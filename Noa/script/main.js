@@ -107,9 +107,9 @@ function onType() {
 // creat lisners for entering a subject =>
 // highlights subject name in navigation bar
 function createScrollListeners() {
-    main.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll);
 
-    setupScroll(main);
+    setupScroll(document.body);
     let subject = document.querySelectorAll(".subject");
 
     // go over the subjects and add enter listeners
@@ -270,7 +270,8 @@ function updateNav(li) {
  * @param {Event} event 
  */
 function onScroll(event) {
-    progBar.style.width = ((main.scrollTop + main.clientHeight) / main.scrollHeight) * 100 + "vw";
+    // progBar.style.width = ((main.scrollTop + main.clientHeight) / main.scrollHeight) * 100 + "vw";
+    progBar.style.width = (document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100 + "vw";
 }
 
 // add listeners for slide out
