@@ -468,7 +468,7 @@ function finishExer() {
     $("body").css({backgroundImage: 'url("assets/images/openendbg.svg")'})
     $(".closing").show();
     $(".game").hide();
-    $(".start").css({bottom: "-20vh"});
+    $(".start").css({bottom: "-12%"});
     $(".start").off("touchend");
     $(".resaults").html("עניתם נכון על " + nResaults + " שאלות מתוך 10.");
     $(".start-text").html(nResaults+"/10");
