@@ -199,7 +199,6 @@ var nResaults = 0;
 var nTextCounter = -1;
 
 $(function(){
-    $(".navigate").on("touchend", onClickBurger);
     $(".about").on("touchend", about);
     $(".start").on("touchend", function(){
         $("body").css({backgroundImage: 'url("assets/images/bg.svg")'});
