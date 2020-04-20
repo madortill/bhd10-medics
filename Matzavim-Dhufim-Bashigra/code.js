@@ -340,7 +340,7 @@ function showSecond() {
 }
 
 function showInfo(event) {
-    $(".case").show();
+    $(".case").css({display: "flex"});
     $(".question").hide();
     $(".speech-bubble").hide();
     $(".patient").attr("src","assets/images/patient"+ (nPatientNum+1) +".svg" );
@@ -368,7 +368,7 @@ function showInfo(event) {
     } else if(nPatientNum === 5 || nPatientNum === 6) {
         $(".text1").css({marginRight: "8vw"});
         $(".case-description").css({marginBottom: "0"});
-        $(".exit").css({marginTop: "4vh"});
+        $(".exit").css({marginTop: "4%"});
         if(nPatientNum === 6) {
             $(".speech-bubble").show();
             $(".text3").css({marginRight: "8vw"});
