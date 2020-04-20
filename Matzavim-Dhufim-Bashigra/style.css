@@ -130,7 +130,7 @@ p {
     background-size: cover;
     width: 35vw;
     height: 20vh;
-    bottom: 78vw;
+    bottom: 44%;
     left: 5vw;
     font-size: 2vh;
 }
@@ -195,7 +195,7 @@ p {
 .infobutton {
     width :9vw;
     left: 5vw;
-    bottom: 60vw;
+    bottom: 80%;
 }
 
 .check {
@@ -214,7 +214,7 @@ p {
     padding-right: 17vw;
     padding-top: 4vh;
     left: 0;
-    bottom: 110vw;
+    bottom: 70%;
     color: rgb(77,117,130);
 }
 
