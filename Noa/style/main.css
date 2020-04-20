@@ -371,7 +371,7 @@ scrolling-title :nth-child(1) div {
 
 
 /* span - circle that surround a number */
-.circle {
+/* .circle {
   position: relative;
   margin: 0 2.1vw;
 }
@@ -386,9 +386,9 @@ scrolling-title :nth-child(1) div {
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
-}
+} */
 
-.ellipse {
+.ellipse, .circle {
   border: solid #009AC4;
   border-radius: 50%;
   padding: 0 3px;
