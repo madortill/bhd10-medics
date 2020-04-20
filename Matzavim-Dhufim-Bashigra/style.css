@@ -14,7 +14,7 @@ body {
     margin: 0;
     background-image: url("assets/images/openendbg.svg");
     background-repeat: no-repeat;
-    background-size: 100vw 95vh;
+    background-size: 100vw 90vh;
     overflow: hidden;
     font-weight: 600;
 }
