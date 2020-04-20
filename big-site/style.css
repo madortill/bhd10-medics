@@ -401,7 +401,7 @@ header a{
   /* line-height: 2.5; */
   /* vertical-align: middle; */
   margin-top: 4vh;
-  word-warp: break-word;
+  /* word-warp: break-word; */
 }
 
 .link-text{
