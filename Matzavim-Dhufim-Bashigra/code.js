@@ -351,7 +351,7 @@ function showInfo(event) {
             $(".text3").css({marginRight: "9vw"});
         } else if(nPatientNum === 3) {
             $(".case-text").html("אלרגי לבוטנים");
-            $(".exit").css({marginTop: "45%"});
+            $(".exit").css({marginTop: "48%"});
             $(".text3").css({marginRight: "8vw"});
         } else {
             $(".case-text").html("אין מידע ");
