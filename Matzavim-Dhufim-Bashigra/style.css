@@ -130,7 +130,7 @@ p {
     background-size: cover;
     width: 35vw;
     height: 20vh;
-    bottom: 47%;
+    bottom: 50%;
     left: 5vw;
     font-size: 2vh;
 }
@@ -166,8 +166,8 @@ p {
     bottom: 0;
     right: 4vw;
     width: 78vw;
-    height: 34vh;
-    padding-top: 9vh;
+    height: 40%;
+    padding-top: 10%;
     padding-right: 7vw;
     padding-left: 7vw;
 }
@@ -249,6 +249,8 @@ p {
     padding-right: 15vw;
     padding-left: 10vw;
     font-size: 4vh;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .case-description {
@@ -261,7 +263,6 @@ p {
 
 .exit {
     width: 10vw;
-    margin-top: 32%;
     margin-right: 63vw;
 }
 
