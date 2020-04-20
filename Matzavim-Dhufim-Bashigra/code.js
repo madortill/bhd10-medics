@@ -400,11 +400,11 @@ function showInfo(event) {
             $(".text3").css({marginRight: "9vw"});
         } else if(nPatientNum === 3) {
             $(".case-text").html("אלרגי לבוטנים");
-            $(".exit").css({marginTop: "13vh"});
+            $(".exit").css({marginTop: "30%"});
             $(".text3").css({marginRight: "8vw"});
         } else {
             $(".case-text").html("אין מידע ");
-            $(".exit").css({marginTop: "-1vh"});
+            $(".exit").css({marginTop: "5%"});
             $(".text3").css({marginRight: "9vw"});
         }
     } else if(nPatientNum === 2)  {
