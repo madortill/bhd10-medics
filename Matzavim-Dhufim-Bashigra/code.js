@@ -146,7 +146,7 @@ var questions = [
     },
     {
         //7
-        "1": ',אזעיק רופא, אבצע אנמנזה, אנטר את מצב ההכרה והמדדים של המטופל ואבצע החייאה על פי הצורך.',
+        "1": 'אזעיק רופא, אבצע אנמנזה, אנטר את מצב ההכרה והמדדים של המטופל ואבצע החייאה על פי הצורך.',
         "2": 'אזעיק רופא, ארגיע את המטופל, אמדוד חום וסטורציה ואחבר לאק"ג.',
         "3": "אזעיק רופא, אמדוד חום וסטורציה, ארגיע את המטופל ואתן לו חמצן ואבצע אנמנזה."
     },
@@ -199,7 +199,6 @@ var nResaults = 0;
 var nTextCounter = -1;
 
 $(function(){
-    $(".navigate").on("touchend", onClickBurger);
     $(".about").on("touchend", about);
     $(".start").on("touchend", function(){
         $("body").css({backgroundImage: 'url("assets/images/bg.svg")'});
@@ -209,54 +208,6 @@ $(function(){
         showPatient();
     });
 });
-
-/**
- * on click burger sign :
- * opens nav 
- * adds listeners to icons
- * @param {Event} event 
- */
-function onClickBurger(event) {
-    burgerNav.classList.add("open");
-    burgerNav.querySelector(".x-icon").addEventListener("touchend", closeBurgerNav);
-    let icons = burgerNav.querySelectorAll(".icon");
-    for (let i = 0; i < icons.length; i++) {
-        const element = icons[i];
-        element.addEventListener("touchend", onClickIcon);
-    }
-}
-
-/**
- * on click icon in burger nav : 
- * change src to marked image 
- * un mark prev image
- * @param {Event} event 
- */
-function onClickIcon(event) {
-    let icons = burgerNav.querySelectorAll(".icon");
-    for (let i = 0; i < icons.length; i++) {
-        const element = icons[i];
-        element.querySelector("img").src = element.querySelector("img").src.replace("-current", "");
-    }
-
-    event.currentTarget.querySelector("img").src = event.currentTarget.querySelector("img").src.replace(".svg", "-current.svg");
-}
-
-/**
- * on click x icon in burger nav : 
- * close burger nav
- * remove listeners from icons
- * @param {Event} event 
- */
-function closeBurgerNav(event) {
-    burgerNav.classList.remove("open");
-    burgerNav.querySelector(".x-icon").removeEventListener("touchend", closeBurgerNav);
-    let icons = burgerNav.querySelectorAll(".icon");
-    for (let i = 0; i < icons.length; i++) {
-        const element = icons[i];
-        element.removeEventListener("touchend", onClickIcon);
-    }
-}
 
 function about() {
     
@@ -392,6 +343,7 @@ function showInfo(event) {
     $(".case").show();
     $(".question").hide();
     $(".speech-bubble").hide();
+    $(".patient").attr("src","assets/images/patient"+ (nPatientNum+1) +".svg" );
     if(nPatientNum === 1 || nPatientNum === 3 || nPatientNum === 4) {
         $(".speech-bubble").hide();
         if(nPatientNum === 1) {
@@ -399,11 +351,11 @@ function showInfo(event) {
             $(".text3").css({marginRight: "9vw"});
         } else if(nPatientNum === 3) {
             $(".case-text").html("אלרגי לבוטנים");
-            $(".exit").css({marginTop: "13vh"});
+            $(".exit").css({marginTop: "35%"});
             $(".text3").css({marginRight: "8vw"});
         } else {
             $(".case-text").html("אין מידע ");
-            $(".exit").css({marginTop: "-1vh"});
+            $(".exit").css({marginTop: "5%"});
             $(".text3").css({marginRight: "9vw"});
         }
     } else if(nPatientNum === 2)  {
@@ -467,7 +419,7 @@ function finishExer() {
     $("body").css({backgroundImage: 'url("assets/images/openendbg.svg")'})
     $(".closing").show();
     $(".game").hide();
-    $(".start").css({bottom: "-20vh"});
+    $(".start").css({bottom: "-12%"});
     $(".start").off("touchend");
     $(".resaults").html("עניתם נכון על " + nResaults + " שאלות מתוך 10.");
     $(".start-text").html(nResaults+"/10");
