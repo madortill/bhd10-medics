@@ -249,6 +249,8 @@ p {
     padding-right: 15vw;
     padding-left: 10vw;
     font-size: 4vh;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .case-description {
@@ -261,7 +263,6 @@ p {
 
 .exit {
     width: 10vw;
-    margin-top: 32%;
     margin-right: 63vw;
 }
 
