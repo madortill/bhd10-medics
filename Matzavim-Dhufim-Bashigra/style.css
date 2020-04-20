@@ -17,6 +17,9 @@ body {
     background-size: 100vw 91vh;
     overflow: hidden;
     font-weight: 600;
+    display: flexbox;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .absolute {
