@@ -392,6 +392,7 @@ function showInfo(event) {
     $(".case").show();
     $(".question").hide();
     $(".speech-bubble").hide();
+    $(".patient").attr("src","assets/images/patient"+ (nPatientNum+1) +".svg" );
     if(nPatientNum === 1 || nPatientNum === 3 || nPatientNum === 4) {
         $(".speech-bubble").hide();
         if(nPatientNum === 1) {
