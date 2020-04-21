@@ -383,7 +383,7 @@ header a{
   margin-bottom: 4.5vh;
 }
 .space-of-adding-options{
-  height: 56vh;
+  height: 69vh;
   overflow: auto;
 }
 
@@ -434,7 +434,7 @@ header a{
   background-image: url("assests/bgcategorysmall.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
   overflow: auto;
   width: 100%;
   white-space: nowrap;
