@@ -437,19 +437,19 @@ header a{
   background-image: url("assests/bgcategorysmall.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 24vh;
-  /* flex: auto; */
-  /* overflow: auto; */
+  min-height: 24vh;
+  overflow: auto;
   width: 100%;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  display: flex;
   /* display: inline-block; */
-  align-items: center;
+  /* align-items: center; */
   /* position: relative; */
 }
 
 .small-option-buttom{
   height: 82%;
-  width: 37%;
+  min-width: 35%;
   display: inline-block;
   margin-right: 1vw;
   margin-top: 1.7vh;
