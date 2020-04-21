@@ -329,7 +329,7 @@ function showSecond() {
     if(nPatientNum === 1 || nPatientNum === 3) {
         $(".options").css({fontSize: "2vh"});
         $(".question").css({height: "45%", paddingTop: "10%"});
-        $(".infobutton").css({bottom: "72vw"});
+        $(".infobutton").css({bottom: "80%"});
         $(".vitals").css({bottom: "92vw"});
     } else if(nPatientNum === 4 || nPatientNum === 6 || nPatientNum === 7){
         $(".options").css({fontSize: "2vh"});
