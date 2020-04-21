@@ -285,7 +285,7 @@ p {
 }
 
 .about-div {
-    background-image: url("assets/images/bgvertical.svg");
+    background-image: url("assets/images/about/bgvertical.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 90%;

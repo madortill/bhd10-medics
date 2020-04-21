@@ -219,7 +219,7 @@ function about() {
     } else {
         bPressedAbout = false;
         $(".about-div").hide();
-        $(".about").attr("src", "assets/images/about/about.svg");
+        $(".about").attr("src", "assets/images/about.svg");
     }
 }
 
