@@ -645,7 +645,7 @@ img.split+* {
   transform: translateX(-50%);
 }
 
-.link:hover .hover {
+.link.open .hover {
   display: block;
 }
 
