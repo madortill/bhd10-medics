@@ -367,6 +367,8 @@ header a{
   background-image: url("assests/bg.svg");
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
@@ -383,7 +385,8 @@ header a{
   margin-bottom: 4.5vh;
 }
 .space-of-adding-options{
-  height: 56vh;
+  /* height: 68vh; */
+  flex: auto;
   overflow: auto;
 }
 
@@ -434,11 +437,12 @@ header a{
   background-image: url("assests/bgcategorysmall.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
-  overflow: auto;
+  height: 24vh;
+  /* flex: auto; */
+  /* overflow: auto; */
   width: 100%;
   white-space: nowrap;
-  display: inline-block;
+  /* display: inline-block; */
   align-items: center;
   /* position: relative; */
 }
@@ -570,7 +574,6 @@ header a{
   display: none;
   overflow: hidden;
 }
-
 #burgerNav>div {
   width: fit-content;
   height: inherit;
