@@ -294,9 +294,9 @@ function openHover(event) {
     //     element = element.parentElement;
     // }
     element.classList.add("open");
-    element.removeEventListener("click", openSlideOut);
+    element.removeEventListener("click", openHover);
     setTimeout(() => {
-        element.addEventListener("click", closeSlideOut);
+        element.addEventListener("click", closeHover);
         // element.parentElement.addEventListener("click", closeSlideOut);
     }, 100);
 }
@@ -310,7 +310,7 @@ function closeHover(event) {
     let element = event.currentTarget;
     element.classList.remove("open");
     // element.querySelector(".tab").addEventListener("click", openSlideOut);
-    element.addEventListener("click", openSlideOut);
-    element.removeEventListener("click", closeSlideOut);
+    element.addEventListener("click", openHover);
+    element.removeEventListener("click", closeHover);
 }
 
