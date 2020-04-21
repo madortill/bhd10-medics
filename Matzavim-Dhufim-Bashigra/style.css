@@ -52,16 +52,16 @@ p {
 
 .about {
     width: 9vw;
-    height: 9vh;
+    /* height: 9vh; */
     left: 5vw;
-    top: 1vh;
+    /* top: 1vh; */
 }
 
 .navigate {
     width: 6vw;
-    height: 6vh;
+    /* height: 6vh; */
     right: 5vw;
-    top: 2.5vh;
+    /* top: 2.5vh; */
 }
 
 .opening {
@@ -130,9 +130,9 @@ p {
     background-size: cover;
     width: 35vw;
     height: 20vh;
-    bottom: 50%;
+    bottom: 46%;
     left: 5vw;
-    font-size: 2vh;
+    font-size: 90%;
 }
 
 .cont {
@@ -173,7 +173,8 @@ p {
 }
 
 .option {
-    width: 8vw;
+    width: 10%;
+    max-height: 40%;
     display: inline-block;
 }
 
@@ -187,7 +188,7 @@ p {
 }
 
 .question-title {
-    font-size: 3.1vh;
+    font-size: 120%;
     margin-right: 3.1vw;
     color:rgb(76, 117, 130);
 }
@@ -231,6 +232,7 @@ p {
 
 .options {
     margin: 0;
+    font-size: 100%
 }
 
 .case {
@@ -248,7 +250,7 @@ p {
     padding-top: 15vh;
     padding-right: 15vw;
     padding-left: 10vw;
-    font-size: 4vh;
+    font-size: 130%;
     flex-direction: column;
     justify-content: space-around;
 }

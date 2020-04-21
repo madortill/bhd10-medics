@@ -197,6 +197,7 @@ var nPatientNum = 0;
 var nMistakes = 0;
 var nResaults = 0;
 var nTextCounter = -1;
+var nPicked = 0;
 
 $(function(){
     $(".about").on("touchend", about);
@@ -224,9 +225,9 @@ function showPatient() {
     if(nPatientNum === 2 || nPatientNum === 4) {
         $(".question").css({height: "40%", paddingTop: "10%"});
         $(".infobutton").css({bottom: "80%"});
-        $(".vitals").css({bottom: "50%"});
+        $(".vitals").css({bottom: "46%"});
     } else if(nPatientNum === 7) {
-        $(".options").css({fontSize: "2.5vh"});
+        $(".options").css({fontSize: "100%"});
     }
     $(".check").on("touchend", Check);
     if(nPatientNum > 0) {
@@ -327,14 +328,14 @@ function showSecond() {
     $(".feedback").hide();
     $(".options").css({marginTop: "-4vh"});
     if(nPatientNum === 1 || nPatientNum === 3) {
-        $(".options").css({fontSize: "2vh"});
-        $(".question").css({height: "45%", paddingTop: "10%"});
-        $(".infobutton").css({bottom: "72vw"});
-        $(".vitals").css({bottom: "92vw"});
+        $(".options").css({fontSize: "70%"});
+        $(".question").css({height: "50%", paddingTop: "10%"});
+        $(".infobutton").css({bottom: "80%"});
+        $(".vitals").css({bottom: "56%"});
     } else if(nPatientNum === 4 || nPatientNum === 6 || nPatientNum === 7){
-        $(".options").css({fontSize: "2vh"});
+        $(".options").css({fontSize: "70%"});
      } else {
-        $(".options").css({fontSize: "2.5vh"});
+        $(".options").css({fontSize: "100%"});
     }
     showPatient();
 }
@@ -400,14 +401,14 @@ function Continue(event) {
     $(".goodjob").hide();
     $(".question-title").html("עם מה תאבחנו את המטופל?");
     if(nCurrQuestion === 3 || nCurrQuestion === 7) {
-        $(".options").css({fontSize: "2vh"});
+        $(".options").css({fontSize: "70%"});
         $(".question").css({height: "45%", paddingTop: "10%"});
-        $(".infobutton").css({bottom: "72vw"});
-        $(".vitals").css({bottom: "92vw"});
+        $(".infobutton").css({bottom: "80%"});
+        $(".vitals").css({bottom: "46%"});
     } else if(nCurrQuestion === 9){
-        $(".options").css({fontSize: "2vh"});
+        $(".options").css({fontSize: "70%"});
     } else {
-        $(".options").css({fontSize: "2.5vh"});
+        $(".options").css({fontSize: "100%"});
     }
     $(".patient").attr("src","assets/images/patient"+ (nPatientNum+1) +".svg" );
     showPatient();

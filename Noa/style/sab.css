@@ -43,6 +43,7 @@
 
 .heartbeat img {
     margin-bottom: 1vh;
+    width: 100%;
 }
 
 #voice {
@@ -130,13 +131,14 @@
     row-gap: 1vh;
     column-gap: 2vw;
     max-width: 50vw;
-    padding: 5vh 1vw;
-    transform: translateX(100vw);
+    padding: 0 1vw;
+    top: 50%;
+    transform: translateX(100vw) translateY(-50%);
     transition: 0.5s 1.7s transform linear;
 }
 
 .phone-example.animate .conversation {
-    transform: translateX(0);
+    transform: translateX(0) translateY(-50%);
 }
 
 .conversation>* {
