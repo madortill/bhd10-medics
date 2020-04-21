@@ -8,7 +8,7 @@ window.onload = () => {
     createScrollListeners();
     createNavListeners();
     createAnimListeners();
-    creatSlideOutListeners();
+    creatHoverListeners();
 
     if (document.getElementsByTagName("title")[0].innerHTML == "מחלות כרוניות") {
         setBMI();
@@ -275,11 +275,11 @@ function onScroll(event) {
 }
 
 // add listeners for slide out
-function creatSlideOutListeners() {
-    let slideOut = document.querySelectorAll(".slide-out .tab");
-    for (let i = 0; i < slideOut.length; i++) {
-        const element = slideOut[i];
-        element.addEventListener("click", openSlideOut);
+function creatHoverListeners() {
+    let hover = document.querySelectorAll(".slide-out, .link");
+    for (let i = 0; i < hover.length; i++) {
+        const element = hover[i];
+        element.addEventListener("click", openHover);
     }
 }
 
@@ -288,11 +288,13 @@ function creatSlideOutListeners() {
  * open slide out div
  * @param {Event} event 
  */
-function openSlideOut(event) {
-    let tab = event.currentTarget;
-    let element = tab.parentElement;
+function openHover(event) {
+    let element=event.currentTarget;
+    // if(event.currentTarget.classList.indexOf("tab") != -1){
+    //     element = element.parentElement;
+    // }
     element.classList.add("open");
-    tab.removeEventListener("click", openSlideOut);
+    element.removeEventListener("click", openSlideOut);
     setTimeout(() => {
         element.addEventListener("click", closeSlideOut);
         // element.parentElement.addEventListener("click", closeSlideOut);
@@ -304,10 +306,11 @@ function openSlideOut(event) {
  * close slide out div
  * @param {Event} event 
  */
-function closeSlideOut(event) {
+function closeHover(event) {
     let element = event.currentTarget;
     element.classList.remove("open");
-    element.querySelector(".tab").addEventListener("click", openSlideOut);
+    // element.querySelector(".tab").addEventListener("click", openSlideOut);
+    element.addEventListener("click", openSlideOut);
     element.removeEventListener("click", closeSlideOut);
 }
 
