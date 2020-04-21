@@ -1,0 +1,594 @@
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+}
+
+body {
+    font-family: "assistant";
+    direction: rtl;
+    margin: 0px;
+    background-image: url("assets/images/bg1.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+p {
+    margin: 0px;
+}
+
+.black {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    z-index: 999;
+}
+
+.header {
+    width: 100vw;
+    color: white;
+    height: 15vh;
+    background-image: url("assets/images/bar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35); */
+    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    right: 8vw;
+    font-weight: 450;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.about {
+    width: 9vw;
+    height: 9vh;
+    left: 0.1vw;
+    top: 3vh;
+}
+
+.navigate {
+    width: 6vw;
+    height: 6vh;
+    right: 1vw;
+    top: 4.7vh;
+}
+
+.opening {
+    padding-right: 10vw;
+    color: #0D2849;
+    width: 90vw;
+    height: 70vh;
+    top: 47vh;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.closing {
+    top: 15vh;
+    right: 7vw;
+    display: none;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.start {
+    width: 50vw;
+    height: 30vh;
+    border: none;
+    border-radius: 1vw;
+    left: 0vw;
+    top: 23vh;
+}
+
+.play {
+    color: white;
+    font-size: 4vw;
+    left: 36vw;
+    top: 33vh;
+}
+
+.goodluck {
+    font-size: 4vw;
+    margin-top: 5vh;
+}
+
+.car {
+    width: 52vw;
+    height: 30vh;
+    right: 47.6vw;
+    top: 34vh;
+    display: none;
+    z-index: 999;
+}
+
+#clue1 {
+    width: 60vw;
+    height: 30vh;
+    left: 25vw;
+    top: 65vh;
+    display: none;
+}
+
+#clue2 {
+    width: 52vw;
+    height: 55vh;
+    top: 10vh;
+    right: 32vw;
+    display: none;
+}
+
+#clue3 {
+    width: 22vw;
+    height: 22vh;
+    top: 43vh;
+    left: 14vw;
+    display: none;
+    z-index: 999;
+}
+
+#airbag {
+    width: 15vw;
+    height: 17vh;
+    top: 48vh;
+    right: 59.2vw;
+    display: none;
+    z-index: 999;
+}
+
+#clue5 {
+    width: 10vw;
+    height: 12vh;
+    top: 62vh;
+    right: 59vw;
+    display: none;
+}
+
+#clue6 {
+    display: none;
+    width: 20vw;
+    height: 10vh;
+    right: 50vw;
+    top: 87vh;
+    z-index: 998;
+    opacity: 0;
+}
+
+#woman {
+    width: 10vw;
+    height: 30vh;
+    right: 50vw;
+    top: 75vh;
+    display: none;
+    z-index: 999;
+}
+
+#clue8 {
+    width: 7vw;
+    height: 15vh;
+    right: 59vw;
+    top: 62vh;
+    display: none;
+    z-index: 999;
+}
+
+#clue9 {
+    width: 30vw;
+    height: 30vh;
+    right: 34.5vw;
+    top: 60.7vh;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue10 {
+    width: 90vw;
+    height: 50vh;
+    top: 15vh;
+    display: none;
+    z-index: 0.1;
+    opacity: 0;
+    z-index: 999;
+}
+
+#clue11 {
+    width: 3vw;
+    height: 5vh;
+    right: 67vw;
+    bottom: 10vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue12 {
+    width: 3vw;
+    height: 5vh;
+    right: 44vw;
+    bottom: 10vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue121 {
+    width: 5vw;
+    height: 9vh;
+    right: 55vw;
+    bottom: 11vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue13 {
+    width: 4vw;
+    height: 5.5vh;
+    right: 66vw;
+    bottom: 12vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue14 {
+    width: 3vw;
+    height: 5vh;
+    right: 48vw;
+    bottom: 6vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue141 {
+    width: 2vw;
+    height: 5vh;
+    right: 64vw;
+    bottom: 11vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+#clue142 {
+    width: 3vw;
+    height: 5vh;
+    right: 48vw;
+    bottom: 15vw;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+.questions {
+    width: 80vw;
+    height: 65vh;
+    background-color: none;
+    background-image: url("assets/images/question-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 15vh;
+    display: none;
+    right: 2vw;
+    padding: 5vw;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.knife {
+    width: 80vw;
+    height: 55vh;
+    background-image: url("assets/images/question-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 15vh;
+    display: none;
+    right: 2vw;
+    padding: 5vw;
+    padding-top: 25vh;
+    font-weight: 700;
+    font-size: 5vw;
+    z-index: 999;
+    text-align: center;
+    color: #0D2849;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+
+.radios {
+    height: 8vh;
+    width: 8vh;
+    border: none;
+}
+
+.option {
+    display: flex;
+}
+
+.answer {
+    margin-top: 3vh;
+    margin-right: 1vw;
+    width: 75vw;
+    font-size: 4.4vh;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hint {
+    left: 0vw;
+    top: 82.5vh;
+    width: 12vw;
+    height: 12vh;
+    border: none;
+    border-radius: 1vw;
+    display: none;
+    z-index: 999;
+}
+
+.back {
+    right: 1vw;
+    top: 82.5vh;
+    width: 10vw;
+    height: 10vh;
+    border: none;
+    border-radius: 1vw;
+    display: none;
+}
+
+.check {
+    width: 10vw;
+    border: none;
+    border-radius: 1vw;
+    bottom: 6vw;
+    margin-right: 58vw;
+}
+
+.stabbed {
+    width: 10vw;
+    height: 40vh;
+    right: 50vw;
+    top: 55vh;
+    display: none;
+}
+
+.exploaded {
+    width: 40vw;
+    right: 60vw;
+    BOTTOM: 10vh;
+    display: none;
+    z-index: 998;
+}
+
+.long {
+    width: 35vw;
+}
+
+.game {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: #4E7582;
+    margin-top: 8vh;
+    margin-right: 6.5vw;
+    font-size: 2.3vw;
+    font-weight: bold;
+    width: 70vw;
+}
+
+.feedback {
+    margin-top: 1vh;
+    display: none;
+    width: 15vw;
+    right: 75vw;
+    top: 1vh;
+}
+
+.smoke {
+    display: none;
+    z-index: 998;
+    width: 70vw;
+    right: 0;
+    bottom: 0;
+}
+
+.bomb {
+    width: 30vw;
+    height: 30vh;
+    right: 34.5vw;
+    top: 60.7vh;
+    display: none;
+    z-index: 998;
+}
+
+.goodJob {
+    font-size: 8vw;
+    color: #0D2849;
+    width: 35vw;
+    top: 43vh;
+}
+
+.finished {
+    width: 34vw;
+    color: #0D2849;
+    font-weight: bold;
+    top: 59vh;
+    right: 50vw;
+}
+
+.resaults {
+    width: 35vw;
+    color: #0D2849;
+    font-weight:  bold;
+    top: 65vh;
+    right: 49vw;
+}
+
+.clue6glow {
+    opacity: 0;
+    width: 30vw;
+    height: 20vh;
+    right: 45vw;
+    top: 85vh;
+}
+
+.clue10glow {
+    opacity: 0;
+    width: 30vw;
+    right: 30vw;
+    top: 5vh;
+}
+
+.clue11glow {
+    opacity: 0;
+    width: 2.5vw;
+    z-index: 998;
+    right: 30vw;
+    margin-top: -1vh;
+}
+
+.clue12glow {
+    opacity: 0;
+    width: 5vw;
+    z-index: 998;
+    margin-top: -8vw;
+    margin-left: 5vw;
+}
+
+.clue13glow {
+    opacity: 0;
+    width: 5vw;
+    z-index: 998;
+    margin-top: 4vw;
+}
+
+.clue14glow {
+    margin-right: 33vw;
+    opacity: 0;
+    width: 4vw;
+    z-index: 998;
+    margin-top: 4vw;
+}
+
+.glow {
+    height: 18.75vw;
+    width: 60vw;
+    bottom: 0;
+    right: 15vw;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 998;
+    display: none;
+}
+
+.about-div {
+    background-image: url("assets/images/about/bghorizontal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 95%;
+    padding-right: 5%;
+    top: 10%;
+    z-index: 100;
+    color: white;
+    display: none;
+    font-weight: 400;
+    font-size: 130%;
+}
+
+.logo {
+    height: 20%;
+    margin-top: -20%;
+    margin-right: 77%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    margin-top: 10%;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 60%;
+}
+
+#burgerNav {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+
+#burgerNav>div {
+    width: 50vw;
+    height: inherit;
+    background-color: white;
+    color: #4d7683;
+    transform: translateX(100%);
+    transition: 0.3s transform linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+#burgerNav .x-icon {
+    width: 6vw;
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+}
+
+#burgerNav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#burgerNav.open {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#burgerNav.open>div {
+    transform: translateX(0);
+}
+
+.head-glow {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 4vw;
+    align-items: center;
+}
