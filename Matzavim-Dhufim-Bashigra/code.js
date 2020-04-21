@@ -222,9 +222,9 @@ function showPatient() {
         $("#option" + i).on("touchend", pickAnswer);
     }
     if(nPatientNum === 2 || nPatientNum === 4) {
-        $(".question").css({height: "34vh", paddingTop: "9vh"});
-        $(".infobutton").css({bottom: "60vw"});
-        $(".vitals").css({bottom: "80vw"});
+        $(".question").css({height: "40%", paddingTop: "10%"});
+        $(".infobutton").css({bottom: "80%"});
+        $(".vitals").css({bottom: "46%"});
     } else if(nPatientNum === 7) {
         $(".options").css({fontSize: "2.5vh"});
     }
@@ -328,9 +328,9 @@ function showSecond() {
     $(".options").css({marginTop: "-4vh"});
     if(nPatientNum === 1 || nPatientNum === 3) {
         $(".options").css({fontSize: "2vh"});
-        $(".question").css({height: "43vh", paddingTop: "8vh"});
-        $(".infobutton").css({bottom: "72vw"});
-        $(".vitals").css({bottom: "92vw"});
+        $(".question").css({height: "50%", paddingTop: "10%"});
+        $(".infobutton").css({bottom: "80%"});
+        $(".vitals").css({bottom: "56%"});
     } else if(nPatientNum === 4 || nPatientNum === 6 || nPatientNum === 7){
         $(".options").css({fontSize: "2vh"});
      } else {
@@ -354,7 +354,7 @@ function showInfo(event) {
             $(".text3").css({marginRight: "8vw"});
         } else {
             $(".case-text").html("אין מידע ");
-            $(".exit").css({marginTop: "5%"});
+            $(".exit").css({marginTop: "1%"});
             $(".text3").css({marginRight: "9vw"});
         }
     } else if(nPatientNum === 2)  {
@@ -401,9 +401,9 @@ function Continue(event) {
     $(".question-title").html("עם מה תאבחנו את המטופל?");
     if(nCurrQuestion === 3 || nCurrQuestion === 7) {
         $(".options").css({fontSize: "2vh"});
-        $(".question").css({height: "43vh", paddingTop: "8vh"});
+        $(".question").css({height: "45%", paddingTop: "10%"});
         $(".infobutton").css({bottom: "72vw"});
-        $(".vitals").css({bottom: "92vw"});
+        $(".vitals").css({bottom: "46%"});
     } else if(nCurrQuestion === 9){
         $(".options").css({fontSize: "2vh"});
     } else {
