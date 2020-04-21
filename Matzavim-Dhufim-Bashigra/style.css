@@ -132,7 +132,7 @@ p {
     height: 20vh;
     bottom: 46%;
     left: 5vw;
-    font-size: 2vh;
+    font-size: 90%;
 }
 
 .cont {
@@ -174,6 +174,7 @@ p {
 
 .option {
     width: 10%;
+    max-height: 40%;
     display: inline-block;
 }
 
@@ -187,7 +188,7 @@ p {
 }
 
 .question-title {
-    font-size: 3.1vh;
+    font-size: 120%;
     margin-right: 3.1vw;
     color:rgb(76, 117, 130);
 }
@@ -231,6 +232,7 @@ p {
 
 .options {
     margin: 0;
+    font-size: 100%
 }
 
 .case {
@@ -248,7 +250,7 @@ p {
     padding-top: 15vh;
     padding-right: 15vw;
     padding-left: 10vw;
-    font-size: 4vh;
+    font-size: 130%;
     flex-direction: column;
     justify-content: space-around;
 }
