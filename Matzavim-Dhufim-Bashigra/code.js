@@ -225,7 +225,7 @@ function showPatient() {
     if(nPatientNum === 2 || nPatientNum === 4) {
         $(".question").css({height: "40%", paddingTop: "10%"});
         $(".infobutton").css({bottom: "80%"});
-        $(".vitals").css({bottom: "46%"});
+        $(".vitals").css({bottom: "47%"});
     } else if(nPatientNum === 7) {
         $(".options").css({fontSize: "100%"});
     }
@@ -331,7 +331,7 @@ function showSecond() {
         $(".options").css({fontSize: "70%"});
         $(".question").css({height: "50%", paddingTop: "10%"});
         $(".infobutton").css({bottom: "80%"});
-        $(".vitals").css({bottom: "56%"});
+        $(".vitals").css({bottom: "57%"});
     } else if(nPatientNum === 4 || nPatientNum === 6 || nPatientNum === 7){
         $(".options").css({fontSize: "70%"});
      } else {
@@ -404,7 +404,7 @@ function Continue(event) {
         $(".options").css({fontSize: "70%"});
         $(".question").css({height: "45%", paddingTop: "10%"});
         $(".infobutton").css({bottom: "80%"});
-        $(".vitals").css({bottom: "46%"});
+        $(".vitals").css({bottom: "47%"});
     } else if(nCurrQuestion === 9){
         $(".options").css({fontSize: "70%"});
     } else {
