@@ -198,6 +198,7 @@ var nMistakes = 0;
 var nResaults = 0;
 var nTextCounter = -1;
 var nPicked = 0;
+var bPressedAbout = false;
 
 $(function(){
     $(".about").on("touchend", about);
@@ -211,7 +212,15 @@ $(function(){
 });
 
 function about() {
-    
+    if(!bPressedAbout) {
+        bPressedAbout = true;
+        $(".about-div").show();
+        $(".about").attr("src", "assets/images/about/play.svg");
+    } else {
+        bPressedAbout = false;
+        $(".about-div").hide();
+        $(".about").attr("src", "assets/images/about/about.svg");
+    }
 }
 
 function showPatient() {
