@@ -275,6 +275,7 @@ function onScroll(event) {
 }
 
 // add listeners for .slide-out & .link
+// close every hover elment
 function creatHoverListeners() {
     let hover = document.querySelectorAll(".slide-out, .link");
     for (let i = 0; i < hover.length; i++) {
@@ -294,8 +295,8 @@ function removeHoverListeners() {
 }
 
 /**
- * on click slide-out tab
- * open slide out div
+ * on click hover or slide-out tab opens it
+ * add click listener to body for closing hover
  * @param {Event} event 
  */
 function openHover(event) {
@@ -314,8 +315,8 @@ function openHover(event) {
 }
 
 /**
- * on click slide-out tab when its open
- * close slide out div
+ * on click body when there is a hover element open
+ * closes all hover elements
  * @param {Event} event 
  */
 function closeHover(event) {
