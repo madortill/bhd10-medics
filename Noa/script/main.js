@@ -274,43 +274,58 @@ function onScroll(event) {
     progBar.style.width = (document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100 + "vw";
 }
 
-// add listeners for slide out
+// add listeners for .slide-out & .link
+// close every hover elment
 function creatHoverListeners() {
     let hover = document.querySelectorAll(".slide-out, .link");
     for (let i = 0; i < hover.length; i++) {
         const element = hover[i];
         element.addEventListener("click", openHover);
+        element.classList.remove("open");
+    }
+}
+
+// remove listeners for slide out
+function removeHoverListeners() {
+    let hover = document.querySelectorAll(".slide-out, .link");
+    for (let i = 0; i < hover.length; i++) {
+        const element = hover[i];
+        element.removeEventListener("click", openHover);
     }
 }
 
 /**
- * on click slide-out tab
- * open slide out div
+ * on click hover or slide-out tab opens it
+ * add click listener to body for closing hover
  * @param {Event} event 
  */
 function openHover(event) {
-    let element=event.currentTarget;
-    // if(event.currentTarget.classList.indexOf("tab") != -1){
-    //     element = element.parentElement;
-    // }
-    element.classList.add("open");
-    element.removeEventListener("click", openHover);
+    removeHoverListeners();
+    // let element=event.currentTarget;
+    // // if(event.currentTarget.classList.indexOf("tab") != -1){
+    // //     element = element.parentElement;
+    // // }
+    event.currentTarget.classList.add("open");
+    // element.removeEventListener("click", openHover);
     setTimeout(() => {
-        element.addEventListener("click", closeHover);
+        document.body.addEventListener("click", closeHover);
+        // element.addEventListener("click", closeHover);
         // element.parentElement.addEventListener("click", closeSlideOut);
     }, 100);
 }
 
 /**
- * on click slide-out tab when its open
- * close slide out div
+ * on click body when there is a hover element open
+ * closes all hover elements
  * @param {Event} event 
  */
 function closeHover(event) {
-    let element = event.currentTarget;
-    element.classList.remove("open");
-    // element.querySelector(".tab").addEventListener("click", openSlideOut);
-    element.addEventListener("click", openHover);
-    element.removeEventListener("click", closeHover);
+    document.body.removeEventListener("click",closeHover);
+    creatHoverListeners();
+    // let element = event.currentTarget;
+    // element.classList.remove("open");
+    // // element.querySelector(".tab").addEventListener("click", openSlideOut);
+    // element.addEventListener("click", openHover);
+    // element.removeEventListener("click", closeHover);
 }
 
