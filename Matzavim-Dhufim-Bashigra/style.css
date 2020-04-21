@@ -52,16 +52,16 @@ p {
 
 .about {
     width: 9vw;
-    height: 9vh;
+    /* height: 9vh; */
     left: 5vw;
-    top: 1vh;
+    /* top: 1vh; */
 }
 
 .navigate {
     width: 6vw;
-    height: 6vh;
+    /* height: 6vh; */
     right: 5vw;
-    top: 2.5vh;
+    /* top: 2.5vh; */
 }
 
 .opening {
