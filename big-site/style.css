@@ -461,7 +461,7 @@ header a{
 }
 
 .anatomy{
-  background-image: url("assests/.1Sanatomy.svg");
+  background-image: url("assests/1Sanatomy.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -473,12 +473,12 @@ header a{
 }
 
 .anatomy-on{
-  background-image: url("assests/.1Sanatomyselected.svg");
+  background-image: url("assests/1Sanatomyselected.svg");
   color:white;
 }
 
 .resucitation{
-  background-image: url("assests/.2Sresucitation.svg");
+  background-image: url("assests/2Sresucitation.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -490,12 +490,12 @@ header a{
 }
 
 .resucitation-on{
-  background-image: url("assests/.2Sresucitationselected.svg");
+  background-image: url("assests/2Sresucitationselected.svg");
   color:white;
 }
 
 .medication{
-  background-image: url("assests/.3Smedication.svg");
+  background-image: url("assests/3Smedication.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -507,12 +507,12 @@ header a{
 }
 
 .medication-on{
-  background-image: url("assests/.3Smedicationselected.svg");
+  background-image: url("assests/3Smedicationselected.svg");
   color:white;
 }
 
 .anamnesys{
-  background-image: url("assests/.4Sanamnesys.svg");
+  background-image: url("assests/4Sanamnesys.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -524,12 +524,12 @@ header a{
 }
 
 .anamnesys-on{
-  background-image: url("assests/.4Sanamnesysselected.svg");
+  background-image: url("assests/4Sanamnesysselected.svg");
   color:white;
 }
 
 .shigra{
-  background-image: url("assests/.5Sshigra.svg");
+  background-image: url("assests/5Sshigra.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -541,12 +541,12 @@ header a{
 }
 
 .shigra-on{
-  background-image: url("assests/.5Sshigraselected.svg");
+  background-image: url("assests/5Sshigraselected.svg");
   color:white;
 }
 
 .trauma{
-  background-image: url("assests/.6Strauma.svg");
+  background-image: url("assests/6Strauma.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -558,7 +558,7 @@ header a{
 }
 
 .trauma-on{
-  background-image: url("assests/.6StraumaSelected.svg");
+  background-image: url("assests/6StraumaSelected.svg");
   color:white;
 }
 
@@ -580,7 +580,7 @@ header a{
   background-color: white;
   color: #4d7683;
   transform: translateX(100%);
-  transition: 0.3s transform linear;
+  transition: 03S transform linear;
   display: flex;
   flex-direction: column;
   align-items: center;
