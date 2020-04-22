@@ -40,7 +40,8 @@ header {
 
 /* bureger image */
 header img {
-  height: 3vh;
+  /* height: 3vh; */
+  width: 5vw;
 }
 
 /* space => align header text right*/
