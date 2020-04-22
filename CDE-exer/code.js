@@ -41,15 +41,15 @@ function pressStage(event) {
         $("#exemination" + nCurrStage).off("touchend", pressStage);
         if (nCurrStage === 1) {
             $(".circle").show();
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "30vw"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "30%", paddingRight: "7%"});
             $(".instructions-text").html("נכון מאוד! עכשיו נעצור דימומים שיכולים להיות למטופל, שבניגוד לשלב הS, לא פורצים.");
-            $(".instructions-text").css({width: '25vw', marginRight: '4vw'});
+            $(".instructions-text").css({width: '70%'});
             $(".next").show();
             $(".next").on("touchend", function() {
                 $(".next").hide();
-                $(".instructions").css({backgroundImage: 'url("assets/images/note5.svg")', height: "25vh", bottom: "20vw"});
+                $(".instructions").css({backgroundImage: 'url("assets/images/note5.svg")', height: "25%", bottom: "40%"});
                 $(".instructions-text").html("בחר את הצעדים בשלב הC לפי הסדר:");
-                $(".instructions-text").css({marginRight: "2.5vw", marginTop: "2.5vh"});
+                $(".instructions-text").css({marginRight: "2.5%", marginTop: "2.5%"});
                 $(".circ-steps").css({display: "flex"});
                 for(var i=1; i<=7; i++) {
                     $("#circ" + i).on("touchend", checkCirc);
@@ -58,8 +58,8 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "55vw", textAlign: "right", marginRight: "8vw", marginTop: "7vh"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60vw", height: "70vh", marginRight: "0.5vw", paddingTop: "8vh", bottom: "3vw"});
+            $(".instructions-text").css({width: "55%", textAlign: "right", marginRight: "8%", marginTop: "7%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
                 $("#option" + i).on("touchend", pickAnswer);
@@ -69,8 +69,8 @@ function pressStage(event) {
         } else if (nCurrStage === 3){
             $(".circle").attr("src", "assets/images/e.svg");
             $(".instructions-text").html("נכון מאוד! עכשיו נכין את המטופל לפינוי. מהם הצעדים בשלב זה? ");
-            $(".instructions-text").css({width: "45vw", textAlign: "right", marginRight: "8vw", marginTop: "6vh"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60vw", height: "70vh", marginRight: "0.5vw", paddingTop: "8vh", bottom: "3vw"});
+            $(".instructions-text").css({width: "45%", textAlign: "right", marginRight: "8%", marginTop: "6%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"});
             $(".answers").show();
             for(var i=1; i<=3; i++){
                 $("#answer" + i).on("touchend", pickAnswer2);
@@ -102,12 +102,12 @@ function checkCirc(event) {
         if(nStepCounter > 7) {
             $(".injury").hide();
             $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")'});
-            $(".instructions").css({width: "30vw", height: "60vh", bottom: "5vw", marginRight: "0.5vw"}); 
+            $(".instructions").css({width: "30%", height: "60%", bottom: "5%", marginRight: "0.5%"}); 
             for(var i=1; i<=7; i++) {
                 $("#circ" + i).hide();
             }
             $(".instructions-text").html("כל הכבוד! מדדתם למטופל 30 פעימות לב ב15 שניות. האם התוצאה מראה על דופק תקין?");
-            $(".instructions-text").css({marginTop: "8vh"})
+            $(".instructions-text").css({marginTop: "8%"})
             $(".yes-or-no").css({display: "flex"});
             $(".answer").on("touchend", checkPalse);
            
@@ -138,11 +138,11 @@ function checkPalse(event) {
         $(".instructions-text").html("טעות!");
         nMistakes++;
     }
-    $(".instructions-text").css({marginTop: "3vh", marginRight: "4vw"});
+    $(".instructions-text").css({marginTop: "3%", marginRight: "4%"});
     $(".instructions-text").after('<p class="palse">דופק כמותי מודדים במשך 15 שניות, ומכפילים את מספר הפעימות ב4 כדי לקבל את מספר הפעימות בדקה. מספר פעימות תקין הוא 60-90 פעימות בדקה.</p> <p class="palse">30X4=120</p>');
-    $(".instructions").css({height: "70vh", width: "35vw", marginRight: "0", marginTop: "5vh"});
+    $(".instructions").css({height: "70%", width: "35%", marginRight: "0", marginTop: "5%"});
     $(".next").show();
-    $(".next").css({bottom: "3vw", right: "32vw"})
+    $(".next").css({bottom: "3%", right: "32%"})
     $(".next").on("touchend", nextStage);
 }              
 
@@ -151,7 +151,7 @@ function nextStage(event) {
     $(".next").off("touchend", nextStage);
     $(".next").hide();
     $(".nextstep").hide();
-    $(".instructions").css({height: '20vh', marginTop: '15vh', paddingTop: '6vh', paddingBottom: '0', width: '24vw', backgroundImage: 'url("assets/images/note5.svg")'});
+    $(".instructions").css({height: '20%', marginTop: '15%', paddingTop: '6%', paddingBottom: '0', width: '24%', backgroundImage: 'url("assets/images/note5.svg")'});
     for(var i = 1; i<=3; i++) {
         $("#exemination" + i).show();
         $("#exemination" + i).css({backgroundImage: 'url("assets/images/exemination' + i + '.svg")'});
@@ -160,7 +160,7 @@ function nextStage(event) {
         $("#exemination" + i).css({opacity: "0.7"});
     }
     $(".instructions-text").html("מה השלב הבא בבדיקה?");
-    $(".instructions-text").css({marginRight: "2vw", width: "20vw", marginTop: "0vh", textAlign: "center"});
+    $(".instructions-text").css({marginRight: "2%", width: "20%", marginTop: "0%", textAlign: "center"});
     $(".options").hide();
     if (nCurrStage === 2) {
         $(".palse").hide();
@@ -203,7 +203,7 @@ function checkRadio(event) {
         $(".check").off("touchend", checkRadio);
         $(".check").hide();
         $(".next").show();
-        $(".next").css({marginTop: "60vh", marginRight: "27vw"});
+        $(".next").css({marginTop: "60%", marginRight: "27%"});
         $(".next").on("touchend", nextStage );
     } else {
         $(".feedback").attr("src", "assets/images/x.svg");
@@ -225,14 +225,14 @@ function checkAnswer(event) {
         $(".check").off("touchend", checkAnswer);
         $(".check").hide();
         $(".next").show();
-        $(".next").css({marginTop: "60vh", marginRight: "27vw"});
+        $(".next").css({marginTop: "60%", marginRight: "27%"});
         $(".next").on("touchend", function(){
             $(".answers").hide();
             $(".feedback").hide();
             $(".instructions-text").html("כל הכבוד!");
-            $(".instructions-text").css({marginRight: "9vw", width: "25vw", fontWeight: "600", marginTop: "8vh"});
+            $(".instructions-text").css({marginRight: "9%", width: "25%", fontWeight: "600", marginTop: "8%"});
             $(".instructions-text").after("<p class=extra>לא נעצור דימומים של המטופל מהפופיק ומעלה מחשש להחמרת פגיעת חזה.</p>"); 
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30vw", height: "70vh", marginRight: "0.5vw", paddingTop: "8vh", bottom: "3vw"})
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"})
             $(".yes-or-no").show();
             $("#yes").html("נכון");
             $("#no").html("לא נכון");
@@ -258,12 +258,12 @@ function checkBleeding(event) {
         $(".instructions-text").html("טעות!");
         nMistakes++;
     }
-    $(".instructions-text").css({marginRight: "10vw", marginTop: "10"});
+    $(".instructions-text").css({marginRight: "10%", marginTop: "10"});
     $(".extra").html("אין לעצור דימומים מנקודת הפופיק ומעלה.");
-    $(".extra").css({marginTop: "25vh"});
+    $(".extra").css({marginTop: "25%"});
     $(".yes-or-no").hide();
     $(".next").show();
-    $(".next").css({right: "-10vw", bottom: "7vw"});
+    $(".next").css({right: "-10%", bottom: "7%"});
     $(".next").on("touchend", finishExer);
 }
 
