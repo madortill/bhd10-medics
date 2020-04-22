@@ -69,14 +69,14 @@ const homeOptions = [
             {
                 title: 'מבוא למחלות מדבקות',
                 titleColor: "yellow",
-                explain: "תיאור סרטון",
+                explain: "בסרטון זה נלמד על מבוא למחלות מדבקות",
                 link: "www",
                 icon: "assests/9contagious.svg",
             },
             {
                 title: 'רפואה ראשונית',
                 titleColor: "yellow",
-                explain: "תיאור סרטון",
+                explain: "בסרטון זה נלמד על הבסיס שלרפואה ראשונית",
                 link: "www",
                 icon: "assests/10firstmedic.svg",
             },
@@ -109,7 +109,7 @@ const homeOptions = [
             {
                 title: 'אנמנזה דגלים אדומים',
                 titleColor: "yellow",
-                explain: "תיאור סרטון",
+                explain: "בסרטון זה נלמד ונכיר את הדגלים האדומים באנמנזה",
                 link: "www",
                 icon: "assests/14redflags.svg",
             },
@@ -208,14 +208,14 @@ const homeOptions = [
             {
                 title: 'פגיעות אקלים <br>חם',
                 titleColor: "yellow",
-                explain: "תיאור סרטון",
+                explain: "בסרטון זה נלמד על פגיעות אקלים",
                 link: "www",
                 icon: "assests/26hotclimate.svg",
             },
             {
                 title: 'פגיעות אקלים <br>קר',
                 titleColor: "yellow",
-                explain: "תיאור סרטון",
+                explain: "בסרטון זה נלמד על פגיעות אקלים",
                 link: "www",
                 icon: "assests/27coldclimate.svg",
             }]
