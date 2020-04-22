@@ -146,7 +146,7 @@ function checkPalse(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "-1%"});
     $(".instructions-text").after('<p class="palse">דופק כמותי מודדים במשך 15 שניות, ומכפילים את מספר הפעימות ב4 כדי לקבל את מספר הפעימות בדקה. מספר פעימות תקין הוא 60-90 פעימות בדקה.</p> <p class="palse">30X4=120</p>');
-    $(".instructions").css({height: "70%", width: "35%", marginRight: "0", marginTop: "5%"});
+    $(".instructions").css({height: "75%", width: "35%", marginRight: "0", marginTop: "10%", paddingRight: "-=3%"});
     $(".next").show();
     $(".next").css({bottom: "8%", right: "47%"})
     $(".next").on("touchend", nextStage);
