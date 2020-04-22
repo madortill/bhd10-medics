@@ -29,13 +29,13 @@ header {
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 0vh 7vw;
+  padding: 1.5vh 7vw;
   background-color: lightcoral;
   /* background-image: linear-gradient(to right, #e29087 , #e2b979); */
   background-image: url("../assests/images/generic/header-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 8vh;
+  /* height: 8vh; */
 }
 
 /* bureger image */
