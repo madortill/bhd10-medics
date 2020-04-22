@@ -448,11 +448,9 @@ header a{
 }
 
 .small-option-buttom{
-  height: 82%;
   min-width: 35%;
   display: inline-block;
-  margin-right: 1vw;
-  margin-top: 1.7vh;
+  background-size: 100% 100%;
 }
 
 .small-option-text{
@@ -463,13 +461,12 @@ header a{
 .anatomy{
   background-image: url("assests/1Sanatomy.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.8vh;
 }
 
 .anatomy-on{
@@ -478,15 +475,16 @@ header a{
 }
 
 .resucitation{
+  margin: 0;
   background-image: url("assests/2Sresucitation.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
+  /* margin-top: 1.2vh; */
 }
 
 .resucitation-on{
@@ -497,13 +495,11 @@ header a{
 .medication{
   background-image: url("assests/3Smedication.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .medication-on{
@@ -514,13 +510,11 @@ header a{
 .anamnesys{
   background-image: url("assests/4Sanamnesys.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .anamnesys-on{
@@ -531,13 +525,11 @@ header a{
 .shigra{
   background-image: url("assests/5Sshigra.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .shigra-on{
@@ -548,13 +540,11 @@ header a{
 .trauma{
   background-image: url("assests/6Strauma.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .trauma-on{
