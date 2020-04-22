@@ -186,15 +186,15 @@ function ZoomIn(event) {
         $(".car").off("touchend", ZoomIn)
         $("#clue1").hide();
         $(".car").attr("src", "assets/images/car2.svg");
-        $(".car").css({width: "62vw"});
-        $(".car").css({height: "60vh"});
-        $(".car").css({right: "38vw"});
-        $(".car").css({top: "41vh"});
+        $(".car").css({width: "62%"});
+        $(".car").css({height: "60%"});
+        $(".car").css({right: "38%"});
+        $(".car").css({top: "41%"});
         $("#clue2").attr("src", "assets/images/clue22.svg");
-        $("#clue2").css({right: "10.7vw"});
-        $("#clue2").css({width: "80vw"});
-        $("#clue2").css({height: "117vh"});
-        $("#clue2").css({top: "-1vh"});
+        $("#clue2").css({right: "10.7%"});
+        $("#clue2").css({width: "80%"});
+        $("#clue2").css({height: "117%"});
+        $("#clue2").css({top: "-1%"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).show();
         }
@@ -206,8 +206,8 @@ function ZoomIn(event) {
         $(".bomb").hide();
         $("#clue9").hide();
         $("#clue10").hide();
-        $(".exploaded").css({width: "60vw"});
-        $(".exploaded").css({right: "15vw"});
+        $(".exploaded").css({width: "60%"});
+        $(".exploaded").css({right: "15%"});
         $(".exploaded").css({bottom: "0"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).show();
@@ -228,15 +228,15 @@ function ZoomOut(event) {
         $(".car").on("touchend", ZoomIn)
         $("#clue1").show();
         $(".car").attr("src", "assets/images/car1.svg");
-        $(".car").css({width: "52vw"});
-        $(".car").css({height: "30vh"});
-        $(".car").css({right: "47.5vw"});
-        $(".car").css({top: "36vh"});
+        $(".car").css({width: "52%"});
+        $(".car").css({height: "30%"});
+        $(".car").css({right: "47.5%"});
+        $(".car").css({top: "36%"});
         $("#clue2").attr("src", "assets/images/clue2.svg");
-        $("#clue2").css({right: "32vw"});
-        $("#clue2").css({width: "52vw"});
-        $("#clue2").css({height: "50vh"});
-        $("#clue2").css({top: "15vh"});
+        $("#clue2").css({right: "32%"});
+        $("#clue2").css({width: "52%"});
+        $("#clue2").css({height: "50%"});
+        $("#clue2").css({top: "15%"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).hide();
         }
@@ -248,9 +248,9 @@ function ZoomOut(event) {
         $(".bomb").show();
         $("#clue9").show();
         $("#clue10").show();
-        $(".exploaded").css({width: "40vw"});
-        $(".exploaded").css({right: "60vw"});
-        $(".exploaded").css({bottom: "10vh"});
+        $(".exploaded").css({width: "40%"});
+        $(".exploaded").css({right: "60%"});
+        $(".exploaded").css({bottom: "10%"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).hide();
         }
@@ -266,15 +266,15 @@ function Animate() {
     $("#clue1").show();
     $(".car").attr("src", "assets/images/car1.svg");
     $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
-    $(".car").css({width: "52vw"});
-    $(".car").css({height: "30vh"});
-    $(".car").css({right: "47.5vw"});
-    $(".car").css({top: "36vh"});
+    $(".car").css({width: "52%"});
+    $(".car").css({height: "30%"});
+    $(".car").css({right: "47.5%"});
+    $(".car").css({top: "36%"});
     $("#clue2").attr("src", "assets/images/clue2.svg");
-    $("#clue2").css({right: "32vw"});
-    $("#clue2").css({width: "52vw"});
-    $("#clue2").css({height: "55vh"});
-    $("#clue2").css({top: "10vh"});
+    $("#clue2").css({right: "32%"});
+    $("#clue2").css({width: "52%"});
+    $("#clue2").css({height: "55%"});
+    $("#clue2").css({top: "10%"});
     for(var i=3; i<=4; i++) {
         $("#clue" + i).hide();
     }
