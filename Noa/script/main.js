@@ -93,9 +93,23 @@ function setBMI() {
 function onType() {
     let weight = document.querySelectorAll(".bmi .calc input")[0].value;
     let height = document.querySelectorAll(".bmi .calc input")[1].value;
+    let ans = document.querySelector(".bmi .ans");
     if (weight != "" && height != "") {
         // document.querySelector(".bmi .ans").style.display = "flex";
-        document.querySelector(".bmi .ans").innerHTML = (Number(weight) / (Math.pow(Number(height), 2))).toFixed(1);
+        ans.innerHTML = (Number(weight) / (Math.pow(Number(height), 2))).toFixed(1);
+        ans.classList.remove("text-green");
+        ans.classList.remove("text-blue");
+        ans.classList.remove("text-red");
+        if(ans.innerHTML >= 30){
+            ans.classList.add("text-red");
+        }
+        else if(ans.innerHTML >= 26){
+            ans.classList.add("text-blue");
+        }
+        else{
+            ans.classList.add("text-green");
+
+        }
     }
     else {
         document.querySelector(".bmi .ans").innerHTML = "הכניסו נתונים";
