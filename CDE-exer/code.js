@@ -7,9 +7,9 @@ var nResaults = 0;
 var bWasWrong = false;
 var nPicked;
 var nNumPicks = 0;
+var bPressedAbout = false;
 
 $(function(){
-    $(".navigate").on("touchend", onClickBurger);
     $(".about").on("touchend", about);
     for(var i=1; i<=3; i++) {
         $("#exemination" + i).on("touchend", pressStage);

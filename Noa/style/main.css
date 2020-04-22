@@ -19,6 +19,7 @@ body {
   width: 100vw;
   z-index: 30;
   max-height: var(--top);
+  margin-top: env(safe-area-inset-top, 0);
 }
 
 /* HEADER */
@@ -130,8 +131,9 @@ nav a {
   /* background-image: url("../assests/images/generic/gradiant-background.svg"); 
   background-repeat: no-repeat;
   background-size: cover;*/
-  /* max-height: 87vh; */
-  margin-top: var(--top);
+  max-height: calc(100vh - var(--top) - env(safe-area-inset-top, 0));
+  margin-top: calc(var(--top) + env(safe-area-inset-top, 0));
+  /* flex:  auto; */
 }
 
 
