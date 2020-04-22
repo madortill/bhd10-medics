@@ -367,6 +367,8 @@ header a{
   background-image: url("assests/bg.svg");
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
@@ -383,7 +385,8 @@ header a{
   margin-bottom: 4.5vh;
 }
 .space-of-adding-options{
-  height: 68vh;
+  /* height: 68vh; */
+  flex: auto;
   overflow: auto;
 }
 
@@ -434,21 +437,20 @@ header a{
   background-image: url("assests/bgcategorysmall.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 24vh;
+  min-height: 24vh;
   overflow: auto;
   width: 100%;
-  white-space: nowrap;
-  display: inline-block;
-  align-items: center;
+  /* white-space: nowrap; */
+  display: flex;
+  /* display: inline-block; */
+  /* align-items: center; */
   /* position: relative; */
 }
 
 .small-option-buttom{
-  height: 82%;
-  width: 37%;
+  min-width: 35%;
   display: inline-block;
-  margin-right: 1vw;
-  margin-top: 1.7vh;
+  background-size: 100% 100%;
 }
 
 .small-option-text{
@@ -457,104 +459,96 @@ header a{
 }
 
 .anatomy{
-  background-image: url("assests/.1Sanatomy.svg");
+  background-image: url("assests/1Sanatomy.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.8vh;
 }
 
 .anatomy-on{
-  background-image: url("assests/.1Sanatomyselected.svg");
+  background-image: url("assests/1Sanatomyselected.svg");
   color:white;
 }
 
 .resucitation{
-  background-image: url("assests/.2Sresucitation.svg");
+  margin: 0;
+  background-image: url("assests/2Sresucitation.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
+  /* margin-top: 1.2vh; */
 }
 
 .resucitation-on{
-  background-image: url("assests/.2Sresucitationselected.svg");
+  background-image: url("assests/2Sresucitationselected.svg");
   color:white;
 }
 
 .medication{
-  background-image: url("assests/.3Smedication.svg");
+  background-image: url("assests/3Smedication.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .medication-on{
-  background-image: url("assests/.3Smedicationselected.svg");
+  background-image: url("assests/3Smedicationselected.svg");
   color:white;
 }
 
 .anamnesys{
-  background-image: url("assests/.4Sanamnesys.svg");
+  background-image: url("assests/4Sanamnesys.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .anamnesys-on{
-  background-image: url("assests/.4Sanamnesysselected.svg");
+  background-image: url("assests/4Sanamnesysselected.svg");
   color:white;
 }
 
 .shigra{
-  background-image: url("assests/.5Sshigra.svg");
+  background-image: url("assests/5Sshigra.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .shigra-on{
-  background-image: url("assests/.5Sshigraselected.svg");
+  background-image: url("assests/5Sshigraselected.svg");
   color:white;
 }
 
 .trauma{
-  background-image: url("assests/.6Strauma.svg");
+  background-image: url("assests/6Strauma.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: auto;
   text-align: center;
   color:#EF5B5B;
-  margin-top: 1.2vh;
 }
 
 .trauma-on{
-  background-image: url("assests/.6StraumaSelected.svg");
+  background-image: url("assests/6StraumaSelected.svg");
   color:white;
 }
 
@@ -570,14 +564,13 @@ header a{
   display: none;
   overflow: hidden;
 }
-
 #burgerNav>div {
   width: fit-content;
   height: inherit;
   background-color: white;
   color: #4d7683;
   transform: translateX(100%);
-  transition: 0.3s transform linear;
+  transition: 03S transform linear;
   display: flex;
   flex-direction: column;
   align-items: center;

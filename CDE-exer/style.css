@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+}
+
+body {
+    font-family: "assistant";
+    direction: rtl;
+    margin: 0px;
+    background-image: url("assets/images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    color: rgb(15, 40, 73);
+    font-size: 4vh;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.header {
+    width: 100vw;
+    color: white;
+    height: 15vh;
+    background-image: url("assets/images/bar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    right: 10vw;
+    font-weight: 450;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.about {
+    width: 10vw;
+    height: 10vh;
+    left: 1vw;
+    top: 3vh;
+}
+
+.navigate {
+    width: 4vw;
+    right: 3vw;
+    top: 5vh;
+}
+
+.closing {
+    top: 48vh;
+    right: 7vw;
+    display: none;
+    font-weight: 500;
+    font-size: 4.2vh;
+}
+
+.finished {
+    right: 55vw;
+    bottom: -20vw;
+    width: 22vw;
+}
+
+.instructions {
+    height: 60vh;
+    width: 24vw;
+    text-align: center;
+    bottom: 5vw;
+    margin-right: 0.5vw;
+    background-image: url("assets/images/note1.svg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: #0D2849;
+    padding-top: 6vh;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    font-size: 5vh;
+    font-weight: 500;
+    z-index: 100;
+}
+
+.instructions-text {
+    width: 22vw;
+    margin-right: 1vw;
+    margin-top: 9vh;
+}
+
+.man {
+    margin-right: 30vw;
+    z-index: 97;
+    width: 80vw;
+    bottom: 12vw;
+    left: 1vw;
+}
+
+.check {
+    width: 5vw;
+    display: none;
+    margin-bottom: -35vw;
+    margin-right: 55vw;
+    z-index: 100;
+}
+
+.next {
+    width: 5vw;
+    margin-top: 48vh;
+    margin-right: 10vw;
+    display: none;
+}
+
+.exeminations {
+    background-repeat: no-repeat;
+    background-size:  cover;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    top: 35vh;
+    width: 15vw;
+    height: 34vh;
+    z-index: 999;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(78, 118, 131);
+    font-size: 2.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exemination1 {
+    background-image: url("assets/images/exemination1.svg");
+    right: 55vw;
+    z-index: 999;
+}
+
+#exemination2 {
+    background-image: url("assets/images/exemination2.svg");
+    right: 32vw;
+    z-index: 999;
+}
+
+#exemination3 {
+    background-image: url("assets/images/exemination3.svg");
+    right: 78vw;
+    z-index: 999;
+}
+
+.injury {
+    width: 5vw;
+    left: 45vw;
+    bottom: 21.5vw;
+    z-index: 100;
+}
+
+.circle {
+    width: 5vw;
+    margin-right: 93vw;
+    margin-top: 3vh;
+    display: none;
+}
+
+.circ {
+    background-image: url("assets/images/note4.svg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 16vh;
+    width: 11vw;
+    padding-top: 6vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 500;
+}
+
+.circ-steps {
+    margin-top: 1vh;
+    width: 65vw;
+    display: none;
+    flex-direction: column;
+    align-content: space-around;
+    left: 3vw;
+    z-index: 100;
+}
+
+.circ-cont1 {
+    width: 47vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 9vw;
+}
+
+.circ-cont2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.yes-or-no {
+    z-index: 999;
+    display: none;
+    top: 35vh;
+    right: 45vw;
+}
+
+.answer {
+    background-repeat: no-repeat;
+    background-size:  cover;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 12vh;
+    width: 15vw;
+    height: 22vh;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(78, 118, 131);
+    font-size: 4vw;
+    margin-left: 5vw;
+}
+
+#yes {
+    background-image: url("assets/images/exemination1.svg");
+}
+
+#no {
+    background-image: url("assets/images/exemination2.svg");
+}
+
+.options {
+    display: none;
+    right: 8vw;
+    bottom: 10vw;
+    width: 28vw;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.option {
+    width: 5vw;
+    display: inline-block;
+}
+
+.option2 {
+    width: 5vw;
+    display: inline-block;
+}
+
+.text {
+    width: 50vw;
+    display: inline-block;
+    margin-top: 6vh;
+    margin-right: 1vw;
+}
+
+.div {
+    display: flex;
+}
+
+.feedback {
+    width: 20vw;
+    z-index: 100;
+    right: 57vw;
+    display: none;
+}
+
+.answers {
+    display: none;
+    right: 8vw;
+    bottom: 8vw;
+    width: 60vw;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.text {
+    width: 50vw;
+    display: inline-block;
+    margin-top: 6vh;
+    margin-right: 1vw;
+}
+
+.cont {
+    display: flex;
+}
+
+.answer-text {
+    width: 60vw;
+    font-weight: bold;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    margin-right: 1vw;
+    display: inline-block;
+}
+
+.extra {
+    margin-top: 20vh;
+    margin-right: 3vw;
+    width: 23vw;
+}
+
+.resaults {
+    width: 27vw;
+    text-align: center;
+    right: 60vw;
+    bottom: 6vw;
+    font-weight: bold;
+}
+
+.goodjob {
+    width: 40vw;
+    top: 56vh;
+    right: 15vw;
+    font-size: 15vh;
+    font-weight: bold;
+}
+
+.palse {
+    margin-top: 11vh;
+}
+
+.about-div {
+    background-image: url("assets/images/about/bghorizontal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 95%;
+    padding-right: 5%;
+    top:10%;
+    z-index: 100;
+    color: white;
+    display: none;
+    font-weight: 400;
+    font-size: 130%;
+}
+
+.logo {
+    height: 20%;
+    margin-top: -20%;
+    margin-right: 77%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+}
