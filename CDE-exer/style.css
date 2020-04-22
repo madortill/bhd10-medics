@@ -64,7 +64,7 @@ body {
 }
 
 .instructions {
-    height: 58%;
+    height: 61%;
     width: 24%;
     text-align: center;
     bottom: 10%;
@@ -73,7 +73,7 @@ body {
     background-repeat: no-repeat;
     background-size:  cover;
     color: #0D2849;
-    padding-top: 6%;
+    padding-top: 3%;
     padding-right: 4%;
     padding-left: 3%;
     font-size: 110%;
@@ -103,7 +103,7 @@ body {
 
 .next {
     width: 12%;
-    margin-top: 35%;
+    margin-top: 45%;
     margin-right: 25%;
     display: none;
 }
