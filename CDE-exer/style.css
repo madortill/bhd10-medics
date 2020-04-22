@@ -96,7 +96,7 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-bottom: -85%;
+    margin-bottom: 0;
     margin-right: 82%;
     z-index: 99;
 }
