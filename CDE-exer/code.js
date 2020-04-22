@@ -260,7 +260,7 @@ function checkBleeding(event) {
         $(".instructions-text").html("טעות!");
         nMistakes++;
     }
-    $(".instructions-text").css({marginRight: "15%", marginTop: "10"});
+    $(".instructions-text").css({marginRight: "17%", marginTop: "10"});
     $(".extra").html("אין לעצור דימומים מנקודת הפופיק ומעלה.");
     $(".extra").css({marginTop: "25%"});
     $(".yes-or-no").hide();
