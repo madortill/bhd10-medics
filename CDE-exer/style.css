@@ -96,7 +96,7 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-bottom: -55%;
+    margin-bottom: -65%;
     margin-right: 80%;
     z-index: 99;
 }
@@ -305,7 +305,7 @@ body {
     width: 27%;
     text-align: center;
     right: 60%;
-    bottom: 10%;
+    bottom: 1%;
     font-weight: bold;
 }
 

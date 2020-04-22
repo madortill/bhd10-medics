@@ -63,8 +63,8 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "65%", textAlign: "right", marginRight: "8%", marginTop: "7%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"});
+            $(".instructions-text").css({width: "65%", textAlign: "right", marginRight: "8%", marginTop: "1%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "1%", bottom: "3%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
                 $("#option" + i).on("touchend", pickAnswer);
@@ -81,7 +81,7 @@ function pressStage(event) {
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "107%", marginBottom: "-57%" });
+            $(".check").css({marginRight: "110%", marginBottom: "-62%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {
@@ -239,7 +239,7 @@ function checkAnswer(event) {
             $(".instructions-text").html("כל הכבוד!");
             $(".instructions-text").css({marginRight: "20%", width: "55%", fontWeight: "600", marginTop: "8%"});
             $(".instructions-text").after("<p class=extra>לא נעצור דימומים של המטופל מהפופיק ומעלה מחשש להחמרת פגיעת חזה.</p>"); 
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"})
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "3%", bottom: "3%", marginTop: "10%"});
             $(".yes-or-no").show();
             $("#yes").html("נכון");
             $("#no").html("לא נכון");
