@@ -54,7 +54,7 @@ function pressStage(event) {
                 $(".next").hide();
                 $(".instructions").css({backgroundImage: 'url("assets/images/note5.svg")', height: "25%", bottom: "40%"});
                 $(".instructions-text").html("בחר את הצעדים בשלב הC לפי הסדר:");
-                $(".instructions-text").css({marginRight: "2.5%", marginTop: "1%"});
+                $(".instructions-text").css({marginRight: "2.5%", marginTop: "-1%"});
                 $(".circ-steps").css({display: "flex"});
                 for(var i=1; i<=7; i++) {
                     $("#circ" + i).on("touchend", checkCirc);
