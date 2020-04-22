@@ -96,8 +96,8 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-bottom: -65%;
-    margin-right: 80%;
+    margin-bottom: -85%;
+    margin-right: 82%;
     z-index: 99;
 }
 
@@ -272,6 +272,7 @@ body {
     right: 8%;
     bottom: 8%;
     width: 60%;
+    height: 80%;
     z-index: 99;
     flex-direction: column;
 }
@@ -305,7 +306,7 @@ body {
     width: 27%;
     text-align: center;
     right: 60%;
-    bottom: 1%;
+    bottom: -6%;
     font-weight: bold;
 }
 
