@@ -10,11 +10,16 @@ var nNumPicks = 0;
 var bPressedAbout = false;
 
 $(function(){
+    $(".ok").on("touchend", removeTurn);
     $(".about").on("touchend", about);
     for(var i=1; i<=3; i++) {
         $("#exemination" + i).on("touchend", pressStage);
     }
 });
+
+function removeTurn(event) {
+    $(".turn-div").hide();
+}
 
 function about() {
     if(!bPressedAbout) {
