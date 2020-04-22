@@ -27,7 +27,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
-    z-index: 999;
+    z-index: 99;
     display: flex;
     align-items: center;
 }
@@ -81,7 +81,7 @@ body {
     padding-left: 3vw;
     font-size: 5vh;
     font-weight: 500;
-    z-index: 100;
+    z-index: 99;
 }
 
 .instructions-text {
@@ -92,7 +92,7 @@ body {
 
 .man {
     margin-right: 30vw;
-    z-index: 97;
+    z-index: 96;
     width: 80vw;
     bottom: 12vw;
     left: 1vw;
@@ -103,7 +103,7 @@ body {
     display: none;
     margin-bottom: -35vw;
     margin-right: 55vw;
-    z-index: 100;
+    z-index: 99;
 }
 
 .next {
@@ -121,7 +121,7 @@ body {
     top: 35vh;
     width: 15vw;
     height: 34vh;
-    z-index: 999;
+    z-index: 99;
     text-align: center;
     font-weight: bold;
     color: rgb(78, 118, 131);
@@ -134,26 +134,26 @@ body {
 #exemination1 {
     background-image: url("assets/images/exemination1.svg");
     right: 55vw;
-    z-index: 999;
+    z-index: 99;
 }
 
 #exemination2 {
     background-image: url("assets/images/exemination2.svg");
     right: 32vw;
-    z-index: 999;
+    z-index: 99;
 }
 
 #exemination3 {
     background-image: url("assets/images/exemination3.svg");
     right: 78vw;
-    z-index: 999;
+    z-index: 99;
 }
 
 .injury {
     width: 5vw;
     left: 45vw;
-    bottom: 21.5vw;
-    z-index: 100;
+    bottom: 34.5%;
+    z-index: 98;
 }
 
 .circle {
@@ -184,7 +184,7 @@ body {
     flex-direction: column;
     align-content: space-around;
     left: 3vw;
-    z-index: 100;
+    z-index: 99;
 }
 
 .circ-cont1 {
@@ -201,7 +201,7 @@ body {
 }
 
 .yes-or-no {
-    z-index: 999;
+    z-index: 99;
     display: none;
     top: 35vh;
     right: 45vw;
@@ -235,7 +235,7 @@ body {
     right: 8vw;
     bottom: 10vw;
     width: 28vw;
-    z-index: 100;
+    z-index: 99;
     flex-direction: column;
 }
 
@@ -262,7 +262,7 @@ body {
 
 .feedback {
     width: 20vw;
-    z-index: 100;
+    z-index: 99;
     right: 57vw;
     display: none;
 }
@@ -272,7 +272,7 @@ body {
     right: 8vw;
     bottom: 8vw;
     width: 60vw;
-    z-index: 100;
+    z-index: 99;
     flex-direction: column;
 }
 
@@ -326,10 +326,11 @@ body {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90%;
+    height: 80%;
     width: 95%;
     padding-right: 5%;
-    top:10%;
+    padding-top: 5%;
+    top:15%;
     z-index: 100;
     color: white;
     display: none;
@@ -347,5 +348,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30%;
+    height: 70%;
+}
+
+.about-p {
+    margin: 0;
 }

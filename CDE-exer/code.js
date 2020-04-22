@@ -7,6 +7,7 @@ var nResaults = 0;
 var bWasWrong = false;
 var nPicked;
 var nNumPicks = 0;
+var bPressedAbout = false;
 
 $(function(){
     $(".about").on("touchend", about);
