@@ -145,10 +145,15 @@ var nNumPicks = 0;
 var bPressedAbout = false;
 
 $(function(){
+    $(".ok").on("touchend", removeTurn);
     $(".start").on("touchend", start);
     $(".play").on("touchend", start);
     $(".about").on("touchend", about);
 });
+
+function removeTurn(event) {
+    $(".turn-div").hide();
+}
 
 function about() {
     if(!bPressedAbout) {
