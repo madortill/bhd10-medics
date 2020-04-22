@@ -29,13 +29,13 @@ header {
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 2vh 7vw;
+  padding: 0vh 7vw;
   background-color: lightcoral;
   /* background-image: linear-gradient(to right, #e29087 , #e2b979); */
   background-image: url("../assests/images/generic/header-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: fit-content;
+  height: 8vh;
 }
 
 /* bureger image */
@@ -50,7 +50,7 @@ header .space {
 
 /* header text */
 #topic {
-  font-size: 3vh;
+  font-size: 6.3vw;
   margin-right: 7vw;
   font-weight: normal;
 }
@@ -77,7 +77,7 @@ nav>ul li {
   list-style: none;
   display: inline-block;
   padding: 0 1vw;
-  font-size: 1.7vh;
+  font-size: 3.7vw;
   font-weight: normal;
 }
 
@@ -189,7 +189,7 @@ nav a {
 /* note section diffrent colors */
 .note.section {
   --padding-sides: 6vw;
-  padding: 2vh var(--padding-sides);
+  padding: 2vh var(--padding-sides) 5vh var(--padding-sides);
   --bg-color: #c3d7dc;
   background-color: var(--bg-color);
   position: relative;
@@ -394,6 +394,7 @@ scrolling-title :nth-child(1) div {
   border: solid #009AC4;
   border-radius: 50%;
   padding: 0 3px;
+  border-width: medium;
 }
 
 /* flex positions */

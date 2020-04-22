@@ -3,7 +3,7 @@
 /* דוגמא להשפעה של גורם המהירות
    שתי מכוניות מתנגשות בעץ אחת אחרי השניה
  */
-#velocity {
+ #velocity {
     position: relative;
     width: 100vw;
     height: 25vh;
@@ -344,7 +344,8 @@
     position: absolute;
     width: 61vw;
     left: 0;
-    transform: translate(-19vw, -14vh);
+    transform: translateX(-19vw);
+    align-self: flex-end;
 }
 
 .pedestrians img {
@@ -364,10 +365,6 @@
 
 .blast img {
     width: 0;
-}
-
-#firstBlast {
-    /* width: 40vh; */
 }
 
 #firstBlast .explosion {
@@ -504,6 +501,10 @@ table.hover {
 
 .glass {
     position: absolute;
+}
+
+.number .highlight{
+    line-height: 5vh;
 }
 
 /* intro */
