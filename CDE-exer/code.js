@@ -146,7 +146,7 @@ function checkPalse(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "-1%"});
     $(".instructions-text").after('<p class="palse">דופק כמותי מודדים במשך 15 שניות, ומכפילים את מספר הפעימות ב4 כדי לקבל את מספר הפעימות בדקה. מספר פעימות תקין הוא 60-90 פעימות בדקה.</p> <p class="palse">30X4=120</p>');
-    $(".instructions").css({height: "75%", width: "35%", marginRight: "0", marginTop: "25%", paddingRight: "-=3%"});
+    $(".instructions").css({height: "75%", width: "35%", marginRight: "0", bottom: "5%", paddingRight: "-=3%"});
     $(".next").show();
     $(".next").css({bottom: "8%", right: "47%"})
     $(".next").on("touchend", nextStage);
@@ -239,7 +239,7 @@ function checkAnswer(event) {
             $(".instructions-text").html("כל הכבוד!");
             $(".instructions-text").css({marginRight: "20%", width: "55%", fontWeight: "600"});
             $(".instructions-text").after("<p class=extra>לא נעצור דימומים של המטופל מהפופיק ומעלה מחשש להחמרת פגיעת חזה.</p>"); 
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "3%", bottom: "3%", marginTop: "17%", paddingRight: "+=2%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "3%", bottom: "0", paddingRight: "+=2%"});
             $(".yes-or-no").show();
             $("#yes").html("נכון");
             $("#no").html("לא נכון");
