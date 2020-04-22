@@ -147,7 +147,6 @@ var bPressedAbout = false;
 $(function(){
     $(".start").on("touchend", start);
     $(".play").on("touchend", start);
-    $(".navigate").on("touchend", onClickBurger);
     $(".about").on("touchend", about);
 });
 

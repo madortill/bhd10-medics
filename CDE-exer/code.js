@@ -9,7 +9,6 @@ var nPicked;
 var nNumPicks = 0;
 
 $(function(){
-    $(".navigate").on("touchend", onClickBurger);
     $(".about").on("touchend", about);
     for(var i=1; i<=3; i++) {
         $("#exemination" + i).on("touchend", pressStage);
