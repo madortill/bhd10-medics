@@ -54,7 +54,7 @@ function pressStage(event) {
                 $(".next").hide();
                 $(".instructions").css({backgroundImage: 'url("assets/images/note5.svg")', height: "25%", bottom: "40%"});
                 $(".instructions-text").html("בחר את הצעדים בשלב הC לפי הסדר:");
-                $(".instructions-text").css({marginRight: "2.5%", marginTop: "2.5%"});
+                $(".instructions-text").css({marginRight: "2.5%", marginTop: "-1%"});
                 $(".circ-steps").css({display: "flex"});
                 for(var i=1; i<=7; i++) {
                     $("#circ" + i).on("touchend", checkCirc);
@@ -63,8 +63,8 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "65%", textAlign: "right", marginRight: "8%", marginTop: "7%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"});
+            $(".instructions-text").css({width: "65%", textAlign: "right", marginRight: "8%", marginTop: "1%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "1%", bottom: "3%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
                 $("#option" + i).on("touchend", pickAnswer);
@@ -81,7 +81,7 @@ function pressStage(event) {
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "107%", marginBottom: "-57%" });
+            $(".check").css({marginRight: "110%", marginBottom: "-62%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {
@@ -146,7 +146,7 @@ function checkPalse(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "-1%"});
     $(".instructions-text").after('<p class="palse">דופק כמותי מודדים במשך 15 שניות, ומכפילים את מספר הפעימות ב4 כדי לקבל את מספר הפעימות בדקה. מספר פעימות תקין הוא 60-90 פעימות בדקה.</p> <p class="palse">30X4=120</p>');
-    $(".instructions").css({height: "70%", width: "35%", marginRight: "0", marginTop: "5%"});
+    $(".instructions").css({height: "75%", width: "35%", marginRight: "0", marginTop: "10%", paddingRight: "-=3%"});
     $(".next").show();
     $(".next").css({bottom: "8%", right: "47%"})
     $(".next").on("touchend", nextStage);
@@ -158,7 +158,7 @@ function nextStage(event) {
     $(".next").off("touchend", nextStage);
     $(".next").hide();
     $(".nextstep").hide();
-    $(".instructions").css({height: '20%', marginTop: '15%', paddingTop: '6%', paddingBottom: '0', width: '24%', backgroundImage: 'url("assets/images/note5.svg")'});
+    $(".instructions").css({height: '20%', marginTop: '15%', paddingTop: '3%', paddingBottom: '0', width: '24%', backgroundImage: 'url("assets/images/note5.svg")'});
     for(var i = 1; i<=3; i++) {
         $("#exemination" + i).show();
         $("#exemination" + i).css({backgroundImage: 'url("assets/images/exemination' + i + '.svg")'});
@@ -239,7 +239,7 @@ function checkAnswer(event) {
             $(".instructions-text").html("כל הכבוד!");
             $(".instructions-text").css({marginRight: "20%", width: "55%", fontWeight: "600", marginTop: "8%"});
             $(".instructions-text").after("<p class=extra>לא נעצור דימומים של המטופל מהפופיק ומעלה מחשש להחמרת פגיעת חזה.</p>"); 
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "8%", bottom: "3%"})
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "3%", bottom: "3%", marginTop: "10%"});
             $(".yes-or-no").show();
             $("#yes").html("נכון");
             $("#no").html("לא נכון");

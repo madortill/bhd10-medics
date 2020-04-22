@@ -64,7 +64,7 @@ body {
 }
 
 .instructions {
-    height: 58%;
+    height: 61%;
     width: 24%;
     text-align: center;
     bottom: 10%;
@@ -73,7 +73,7 @@ body {
     background-repeat: no-repeat;
     background-size:  cover;
     color: #0D2849;
-    padding-top: 6%;
+    padding-top: 3%;
     padding-right: 4%;
     padding-left: 3%;
     font-size: 110%;
@@ -96,14 +96,14 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-bottom: -55%;
+    margin-bottom: -65%;
     margin-right: 80%;
     z-index: 99;
 }
 
 .next {
     width: 12%;
-    margin-top: 68%;
+    margin-top: 45%;
     margin-right: 25%;
     display: none;
 }
@@ -115,7 +115,7 @@ body {
     padding-left: 2%;
     top: 35%;
     width: 15%;
-    height: 34%;
+    height: 44%;
     z-index: 99;
     text-align: center;
     font-weight: bold;
@@ -147,7 +147,7 @@ body {
 .injury {
     width: 5%;
     left: 45%;
-    bottom: 34.5%;
+    bottom: 36.5%;
     z-index: 98;
 }
 
@@ -305,7 +305,7 @@ body {
     width: 27%;
     text-align: center;
     right: 60%;
-    bottom: 10%;
+    bottom: 1%;
     font-weight: bold;
 }
 
@@ -325,7 +325,7 @@ body {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80%;
+    height: 79%;
     width: 95%;
     padding-right: 5%;
     padding-top: 5%;
@@ -356,7 +356,7 @@ body {
 .turn-div {
     z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: linear-gradient(to right, #e8e8e8, #f3f3f3);
     text-align: center;
     padding-top: 20%;
