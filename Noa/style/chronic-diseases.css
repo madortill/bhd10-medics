@@ -1,3 +1,7 @@
+nav>ul li {
+    font-size: 3.5vw;
+}
+
 .floating {
     float: left;
     width: 13vw;
@@ -99,6 +103,8 @@
     font-weight: inherit;
     margin: 0.8vh 0;
     background-color: unset;
+    /* outline: none; */
+    color: #476d79;
 }
 
 .bmi .calc>div {
@@ -144,10 +150,10 @@
 
 .dna-long {
     position: absolute;
-    left: 13vw;
+    left: 16vw;
     width: 100%;
-    bottom: 1vh;
-    z-index: -1;
+    bottom: 7vh;
+    z-index: 0;
 }
 
 .kidneyEye {
@@ -200,6 +206,10 @@
     width: 36vw;
 }
 
+.kidneys img{
+    width: 23vw
+}
+
 .kidneys :nth-child(2) {
     transform: scaleX(-1);
     margin-right: 5vw;
@@ -233,5 +243,5 @@
 
 .smoke {
     width: 27vw;
-    transform: translate(-100%, -1vh);
+    margin-right: 3vw;
 }
