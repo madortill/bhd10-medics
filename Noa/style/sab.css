@@ -71,7 +71,7 @@
 /* דוגמה נדב"ר */
 .phone-example {
     position: relative;
-    height: 30vh;
+    /* height: 30vh; */
 }
 
 .phone-example>img {
@@ -133,12 +133,13 @@
     max-width: 50vw;
     padding: 0 1vw;
     top: 50%;
-    transform: translateX(100vw) translateY(-50%);
+    padding: 3vh 0;
+    transform: translateX(100vw);
     transition: 0.5s 1.7s transform linear;
 }
 
 .phone-example.animate .conversation {
-    transform: translateX(0) translateY(-50%);
+    transform: translateX(0);
 }
 
 .conversation>* {
