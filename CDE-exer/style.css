@@ -41,7 +41,7 @@ body {
 .about {
     width: 5.5%;
     left: 3%;
-    top: 2%;
+    top: 3%;
 }
 
 .navigate {
@@ -325,7 +325,7 @@ body {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80%;
+    height: 79%;
     width: 95%;
     padding-right: 5%;
     padding-top: 5%;
