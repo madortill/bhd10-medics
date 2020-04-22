@@ -96,7 +96,7 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-bottom: 0;
+    margin-top: 50%;
     margin-right: 82%;
     z-index: 99;
 }
@@ -234,7 +234,7 @@ body {
 .options {
     display: none;
     right: 10%;
-    bottom: 18%;
+    bottom: 17%;
     width: 70%;
     z-index: 99;
     flex-direction: column;
@@ -270,7 +270,7 @@ body {
 .answers {
     display: none;
     right: 8%;
-    bottom: 8%;
+    bottom: 1%;
     width: 60%;
     height: 80%;
     z-index: 99;
