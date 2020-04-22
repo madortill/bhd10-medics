@@ -158,7 +158,7 @@ function nextStage(event) {
     $(".next").off("touchend", nextStage);
     $(".next").hide();
     $(".nextstep").hide();
-    $(".instructions").css({height: '20%', marginTop: '15%', paddingTop: '6%', paddingBottom: '0', width: '24%', backgroundImage: 'url("assets/images/note5.svg")'});
+    $(".instructions").css({height: '20%', marginTop: '15%', paddingTop: '3%', paddingBottom: '0', width: '24%', backgroundImage: 'url("assets/images/note5.svg")'});
     for(var i = 1; i<=3; i++) {
         $("#exemination" + i).show();
         $("#exemination" + i).css({backgroundImage: 'url("assets/images/exemination' + i + '.svg")'});
