@@ -81,7 +81,7 @@ function pressStage(event) {
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "110%", marginBottom: "-53%" });
+            $(".check").css({marginRight: "110%", marginBottom: "-57%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {
