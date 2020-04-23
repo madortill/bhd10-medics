@@ -75,13 +75,13 @@ function pressStage(event) {
             $(".circle").attr("src", "assets/images/e.svg");
             $(".instructions-text").html("נכון מאוד! עכשיו נכין את המטופל לפינוי. מהם הצעדים בשלב זה? ");
             $(".instructions-text").css({width: "85%", textAlign: "right", marginRight: "8%", marginTop: "6%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "3%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "-3%"});
             $(".answers").show();
             for(var i=1; i<=3; i++){
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "110%", marginBottom: "-57%" });
+            $(".check").css({marginRight: "110%", marginBottom: "-53%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {
@@ -239,7 +239,7 @@ function checkAnswer(event) {
             $(".instructions-text").html("כל הכבוד!");
             $(".instructions-text").css({marginRight: "20%", width: "55%", fontWeight: "600"});
             $(".instructions-text").after("<p class=extra>לא נעצור דימומים של המטופל מהפופיק ומעלה מחשש להחמרת פגיעת חזה.</p>"); 
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "6%", bottom: "0", paddingRight: "+=2%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', width: "30%", height: "70%", marginRight: "0.5%", paddingTop: "6%", bottom: "-5%", paddingRight: "+=2%"});
             $(".yes-or-no").show();
             $("#yes").html("נכון");
             $("#no").html("לא נכון");
