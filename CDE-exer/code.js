@@ -63,8 +63,8 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "65%", textAlign: "right", marginRight: "8%", marginBottom: "0", marginTop: "5%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "3%"});
+            $(".instructions-text").css({width: "70%", textAlign: "right", marginRight: "8%", marginBottom: "0", marginTop: "5%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "-3%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
                 $("#option" + i).on("touchend", pickAnswer);
@@ -81,7 +81,7 @@ function pressStage(event) {
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "110%", marginBottom: "-55%" });
+            $(".check").css({marginRight: "110%", marginBottom: "-57%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {
