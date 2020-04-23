@@ -63,8 +63,8 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "70%", textAlign: "right", marginRight: "8%", marginBottom: "0", marginTop: "5%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "-3%"});
+            $(".instructions-text").css({width: "75%", textAlign: "right", marginRight: "8%", marginBottom: "0", marginTop: "5%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "-5%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
                 $("#option" + i).on("touchend", pickAnswer);
@@ -75,7 +75,7 @@ function pressStage(event) {
             $(".circle").attr("src", "assets/images/e.svg");
             $(".instructions-text").html("נכון מאוד! עכשיו נכין את המטופל לפינוי. מהם הצעדים בשלב זה? ");
             $(".instructions-text").css({width: "85%", textAlign: "right", marginRight: "8%", marginTop: "6%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "-3%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "85%", marginRight: "0.5%", paddingTop: "2%", bottom: "-3%"});
             $(".answers").show();
             for(var i=1; i<=3; i++){
                 $("#answer" + i).on("touchend", pickAnswer2);
