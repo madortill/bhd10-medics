@@ -149,6 +149,7 @@ $(function(){
     $(".start").on("touchend", start);
     $(".play").on("touchend", start);
     $(".about").on("touchend", about);
+    $(".navigate").on("touchend", Home);
 });
 
 function removeTurn(event) {
@@ -167,7 +168,11 @@ function about() {
         $(".head").html("קינמטיקה");
         $(".about").attr("src", "assets/images/about.svg");
     }
-}    
+}  
+
+function Home() {
+    window.location.href = "https://mador-till-prod.github.io/BHD-10-Medics/big-site/";
+}
 
 function start(event) {
     screen = screens[0];
