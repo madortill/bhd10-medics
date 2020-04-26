@@ -81,7 +81,7 @@ p {
     color: #0D2849;
     width: 90%;
     height: 70%;
-    top: 50%;
+    bottom: 1%;
     font-size: 100%;
     font-weight: 550;
 }
@@ -100,14 +100,14 @@ p {
     border: none;
     border-radius: 1%;
     left: 0%;
-    top: 45%;
+    bottom: 3%;
 }
 
 .play {
     color: white;
     font-size: 160%;
     left: 36%;
-    top: 43%;
+    bottom: 10%;
 }
 
 .goodluck {
