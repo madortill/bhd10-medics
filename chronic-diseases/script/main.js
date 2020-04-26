@@ -15,6 +15,9 @@ window.onload = () => {
     }
 
     document.body.style.setProperty("--top", document.querySelector(".top").offsetHeight + "px");
+    window.onresize = () => {
+        document.body.style.setProperty("--top", document.querySelector(".top").offsetHeight + "px");
+    }
 };
 
 // define scrolling note title
