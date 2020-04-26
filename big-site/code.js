@@ -3,6 +3,13 @@ const homeOptions = [
         name: "anatomy",
         insideOptions: [
             {
+                title: "יסודות מבנה הגוף",
+                titleColor: "red", 
+                explain:"מי רוצה להיות חובש? - שאלות חזרה",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/Body-structure/",
+                icon: "assests/yesodotmivneihaguf.svg",
+            },
+            {
                 title: "מע' הדם באוויר והעצבים",
                 titleColor: "yellow", //yellow or red or orenge
                 explain: "מבוא למבנה מערכות הגוף",
@@ -13,35 +20,35 @@ const homeOptions = [
                 title: "מע' העצבים",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www.gal.com",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/nerve-system/",
                 icon: "assests/2nerve.svg",
             },
             {
                 title: "מע' הנשימה",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www.gal.com",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/breath-system/",
                 icon: "assests/3breath.svg",
             },
             {
                 title: "מע' ההובלה",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www.gal.com",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/hovala/",
                 icon: "assests/4hovala.svg",
             },
             {
                 title: "מע' העיכול",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www.gal.com",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/haykol/",
                 icon: "assests/5digestion.svg",
             },
             {
                 title: "מע' העור,שריר, שלד ושתן",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www.gal.com",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/sheten-oor-sheled/",
                 icon: "assests/6skinmusclebonepiss.svg",
             }]
     },
@@ -49,18 +56,39 @@ const homeOptions = [
         name: "resucitation",
         insideOptions: [
             {
-                title: 'החייאת ילדים, תינוקות וסילגו"ז',
+                title: 'החייאת ילדים ותינוקות',
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/hachyaa-children/",
                 icon: "assests/7baby.svg",
             },
             {
-                title: 'החייאת מבוגר וסילגו"ז',
+                title: 'סילגו"ז ילדים ותינוקות',
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/silgoz-children/",
+                icon: "assests/silguzchild.svg",
+            },
+            {
+                title: 'החייאת מבוגר',
+                titleColor: "red",
+                explain: "מי רוצה להיות חובש? - שאלות חזרה",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/hachyaa-adult/",
                 icon: "assests/8old.svg",
+            },
+            {
+                title: 'סילגו"ז מבוגר',
+                titleColor: "red",
+                explain: "מי רוצה להיות חובש? - שאלות חזרה",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/adult-silgoz/",
+                icon: "assests/silguzold.svg",
+            },
+            {
+                title: 'מכשירים החייאה',
+                titleColor: "red",
+                explain: "מי רוצה להיות חובש? - שאלות חזרה",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/Machshirim/",
+                icon: "assests/resucitationmachines.svg",
             }]
     },
     {
@@ -84,7 +112,7 @@ const homeOptions = [
                 title: 'עקרונות הטיפול התרופתי',
                 titleColor: "orenge",
                 explain: "למידת מושגים ב-4 דרכים שונות",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/The-principles-of-drug/",
                 icon: "assests/11trufati.svg",
             },
             {
@@ -170,7 +198,7 @@ const homeOptions = [
                 title: 'בדיקות שגרה',
                 titleColor: "orenge",
                 explain: "תרגול מקדים לפני ביצוע מעשי",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/Routine-testing/",
                 icon: "assests/21shigra.svg",
             }]
     },
