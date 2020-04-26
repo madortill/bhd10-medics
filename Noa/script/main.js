@@ -103,7 +103,7 @@ function onType() {
         // document.querySelector(".bmi .ans").style.display = "flex";
         ans.innerHTML = (Number(weight) / (Math.pow(Number(height), 2))).toFixed(1);
         
-        if(ans.innerHTML >= 30){
+        if(ans.innerHTML >= 30 || ans.innerHTML < 19){
             ans.classList.add("text-red");
         }
         else if(ans.innerHTML >= 26){
