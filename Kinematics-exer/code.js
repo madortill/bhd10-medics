@@ -204,7 +204,7 @@ function ZoomIn(event) {
         $("#clue2").css({right: "10.7%"});
         $("#clue2").css({width: "80%"});
         $("#clue2").css({height: "117%"});
-        $("#clue2").css({top: "9%"});
+        $("#clue2").css({top: "0"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).show();
         }
