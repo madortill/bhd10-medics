@@ -202,6 +202,7 @@ var bPressedAbout = false;
 
 $(function(){
     $(".about").on("touchend", about);
+    $(".navigate").on("touchend", Home);
     $(".start").on("touchend", function(){
         $("body").css({backgroundImage: 'url("assets/images/bg.svg")'});
         $(".opening").hide();
@@ -221,6 +222,10 @@ function about() {
         $(".about-div").hide();
         $(".about").attr("src", "assets/images/about.svg");
     }
+}
+
+function Home() {
+    window.location.href = "https://mador-till-prod.github.io/BHD-10-Medics/big-site/";
 }
 
 function showPatient() {

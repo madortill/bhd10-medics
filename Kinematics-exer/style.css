@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: "assistant";
-    src: url("assets/fonts/Assistant-Regular.ttf");
+    src: url("assets/fonts/Assistant-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "assistant";
-    src: url("assets/fonts/Assistant-Regular.ttf");
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
     font-weight: 500;
 }
 
@@ -58,16 +58,15 @@ p {
 
 .head {
     right: 8%;
-    font-weight: 450;
+    font-weight: 400;
     font-size: 130%;
     margin: 0;
 }
 
 .about {
-    width: 15%;
-    height: 65%;
-    left: 1%;
-    top: 17%;
+    width: 5.5%;
+    left: 3%;
+    top: 7%;
 }
 
 .navigate {
@@ -82,17 +81,17 @@ p {
     color: #0D2849;
     width: 90%;
     height: 70%;
-    top: 47%;
+    top: 50%;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .closing {
-    top: 15%;
-    right: 7%;
+    top: 48%;
     display: none;
-    text-align: center;
-    font-size: 100%;
+    font-weight: 500;
+    width: 100%;
+    height: 25%;
 }
 
 .start {
@@ -162,7 +161,7 @@ p {
 #clue5 {
     width: 10%;
     height: 12%;
-    top: 62%;
+    top: 72%;
     right: 59%;
     display: none;
 }
@@ -181,18 +180,18 @@ p {
     width: 10%;
     height: 30%;
     right: 50%;
-    top: 75%;
+    top: 85%;
     display: none;
-    z-index: 99;
+    z-index: 98;
 }
 
 #clue8 {
     width: 7%;
     height: 15%;
     right: 59%;
-    top: 62%;
+    top: 72%;
     display: none;
-    z-index: 99;
+    z-index: 98;
 }
 
 #clue9 {
@@ -201,7 +200,7 @@ p {
     right: 34.5%;
     top: 60.7%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -210,48 +209,47 @@ p {
     height: 50%;
     top: 15%;
     display: none;
-    z-index: 0.1;
     opacity: 0;
-    z-index: 999;
+    z-index: 98;
 }
 
 #clue11 {
     width: 3%;
     height: 5%;
-    right: 67%;
-    bottom: 10%;
+    right: 68%;
+    bottom: 17%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
 #clue12 {
     width: 3%;
     height: 5%;
-    right: 44%;
-    bottom: 10%;
+    right: 55%;
+    bottom: 20%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
 #clue121 {
     width: 5%;
     height: 9%;
-    right: 55%;
-    bottom: 11%;
+    right: 44%;
+    bottom: 14%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
 #clue13 {
     width: 4%;
     height: 5.5%;
-    right: 66%;
-    bottom: 12%;
+    right: 67%;
+    bottom: 21%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -259,9 +257,9 @@ p {
     width: 3%;
     height: 5%;
     right: 48%;
-    bottom: 6%;
+    bottom: 11%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -269,25 +267,25 @@ p {
     width: 2%;
     height: 5%;
     right: 64%;
-    bottom: 11%;
+    bottom: 20%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
 #clue142 {
     width: 3%;
     height: 5%;
-    right: 48%;
-    bottom: 15%;
+    right: 49%;
+    bottom: 26%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
 .questions {
-    width: 80%;
-    height: 65%;
+    width: 60%;
+    height: 75%;
     background-color: none;
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
@@ -297,7 +295,7 @@ p {
     right: 2%;
     padding: 5%;
     font-weight: 600;
-    z-index: 999;
+    z-index: 98;
 }
 
 .knife {
@@ -306,14 +304,14 @@ p {
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 15%;
+    top: 5%;
     display: none;
     right: 2%;
     padding: 5%;
     padding-top: 25%;
     font-weight: 700;
     font-size: 100%;
-    z-index: 999;
+    z-index: 98;
     text-align: center;
     color: #0D2849;
 }
@@ -321,14 +319,12 @@ p {
 .radio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 2%;
 }
 
 .radios {
-    height: 8%;
-    width: 8%;
+    width: 5%;
     border: none;
 }
 
@@ -350,13 +346,13 @@ p {
 
 .hint {
     left: 0%;
-    top: 82.5%;
+    top: 92.5%;
     width: 12%;
     height: 12%;
     border: none;
     border-radius: 1%;
     display: none;
-    z-index: 999;
+    z-index: 98;
 }
 
 .back {
@@ -370,11 +366,11 @@ p {
 }
 
 .check {
-    width: 10%;
+    width: 15%;
     border: none;
     border-radius: 1%;
-    bottom: 6%;
-    margin-right: 58%;
+    bottom: 15%;
+    right: 73%;
 }
 
 .stabbed {
@@ -388,9 +384,9 @@ p {
 .exploaded {
     width: 40%;
     right: 60%;
-    BOTTOM: 10%;
+    bottom: 1%;
     display: none;
-    z-index: 998;
+    z-index: 97;
 }
 
 .long {
@@ -405,59 +401,62 @@ p {
 
 .title {
     color: #4E7582;
-    margin-top: 8%;
     margin-right: 6.5%;
     font-size: 100%;
     font-weight: bold;
-    width: 70%;
+    width: 80%;
 }
 
 .feedback {
     margin-top: 1%;
     display: none;
     width: 15%;
-    right: 75%;
+    right: 85%;
     top: 1%;
 }
 
 .smoke {
     display: none;
-    z-index: 998;
+    z-index: 97;
     width: 70%;
     right: 0;
-    bottom: 0;
+    bottom: -10%;
 }
 
 .bomb {
     width: 30%;
     height: 30%;
     right: 34.5%;
-    top: 60.7%;
+    top: 70.7%;
     display: none;
-    z-index: 998;
+    z-index: 97;
 }
 
 .goodJob {
-    font-size: 100%;
+    width: 40%;
+    top: 90%;
+    right: 8%;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
     color: #0D2849;
-    width: 35%;
-    top: 43%;
 }
 
 .finished {
     width: 34%;
     color: #0D2849;
     font-weight: bold;
-    top: 59%;
-    right: 50%;
+    top: 104%;
+    right: 58%;
 }
 
 .resaults {
     width: 35%;
     color: #0D2849;
     font-weight:  bold;
-    top: 65%;
-    right: 49%;
+    top: 121%;
+    right: 54.5%;
+    text-align: center;
 }
 
 .clue6glow {
@@ -478,7 +477,7 @@ p {
 .clue11glow {
     opacity: 0;
     width: 2.5%;
-    z-index: 998;
+    z-index: 97;
     right: 30%;
     margin-top: -1%;
 }
@@ -486,7 +485,7 @@ p {
 .clue12glow {
     opacity: 0;
     width: 5%;
-    z-index: 998;
+    z-index: 97;
     margin-top: -8%;
     margin-left: 5%;
 }
@@ -494,7 +493,7 @@ p {
 .clue13glow {
     opacity: 0;
     width: 5%;
-    z-index: 998;
+    z-index: 97;
     margin-top: 4%;
 }
 
@@ -502,7 +501,7 @@ p {
     margin-right: 33%;
     opacity: 0;
     width: 4%;
-    z-index: 998;
+    z-index: 97;
     margin-top: 4%;
 }
 
@@ -513,7 +512,7 @@ p {
     right: 15%;
     justify-content: space-between;
     align-items: center;
-    z-index: 998;
+    z-index: 97;
     display: none;
 }
 
@@ -521,10 +520,11 @@ p {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 87%;
+    height: 79%;
     width: 95%;
     padding-right: 5%;
-    top: 13%;
+    padding-top: 5%;
+    top:15%;
     z-index: 100;
     color: white;
     display: none;
@@ -542,8 +542,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60%;
-    margin-top: 10%;
+    height: 70%;
+}
+
+.about-p {
+    margin: 0;
 }
 
 .turn-div {

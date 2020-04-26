@@ -12,6 +12,7 @@ var bPressedAbout = false;
 $(function(){
     $(".ok").on("touchend", removeTurn);
     $(".about").on("touchend", about);
+    $(".navigate").on("touchend", Home);
     for(var i=1; i<=3; i++) {
         $("#exemination" + i).on("touchend", pressStage);
     }
@@ -34,6 +35,10 @@ function about() {
         $(".about").attr("src", "assets/images/about.svg");
     }
 }    
+
+function Home() {
+    window.location.href = "https://mador-till-prod.github.io/BHD-10-Medics/big-site/";
+}
 
 function pressStage(event) {
     if(Number(this.id.charAt(11)) === nCurrStage) {
