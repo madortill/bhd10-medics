@@ -64,10 +64,9 @@ p {
 }
 
 .about {
-    width: 15%;
-    height: 65%;
-    left: 1%;
-    top: 17%;
+    width: 5.5%;
+    left: 3%;
+    top: 7%;
 }
 
 .navigate {
@@ -521,10 +520,11 @@ p {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 87%;
+    height: 79%;
     width: 95%;
     padding-right: 5%;
-    top: 13%;
+    padding-top: 5%;
+    top:15%;
     z-index: 100;
     color: white;
     display: none;
@@ -542,8 +542,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60%;
-    margin-top: 10%;
+    height: 70%;
+}
+
+.about-p {
+    margin: 0;
 }
 
 .turn-div {
