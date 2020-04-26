@@ -82,7 +82,7 @@ p {
     color: #0D2849;
     width: 90%;
     height: 70%;
-    top: 47%;
+    top: 50%;
     font-size: 100%;
     font-weight: 550;
 }
@@ -162,7 +162,7 @@ p {
 #clue5 {
     width: 10%;
     height: 12%;
-    top: 62%;
+    top: 72%;
     right: 59%;
     display: none;
 }
@@ -181,7 +181,7 @@ p {
     width: 10%;
     height: 30%;
     right: 50%;
-    top: 75%;
+    top: 85%;
     display: none;
     z-index: 99;
 }
@@ -190,7 +190,7 @@ p {
     width: 7%;
     height: 15%;
     right: 59%;
-    top: 62%;
+    top: 72%;
     display: none;
     z-index: 99;
 }
@@ -287,7 +287,7 @@ p {
 
 .questions {
     width: 60%;
-    height: 65%;
+    height: 75%;
     background-color: none;
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
@@ -348,7 +348,7 @@ p {
 
 .hint {
     left: 0%;
-    top: 82.5%;
+    top: 92.5%;
     width: 12%;
     height: 12%;
     border: none;
@@ -386,7 +386,7 @@ p {
 .exploaded {
     width: 40%;
     right: 60%;
-    BOTTOM: 10%;
+    bottom: 1%;
     display: none;
     z-index: 998;
 }
@@ -413,7 +413,7 @@ p {
     margin-top: 1%;
     display: none;
     width: 15%;
-    right: 75%;
+    right: 85%;
     top: 1%;
 }
 
@@ -422,14 +422,14 @@ p {
     z-index: 998;
     width: 70%;
     right: 0;
-    bottom: 0;
+    bottom: -10%;
 }
 
 .bomb {
     width: 30%;
     height: 30%;
     right: 34.5%;
-    top: 60.7%;
+    top: 70.7%;
     display: none;
     z-index: 998;
 }

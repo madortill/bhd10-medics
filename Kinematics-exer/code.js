@@ -194,12 +194,12 @@ function ZoomIn(event) {
         $(".car").css({width: "62%"});
         $(".car").css({height: "60%"});
         $(".car").css({right: "38%"});
-        $(".car").css({top: "41%"});
+        $(".car").css({top: "51%"});
         $("#clue2").attr("src", "assets/images/clue22.svg");
         $("#clue2").css({right: "10.7%"});
         $("#clue2").css({width: "80%"});
         $("#clue2").css({height: "117%"});
-        $("#clue2").css({top: "-1%"});
+        $("#clue2").css({top: "9%"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).show();
         }
@@ -343,11 +343,6 @@ function continueRoom() {
 
 function showQuestion(event) {
     $(".feedback").html("");
-    if(nCurrQuestion === 5) {
-        $(".answer").css({fontSize: "90%"});
-    } else {
-        $(".answer").css({fontSize: "100%"});
-    }
     for(var i = 1; i<=14; i++) {
         $("#clue" + i).attr("src", "assets/images/clue" + i + ".svg");
     }
@@ -367,9 +362,17 @@ function showQuestion(event) {
          * @type {string}
          */
         let s = this.id;
-        nCurrQuestion = Number(s.substr(4))
+        nCurrQuestion = Number(s.substr(4));
     } else {
         nCurrQuestion = Number(this.id.substr(4,2));
+    }
+    console.log(nCurrQuestion);
+    if(nCurrQuestion === 1 || nCurrQuestion === 9) {
+        $(".answer").css({fontSize: "90%"});
+    } else if(nCurrQuestion === 5) {
+        $(".answer").css({fontSize: "80%"});
+    } else {
+        $(".answer").css({fontSize: "100%"});
     }
     for(var i=1; i<=14; i++) {
         $("#clue" + i).off("touchend", showQuestion);
