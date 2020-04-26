@@ -183,7 +183,7 @@ p {
     right: 50%;
     top: 85%;
     display: none;
-    z-index: 99;
+    z-index: 98;
 }
 
 #clue8 {
@@ -192,7 +192,7 @@ p {
     right: 59%;
     top: 72%;
     display: none;
-    z-index: 99;
+    z-index: 98;
 }
 
 #clue9 {
@@ -201,7 +201,7 @@ p {
     right: 34.5%;
     top: 60.7%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -210,9 +210,8 @@ p {
     height: 50%;
     top: 15%;
     display: none;
-    z-index: 0.1;
     opacity: 0;
-    z-index: 999;
+    z-index: 98;
 }
 
 #clue11 {
@@ -221,7 +220,7 @@ p {
     right: 68%;
     bottom: 17%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -231,7 +230,7 @@ p {
     right: 55%;
     bottom: 20%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -241,7 +240,7 @@ p {
     right: 44%;
     bottom: 14%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -251,7 +250,7 @@ p {
     right: 67%;
     bottom: 21%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -261,7 +260,7 @@ p {
     right: 48%;
     bottom: 11%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -271,7 +270,7 @@ p {
     right: 64%;
     bottom: 20%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -281,7 +280,7 @@ p {
     right: 49%;
     bottom: 26%;
     display: none;
-    z-index: 999;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -297,7 +296,7 @@ p {
     right: 2%;
     padding: 5%;
     font-weight: 600;
-    z-index: 999;
+    z-index: 98;
 }
 
 .knife {
@@ -313,7 +312,7 @@ p {
     padding-top: 25%;
     font-weight: 700;
     font-size: 100%;
-    z-index: 999;
+    z-index: 98;
     text-align: center;
     color: #0D2849;
 }
@@ -354,7 +353,7 @@ p {
     border: none;
     border-radius: 1%;
     display: none;
-    z-index: 999;
+    z-index: 98;
 }
 
 .back {
@@ -388,7 +387,7 @@ p {
     right: 60%;
     bottom: 1%;
     display: none;
-    z-index: 998;
+    z-index: 97;
 }
 
 .long {
@@ -419,7 +418,7 @@ p {
 
 .smoke {
     display: none;
-    z-index: 998;
+    z-index: 97;
     width: 70%;
     right: 0;
     bottom: -10%;
@@ -431,7 +430,7 @@ p {
     right: 34.5%;
     top: 70.7%;
     display: none;
-    z-index: 998;
+    z-index: 97;
 }
 
 .goodJob {
@@ -479,7 +478,7 @@ p {
 .clue11glow {
     opacity: 0;
     width: 2.5%;
-    z-index: 998;
+    z-index: 97;
     right: 30%;
     margin-top: -1%;
 }
@@ -487,7 +486,7 @@ p {
 .clue12glow {
     opacity: 0;
     width: 5%;
-    z-index: 998;
+    z-index: 97;
     margin-top: -8%;
     margin-left: 5%;
 }
@@ -495,7 +494,7 @@ p {
 .clue13glow {
     opacity: 0;
     width: 5%;
-    z-index: 998;
+    z-index: 97;
     margin-top: 4%;
 }
 
@@ -503,7 +502,7 @@ p {
     margin-right: 33%;
     opacity: 0;
     width: 4%;
-    z-index: 998;
+    z-index: 97;
     margin-top: 4%;
 }
 
@@ -514,7 +513,7 @@ p {
     right: 15%;
     justify-content: space-between;
     align-items: center;
-    z-index: 998;
+    z-index: 97;
     display: none;
 }
 
