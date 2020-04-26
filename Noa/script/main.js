@@ -13,6 +13,8 @@ window.onload = () => {
     if (document.getElementsByTagName("title")[0].innerHTML == "מחלות כרוניות") {
         setBMI();
     }
+
+    document.body.style.setProperty("--top", document.querySelector(".top").offsetHeight + "px");
 };
 
 // define scrolling note title
@@ -94,12 +96,13 @@ function onType() {
     let weight = document.querySelectorAll(".bmi .calc input")[0].value;
     let height = document.querySelectorAll(".bmi .calc input")[1].value;
     let ans = document.querySelector(".bmi .ans");
+    ans.classList.remove("text-green");
+    ans.classList.remove("text-blue");
+    ans.classList.remove("text-red");
     if (weight != "" && height != "") {
         // document.querySelector(".bmi .ans").style.display = "flex";
         ans.innerHTML = (Number(weight) / (Math.pow(Number(height), 2))).toFixed(1);
-        ans.classList.remove("text-green");
-        ans.classList.remove("text-blue");
-        ans.classList.remove("text-red");
+        
         if(ans.innerHTML >= 30){
             ans.classList.add("text-red");
         }
