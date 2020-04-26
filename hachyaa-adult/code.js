@@ -95,7 +95,9 @@ const termList = [
 ];
 
 //value of the questions
-const quesValue = ["0", "100", "200", "500", "1,000", "5,000", "10,000", "80,000", "100,000", "500,000", "1,000,000"];
+const quesValue = ["0", "100", "200", "500", "1,000", "5,000", "10,000", "80,000", "100,000", "500,000", "1,000,000", "1,000,000"];
+
+
 
 var quessOrder = [];
 var ansArr = [0, 1, 2, 3];
@@ -369,14 +371,19 @@ function shuffle(arr) {
 }
 
 function onClickI() {
-    document.querySelector(".home-page").classList.add("inactive");
-    document.querySelector(".info").classList.remove("inactive");
+    // document.querySelector(".home-page").classList.add("inactive");
+    // document.querySelector(".info").classList.remove("inactive");
+    // void document.querySelector(".info").offsetWidth;
+    document.querySelector(".info").classList.add("transition");
     document.querySelector(".play-icon").addEventListener("click", onClickPlay);
 
 }
 
 function onClickPlay() {
-    document.querySelector(".home-page").classList.remove("inactive");
-    document.querySelector(".info").classList.add("inactive");
+    
+    document.querySelector(".info").classList.remove("transition");
+    // document.querySelector(".home-page").classList.remove("inactive");
+
+    // document.querySelector(".info").classList.add("inactive");
 }
 

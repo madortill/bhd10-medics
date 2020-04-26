@@ -3,6 +3,19 @@
     src: url("assets/fonts/Assistant-Regular.ttf");
 }
 
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+    font-weight: 500;
+}
+
+
 body {
     font-family: "assistant";
     direction: rtl;
@@ -26,7 +39,7 @@ p {
     height: 100%;
     background-color: black;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 .header {
@@ -38,7 +51,7 @@ p {
     background-size: cover;
     /* box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35); */
     box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
-    z-index: 999;
+    z-index: 99;
     display: flex;
     align-items: center;
 }
@@ -46,22 +59,22 @@ p {
 .head {
     right: 8%;
     font-weight: 450;
-    font-size: 3%;
+    font-size: 130%;
     margin: 0;
 }
 
 .about {
-    width: 9%;
-    height: 9%;
-    left: 0.1%;
-    top: 3%;
+    width: 15%;
+    height: 65%;
+    left: 1%;
+    top: 17%;
 }
 
 .navigate {
-    width: 6%;
-    height: 6%;
-    right: 1%;
-    top: 4.7%;
+    width: 15%;
+    height: 65%;
+    right: -3%;
+    top: 6;
 }
 
 .opening {
@@ -70,8 +83,8 @@ p {
     width: 90%;
     height: 70%;
     top: 47%;
-    font-size: 2.5%;
-    font-weight: bold;
+    font-size: 100%;
+    font-weight: 600;
 }
 
 .closing {
@@ -79,7 +92,7 @@ p {
     right: 7%;
     display: none;
     text-align: center;
-    font-size: 4%;
+    font-size: 100%;
 }
 
 .start {
@@ -88,18 +101,18 @@ p {
     border: none;
     border-radius: 1%;
     left: 0%;
-    top: 23%;
+    top: 35%;
 }
 
 .play {
     color: white;
-    font-size: 4%;
+    font-size: 160%;
     left: 36%;
-    top: 33%;
+    top: 43%;
 }
 
 .goodluck {
-    font-size: 4%;
+    font-size: 100%;
     margin-top: 5%;
 }
 
@@ -109,7 +122,7 @@ p {
     right: 47.6%;
     top: 34%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue1 {
@@ -134,7 +147,7 @@ p {
     top: 43%;
     left: 14%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #airbag {
@@ -143,7 +156,7 @@ p {
     top: 48%;
     right: 59.2%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue5 {
@@ -160,7 +173,7 @@ p {
     height: 10%;
     right: 50%;
     top: 87%;
-    z-index: 998;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -170,7 +183,7 @@ p {
     right: 50%;
     top: 75%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue8 {
@@ -179,7 +192,7 @@ p {
     right: 59%;
     top: 62%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue9 {
@@ -299,7 +312,7 @@ p {
     padding: 5%;
     padding-top: 25%;
     font-weight: 700;
-    font-size: 5%;
+    font-size: 100%;
     z-index: 999;
     text-align: center;
     color: #0D2849;
@@ -327,7 +340,7 @@ p {
     margin-top: 3%;
     margin-right: 1%;
     width: 75%;
-    font-size: 4.4%;
+    font-size: 100%;
 }
 
 .buttons {
@@ -394,7 +407,7 @@ p {
     color: #4E7582;
     margin-top: 8%;
     margin-right: 6.5%;
-    font-size: 2.3%;
+    font-size: 100%;
     font-weight: bold;
     width: 70%;
 }
@@ -425,7 +438,7 @@ p {
 }
 
 .goodJob {
-    font-size: 8%;
+    font-size: 100%;
     color: #0D2849;
     width: 35%;
     top: 43%;
@@ -508,10 +521,10 @@ p {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90%;
+    height: 87%;
     width: 95%;
     padding-right: 5%;
-    top: 10%;
+    top: 13%;
     z-index: 100;
     color: white;
     display: none;
