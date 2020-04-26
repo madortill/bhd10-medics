@@ -3,6 +3,18 @@
     src: url("assets/fonts/Assistant-Regular.ttf");
 }
 
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+    font-weight: 500;
+}
+
 body {
     font-family: "assistant";
     direction: rtl;
