@@ -3,6 +3,19 @@
     src: url("assets/fonts/Assistant-Regular.ttf");
 }
 
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 500;
+}
+
+
 body {
     font-family: "assistant";
     direction: rtl;
@@ -26,7 +39,7 @@ p {
     height: 100%;
     background-color: black;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 .header {
@@ -38,30 +51,30 @@ p {
     background-size: cover;
     /* box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35); */
     box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
-    z-index: 999;
+    z-index: 99;
     display: flex;
     align-items: center;
 }
 
 .head {
     right: 8%;
-    font-weight: 450;
-    font-size: 3%;
+    font-weight: 400;
+    font-size: 130%;
     margin: 0;
 }
 
 .about {
-    width: 9%;
-    height: 9%;
-    left: 0.1%;
-    top: 3%;
+    width: 15%;
+    height: 65%;
+    left: 1%;
+    top: 17%;
 }
 
 .navigate {
-    width: 6%;
-    height: 6%;
-    right: 1%;
-    top: 4.7%;
+    width: 15%;
+    height: 65%;
+    right: -3%;
+    top: 6;
 }
 
 .opening {
@@ -70,16 +83,16 @@ p {
     width: 90%;
     height: 70%;
     top: 47%;
-    font-size: 2.5%;
-    font-weight: bold;
+    font-size: 100%;
+    font-weight: 550;
 }
 
 .closing {
-    top: 15%;
-    right: 7%;
+    top: 48%;
     display: none;
-    text-align: center;
-    font-size: 4%;
+    font-weight: 500;
+    width: 100%;
+    height: 25%;
 }
 
 .start {
@@ -88,18 +101,18 @@ p {
     border: none;
     border-radius: 1%;
     left: 0%;
-    top: 23%;
+    top: 35%;
 }
 
 .play {
     color: white;
-    font-size: 4%;
+    font-size: 160%;
     left: 36%;
-    top: 33%;
+    top: 43%;
 }
 
 .goodluck {
-    font-size: 4%;
+    font-size: 100%;
     margin-top: 5%;
 }
 
@@ -109,7 +122,7 @@ p {
     right: 47.6%;
     top: 34%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue1 {
@@ -134,7 +147,7 @@ p {
     top: 43%;
     left: 14%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #airbag {
@@ -143,7 +156,7 @@ p {
     top: 48%;
     right: 59.2%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue5 {
@@ -160,7 +173,7 @@ p {
     height: 10%;
     right: 50%;
     top: 87%;
-    z-index: 998;
+    z-index: 98;
     opacity: 0;
 }
 
@@ -170,7 +183,7 @@ p {
     right: 50%;
     top: 75%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue8 {
@@ -179,7 +192,7 @@ p {
     right: 59%;
     top: 62%;
     display: none;
-    z-index: 999;
+    z-index: 99;
 }
 
 #clue9 {
@@ -205,8 +218,8 @@ p {
 #clue11 {
     width: 3%;
     height: 5%;
-    right: 67%;
-    bottom: 10%;
+    right: 68%;
+    bottom: 17%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -215,8 +228,8 @@ p {
 #clue12 {
     width: 3%;
     height: 5%;
-    right: 44%;
-    bottom: 10%;
+    right: 55%;
+    bottom: 20%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -225,8 +238,8 @@ p {
 #clue121 {
     width: 5%;
     height: 9%;
-    right: 55%;
-    bottom: 11%;
+    right: 44%;
+    bottom: 14%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -235,8 +248,8 @@ p {
 #clue13 {
     width: 4%;
     height: 5.5%;
-    right: 66%;
-    bottom: 12%;
+    right: 67%;
+    bottom: 21%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -246,7 +259,7 @@ p {
     width: 3%;
     height: 5%;
     right: 48%;
-    bottom: 6%;
+    bottom: 11%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -256,7 +269,7 @@ p {
     width: 2%;
     height: 5%;
     right: 64%;
-    bottom: 11%;
+    bottom: 20%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -265,15 +278,15 @@ p {
 #clue142 {
     width: 3%;
     height: 5%;
-    right: 48%;
-    bottom: 15%;
+    right: 49%;
+    bottom: 26%;
     display: none;
     z-index: 999;
     opacity: 0;
 }
 
 .questions {
-    width: 80%;
+    width: 60%;
     height: 65%;
     background-color: none;
     background-image: url("assets/images/question-bg.svg");
@@ -293,13 +306,13 @@ p {
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 15%;
+    top: 5%;
     display: none;
     right: 2%;
     padding: 5%;
     padding-top: 25%;
     font-weight: 700;
-    font-size: 5%;
+    font-size: 100%;
     z-index: 999;
     text-align: center;
     color: #0D2849;
@@ -308,14 +321,12 @@ p {
 .radio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 2%;
 }
 
 .radios {
-    height: 8%;
-    width: 8%;
+    width: 5%;
     border: none;
 }
 
@@ -327,7 +338,7 @@ p {
     margin-top: 3%;
     margin-right: 1%;
     width: 75%;
-    font-size: 4.4%;
+    font-size: 100%;
 }
 
 .buttons {
@@ -357,11 +368,11 @@ p {
 }
 
 .check {
-    width: 10%;
+    width: 15%;
     border: none;
     border-radius: 1%;
-    bottom: 6%;
-    margin-right: 58%;
+    bottom: 15%;
+    right: 73%;
 }
 
 .stabbed {
@@ -392,11 +403,10 @@ p {
 
 .title {
     color: #4E7582;
-    margin-top: 8%;
     margin-right: 6.5%;
-    font-size: 2.3%;
+    font-size: 100%;
     font-weight: bold;
-    width: 70%;
+    width: 80%;
 }
 
 .feedback {
@@ -425,26 +435,30 @@ p {
 }
 
 .goodJob {
-    font-size: 8%;
+    width: 40%;
+    top: 90%;
+    right: 8%;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
     color: #0D2849;
-    width: 35%;
-    top: 43%;
 }
 
 .finished {
     width: 34%;
     color: #0D2849;
     font-weight: bold;
-    top: 59%;
-    right: 50%;
+    top: 104%;
+    right: 58%;
 }
 
 .resaults {
     width: 35%;
     color: #0D2849;
     font-weight:  bold;
-    top: 65%;
-    right: 49%;
+    top: 121%;
+    right: 54.5%;
+    text-align: center;
 }
 
 .clue6glow {
@@ -508,10 +522,10 @@ p {
     background-image: url("assets/images/about/bghorizontal.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90%;
+    height: 87%;
     width: 95%;
     padding-right: 5%;
-    top: 10%;
+    top: 13%;
     z-index: 100;
     color: white;
     display: none;

@@ -343,6 +343,11 @@ function continueRoom() {
 
 function showQuestion(event) {
     $(".feedback").html("");
+    if(nCurrQuestion === 5) {
+        $(".answer").css({fontSize: "90%"});
+    } else {
+        $(".answer").css({fontSize: "100%"});
+    }
     for(var i = 1; i<=14; i++) {
         $("#clue" + i).attr("src", "assets/images/clue" + i + ".svg");
     }
