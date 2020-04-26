@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: "assistant";
-    src: url("assets/fonts/Assistant-Regular.ttf");
+    src: url("assets/fonts/Assistant-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "assistant";
-    src: url("assets/fonts/Assistant-Regular.ttf");
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
     font-weight: 500;
 }
 
@@ -58,7 +58,7 @@ p {
 
 .head {
     right: 8%;
-    font-weight: 450;
+    font-weight: 400;
     font-size: 130%;
     margin: 0;
 }
@@ -84,15 +84,15 @@ p {
     height: 70%;
     top: 47%;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .closing {
-    top: 15%;
-    right: 7%;
+    top: 48%;
     display: none;
-    text-align: center;
-    font-size: 100%;
+    font-weight: 500;
+    width: 100%;
+    height: 25%;
 }
 
 .start {
@@ -218,8 +218,8 @@ p {
 #clue11 {
     width: 3%;
     height: 5%;
-    right: 67%;
-    bottom: 10%;
+    right: 68%;
+    bottom: 17%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -228,8 +228,8 @@ p {
 #clue12 {
     width: 3%;
     height: 5%;
-    right: 44%;
-    bottom: 10%;
+    right: 55%;
+    bottom: 20%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -238,8 +238,8 @@ p {
 #clue121 {
     width: 5%;
     height: 9%;
-    right: 55%;
-    bottom: 11%;
+    right: 44%;
+    bottom: 14%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -248,8 +248,8 @@ p {
 #clue13 {
     width: 4%;
     height: 5.5%;
-    right: 66%;
-    bottom: 12%;
+    right: 67%;
+    bottom: 21%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -259,7 +259,7 @@ p {
     width: 3%;
     height: 5%;
     right: 48%;
-    bottom: 6%;
+    bottom: 11%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -269,7 +269,7 @@ p {
     width: 2%;
     height: 5%;
     right: 64%;
-    bottom: 11%;
+    bottom: 20%;
     display: none;
     z-index: 999;
     opacity: 0;
@@ -278,15 +278,15 @@ p {
 #clue142 {
     width: 3%;
     height: 5%;
-    right: 48%;
-    bottom: 15%;
+    right: 49%;
+    bottom: 26%;
     display: none;
     z-index: 999;
     opacity: 0;
 }
 
 .questions {
-    width: 80%;
+    width: 60%;
     height: 65%;
     background-color: none;
     background-image: url("assets/images/question-bg.svg");
@@ -306,7 +306,7 @@ p {
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 15%;
+    top: 5%;
     display: none;
     right: 2%;
     padding: 5%;
@@ -321,14 +321,12 @@ p {
 .radio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 2%;
 }
 
 .radios {
-    height: 8%;
-    width: 8%;
+    width: 5%;
     border: none;
 }
 
@@ -370,11 +368,11 @@ p {
 }
 
 .check {
-    width: 10%;
+    width: 15%;
     border: none;
     border-radius: 1%;
-    bottom: 6%;
-    margin-right: 58%;
+    bottom: 15%;
+    right: 73%;
 }
 
 .stabbed {
@@ -405,11 +403,10 @@ p {
 
 .title {
     color: #4E7582;
-    margin-top: 8%;
     margin-right: 6.5%;
     font-size: 100%;
     font-weight: bold;
-    width: 70%;
+    width: 80%;
 }
 
 .feedback {
@@ -438,26 +435,30 @@ p {
 }
 
 .goodJob {
-    font-size: 100%;
+    width: 40%;
+    top: 90%;
+    right: 8%;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
     color: #0D2849;
-    width: 35%;
-    top: 43%;
 }
 
 .finished {
     width: 34%;
     color: #0D2849;
     font-weight: bold;
-    top: 59%;
-    right: 50%;
+    top: 104%;
+    right: 58%;
 }
 
 .resaults {
     width: 35%;
     color: #0D2849;
     font-weight:  bold;
-    top: 65%;
-    right: 49%;
+    top: 121%;
+    right: 54.5%;
+    text-align: center;
 }
 
 .clue6glow {
