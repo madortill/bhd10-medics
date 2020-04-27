@@ -8,8 +8,10 @@ var bWasWrong = false;
 var nPicked;
 var nNumPicks = 0;
 var bPressedAbout = false;
+var elem = document.querySelector("html");
 
 $(function(){
+    openFullscreen();
     $(".ok").on("touchend", removeTurn);
     $(".about").on("touchend", about);
     $(".navigate").on("touchend", Home);
@@ -39,6 +41,18 @@ function about() {
 function Home() {
     window.location.href = "https://mador-till-prod.github.io/BHD-10-Medics/big-site/";
 }
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
 
 function pressStage(event) {
     if(Number(this.id.charAt(11)) === nCurrStage) {

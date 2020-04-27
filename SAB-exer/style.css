@@ -13,6 +13,11 @@ body {
     overflow: hidden;
     color: rgb(15, 40, 73);
     font-size: 100%;
+    min-height: 100%
+}
+
+html {
+    height: 100%;
 }
 
 .header {
