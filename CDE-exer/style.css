@@ -109,8 +109,8 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-top: 43%;
-    margin-right: 32%;
+    margin-top: 50%;
+    margin-right: 52%;
     z-index: 99;
 }
 
@@ -285,9 +285,9 @@ body {
 .answers {
     display: none;
     right: 8%;
-    bottom: -24%;
+    bottom: 15%;
     width: 60%;
-    height: 80%;
+    height: 42%;
     z-index: 99;
     flex-direction: column;
 }
@@ -299,7 +299,7 @@ body {
 }
 
 .answer-text {
-    width: 70%;
+    width: 80%;
     font-weight: bold;
     margin-top: 4%;
     margin-bottom: 0;
@@ -326,9 +326,9 @@ body {
 }
 
 .goodjob {
-    width: 40%;
+    width: 60%;
     top: 54%;
-    right: 8%;
+    right: 2%;
     font-size: 400%;
     font-weight: bold;
 }
