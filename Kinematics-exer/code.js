@@ -143,6 +143,8 @@ var bQuestion7 = false;
 var arrAnswered =[];
 var nNumPicks = 0;
 var bPressedAbout = false;
+var elem = document.querySelector("html");
+
 
 $(function(){
     $(".ok").on("touchend", removeTurn);
@@ -175,6 +177,7 @@ function Home() {
 }
 
 function start(event) {
+    openFullscreen();
     screen = screens[0];
     $(".opening").hide();
     $(".header").hide();
@@ -189,6 +192,18 @@ function start(event) {
     }
     $(".car").on("touchend", ZoomIn);
 }
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
 
 function ZoomIn(event) {
     if(nQuestionsCounter < 3) {
@@ -385,7 +400,6 @@ function Hint(event) {
     while(arrAnswered.indexOf(nRandom) !== -1 || screen.questions.indexOf(nRandom) === -1 || nRandom === 4 || nRandom === 5) {
         nRandom = Math.round(Math.random()*(13)+1);
     }
-    console.log($("#clue" + nRandom));
     if (nRandom === 1 || (nRandom >= 3) && (nRandom <= 5) || (nRandom >= 7) && (nRandom <= 8)) {
         $("#clue" + nRandom).attr("src", "assets/images/clue" + nRandom + "-glow.svg");
     } else if(nRandom === 2) {
