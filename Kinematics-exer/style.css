@@ -159,7 +159,7 @@ p {
 #clue5 {
     width: 10%;
     height: 12%;
-    top: 72%;
+    bottom: 25%;
     right: 59%;
     display: none;
 }
@@ -178,7 +178,7 @@ p {
     width: 10%;
     height: 30%;
     right: 50%;
-    top: 85%;
+    bottom: 1%;
     display: none;
     z-index: 98;
 }
@@ -293,7 +293,7 @@ p {
     right: 2%;
     padding: 5%;
     font-weight: 600;
-    z-index: 98;
+    z-index: 99;
 }
 
 .knife {

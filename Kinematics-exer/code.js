@@ -234,15 +234,9 @@ function ZoomOut(event) {
         $(".car").on("touchend", ZoomIn)
         $("#clue1").show();
         $(".car").attr("src", "assets/images/car1.svg");
-        $(".car").css({width: "52%"});
-        $(".car").css({height: "30%"});
-        $(".car").css({right: "47.5%"});
-        $(".car").css({top: "36%"});
+        $(".car").css({width: "52%", height: "30%", right: "47.6%", top: "34%"});
         $("#clue2").attr("src", "assets/images/clue2.svg");
-        $("#clue2").css({right: "32%"});
-        $("#clue2").css({width: "52%"});
-        $("#clue2").css({height: "50%"});
-        $("#clue2").css({top: "15%"});
+        $("#clue2").css({ width: "52%", height: "55%", top: "10%", right: "32%",});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).hide();
         }
