@@ -293,6 +293,7 @@ function dropItem(event) {
 }
 
 function checkDrag(event) {
+    $(".check2").off("touchend", checkDrag);
     if($("#div1").text() === "הכרה מלאה" && $("#div2").text() === "מגיב לקול" && $("#div3").text() === "מגיב לכאב" && $("#div4").text() === "מחוסר הכרה") {
         nNumPicks = 0;
         bWasWrong = false;
@@ -321,6 +322,7 @@ function checkDrag(event) {
             $(".steps").hide();
         });
     } else {
+        $(".check2").on("touchend", checkDrag);
         $(".wrong").show();
         if(!bWasWrong) {
             nMistakes++;
