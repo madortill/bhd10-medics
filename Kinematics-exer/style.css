@@ -283,7 +283,7 @@ p {
 
 .questions {
     width: 60%;
-    height: 75%;
+    height: 68%;
     background-color: none;
     background-image: url("assets/images/question-bg.svg");
     background-repeat: no-repeat;
@@ -367,8 +367,8 @@ p {
     width: 15%;
     border: none;
     border-radius: 1%;
-    bottom: 15%;
-    right: 73%;
+    bottom: 12%;
+    left: 10%;
 }
 
 .stabbed {
