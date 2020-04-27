@@ -181,7 +181,7 @@ function pressStage(event) {
             $(".div2").css({display: "flex"});
             $(".instructions-text").html("איך נתחיל את שלב הB?");
             $(".instructions-text").css({marginRight:"6%", width: "70%", marginTop: "-=5%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', height: "75%", paddingLeft: "5%", top: "+=10%", paddingTop: "-=5%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', height: "75%", paddingLeft: "5%", top: "25%", paddingTop: "-=5%"});
             $(".radio").css({margin: "0"});
             nPicked = 0;
             for(var i=3; i<=6; i++) {
@@ -302,13 +302,13 @@ function checkDrag(event) {
         $(".next").show();
         $(".next").css({marginRight: "-40%", marginTop: "30%"})
         $(".next").on("touchend", function(){
-            $(".instructions").css({height: '10%',marginTop: '-5%',paddingTop: '5%',paddingBottom: '30%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
+            $(".instructions").css({height: '10%',marginTop: '-7%',paddingTop: '5%',paddingBottom: '30%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
             $(".instructions").append('<div class="options"><div class="radios"><img class="radio" id="radio1" src="assets/images/option.svg" /><img class="radio" id="radio2" src="assets/images/option.svg" /></div><div class="answer"><p>Jaw Thrust - דחיקת לסת</p><p>Head Tilt - הטיית ראש</p></div></div>');
             $(".instructions-text").html("פצוע נפגע כתוצאה מפיצוץ, באיזו שיטה נשתמש על מנת לפתוח נתיב אוויר?");
             $(".instructions-text").css({width: "70%", marginRight: "4.5%"});
             $(".conscious").hide();
             $(".div").hide();
-            $(".check2").css({position: "absolute", right: "25%", bottom: "7%"});
+            $(".check2").css({position: "absolute", right: "25%", bottom: "15%"});
             $(".check2").off("touchend", checkDrag);
             for(var i=1; i<=4; i++) {
                 $("#clue" + i).hide();
