@@ -346,7 +346,11 @@ p {
 
 .hint {
     left: 0%;
+<<<<<<< HEAD
     bottom: 7.5%;
+=======
+    bottom: 8%;
+>>>>>>> c31ebd0c2e3cf05bfeaaf3104182225937c9cfd2
     width: 12%;
     height: 12%;
     border: none;
@@ -357,7 +361,11 @@ p {
 
 .back {
     right: 1%;
+<<<<<<< HEAD
     bottom: 7.5%;
+=======
+    bottom: 8%;
+>>>>>>> c31ebd0c2e3cf05bfeaaf3104182225937c9cfd2
     width: 10%;
     height: 10%;
     border: none;
