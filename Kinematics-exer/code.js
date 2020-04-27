@@ -196,15 +196,12 @@ function ZoomIn(event) {
         $(".car").off("touchend", ZoomIn)
         $("#clue1").hide();
         $(".car").attr("src", "assets/images/car2.svg");
-        $(".car").css({width: "62%"});
-        $(".car").css({height: "60%"});
-        $(".car").css({right: "38%"});
-        $(".car").css({top: "51%"});
+        $(".car").css({width: "62%", height: "60%", right: "38%", top: "42%"});
         $("#clue2").attr("src", "assets/images/clue22.svg");
         $("#clue2").css({right: "10.7%"});
         $("#clue2").css({width: "80%"});
         $("#clue2").css({height: "117%"});
-        $("#clue2").css({top: "9%"});
+        $("#clue2").css({top: "0"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).show();
         }
@@ -231,7 +228,6 @@ function ZoomIn(event) {
 }
 
 function ZoomOut(event) {
-    $(".hint", )
     if(nQuestionsCounter < 3) {
         screen = screens[0];
         $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
