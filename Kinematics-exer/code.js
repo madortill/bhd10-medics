@@ -177,6 +177,7 @@ function Home() {
 function start(event) {
     screen = screens[0];
     $(".opening").hide();
+    $(".header").hide();
     $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
     $(".hint").show();
     $(".hint").on("touchend", Hint);
@@ -198,10 +199,7 @@ function ZoomIn(event) {
         $(".car").attr("src", "assets/images/car2.svg");
         $(".car").css({width: "62%", height: "60%", right: "38%", top: "45%"});
         $("#clue2").attr("src", "assets/images/clue22.svg");
-        $("#clue2").css({right: "10.7%"});
-        $("#clue2").css({width: "80%"});
-        $("#clue2").css({height: "117%"});
-        $("#clue2").css({top: "0"});
+        $("#clue2").css({right: "0", width: "unset", height: "100%",top: "0px"});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).show();
         }
@@ -213,9 +211,9 @@ function ZoomIn(event) {
         $(".bomb").hide();
         $("#clue9").hide();
         $("#clue10").hide();
-        $(".exploaded").css({width: "60%"});
+        $(".exploaded").css({width: "120%"});
         $(".exploaded").css({right: "15%"});
-        $(".exploaded").css({bottom: "0"});
+        $(".clues").css({bottom: "0"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).show();
         }
@@ -236,7 +234,7 @@ function ZoomOut(event) {
         $(".car").attr("src", "assets/images/car1.svg");
         $(".car").css({width: "52%", height: "30%", right: "47.6%", top: "34%"});
         $("#clue2").attr("src", "assets/images/clue2.svg");
-        $("#clue2").css({ width: "52%", height: "55%", top: "10%", right: "32%",});
+        $("#clue2").css({ width: "52%", height: "65%", right: "32%",});
         for(var i=3; i<=4; i++) {
             $("#clue" + i).hide();
         }
@@ -248,9 +246,9 @@ function ZoomOut(event) {
         $(".bomb").show();
         $("#clue9").show();
         $("#clue10").show();
-        $(".exploaded").css({width: "40%"});
+        $(".exploaded").css({width: "90%"});
         $(".exploaded").css({right: "60%"});
-        $(".exploaded").css({bottom: "10%"});
+        $(".clues").css({bottom: "20%"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).hide();
         }
@@ -271,10 +269,7 @@ function Animate() {
     $(".car").css({right: "47.5%"});
     $(".car").css({top: "36%"});
     $("#clue2").attr("src", "assets/images/clue2.svg");
-    $("#clue2").css({right: "32%"});
-    $("#clue2").css({width: "52%"});
-    $("#clue2").css({height: "55%"});
-    $("#clue2").css({top: "10%"});
+    $("#clue2").css({ width: "52%", height: "65%", right: "32%",});
     for(var i=3; i<=4; i++) {
         $("#clue" + i).hide();
     }
@@ -361,14 +356,6 @@ function showQuestion(event) {
     } else {
         nCurrQuestion = Number(this.id.substr(4,2));
     }
-    console.log(nCurrQuestion);
-    if(nCurrQuestion === 1 || nCurrQuestion === 9) {
-        $(".answer").css({fontSize: "90%"});
-    } else if(nCurrQuestion === 5) {
-        $(".answer").css({fontSize: "80%"});
-    } else {
-        $(".answer").css({fontSize: "100%"});
-    }
     for(var i=1; i<=14; i++) {
         $("#clue" + i).off("touchend", showQuestion);
     }
@@ -395,7 +382,7 @@ function Hint(event) {
     $(".hint").off("touchend", Hint);
     nHints++;
     nRandom = Math.round(Math.random()*(13)+1);
-    while(arrAnswered.indexOf(nRandom) !== -1 || screen.questions.indexOf(nRandom) === -1 ) {
+    while(arrAnswered.indexOf(nRandom) !== -1 || screen.questions.indexOf(nRandom) === -1 || nRandom === 4 || nRandom === 5) {
         nRandom = Math.round(Math.random()*(13)+1);
     }
     console.log($("#clue" + nRandom));
