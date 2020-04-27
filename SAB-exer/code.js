@@ -9,7 +9,6 @@ var nNumPicks = 0;
 var elem = document.querySelector("html");
 
 $(function(){
-    openFullscreen();
     $(".ok").on("touchend", removeTurn);
     $(".navigate").on("touchend", Home);
     for(var i=1; i<=3; i++) {
@@ -20,6 +19,7 @@ $(function(){
 
 function removeTurn(event) {
     $(".turn-div").hide();
+    openFullscreen();
 }
 
 function about() {

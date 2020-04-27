@@ -11,7 +11,6 @@ var bPressedAbout = false;
 var elem = document.querySelector("html");
 
 $(function(){
-    openFullscreen();
     $(".ok").on("touchend", removeTurn);
     $(".about").on("touchend", about);
     $(".navigate").on("touchend", Home);
@@ -22,6 +21,7 @@ $(function(){
 
 function removeTurn(event) {
     $(".turn-div").hide();
+    openFullscreen();
 }
 
 function about() {
