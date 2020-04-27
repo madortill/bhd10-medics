@@ -147,19 +147,10 @@ p {
     z-index: 99;
 }
 
-#airbag {
-    width: 15%;
-    height: 17%;
-    top: 48%;
-    right: 59.2%;
-    display: none;
-    z-index: 99;
-}
-
 #clue5 {
     width: 10%;
     height: 12%;
-    bottom: 25%;
+    bottom: 20%;
     right: 59%;
     display: none;
 }
@@ -178,7 +169,7 @@ p {
     width: 10%;
     height: 30%;
     right: 50%;
-    bottom: 1%;
+    bottom: -10%;
     display: none;
     z-index: 98;
 }

@@ -196,7 +196,7 @@ function ZoomIn(event) {
         $(".car").off("touchend", ZoomIn)
         $("#clue1").hide();
         $(".car").attr("src", "assets/images/car2.svg");
-        $(".car").css({width: "62%", height: "60%", right: "38%", top: "42%"});
+        $(".car").css({width: "62%", height: "60%", right: "38%", top: "45%"});
         $("#clue2").attr("src", "assets/images/clue22.svg");
         $("#clue2").css({right: "10.7%"});
         $("#clue2").css({width: "80%"});
