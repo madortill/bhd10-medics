@@ -311,7 +311,6 @@ function checkDrag(event) {
             $(".conscious").hide();
             $(".div").hide();
             $(".check2").css({position: "absolute", right: "25%", bottom: "15%"});
-            $(".check2").off("touchend", checkDrag);
             for(var i=1; i<=4; i++) {
                 $("#clue" + i).hide();
             }
