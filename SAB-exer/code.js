@@ -101,11 +101,12 @@ function changeBack() {
 
 function nextStage(event) {
     nCurrStage++;
+    $(".steps").hide();
     $(".next").hide();
     $(".nextstep").hide();
     $(".instructions").show();
     $(".instructions").css({height: '60%'});
-    $(".instructions").css({marginTop: '1%'});
+    $(".instructions").css({marginTop: '-5%'});
     $(".instructions").css({paddingTop: '6%'});
     $(".instructions").css({paddingBottom: '0'});
     $(".instructions").css({width: '24%'});
@@ -135,7 +136,7 @@ function pressStage(event) {
         $("#exemination" + nCurrStage).off("touchend", pressStage);
         if (nCurrStage === 1) {
             $(".circle").show();
-            $(".instructions").css({marginTop: '-5%'});
+            $(".instructions").css({marginTop: '-5%', paddinTop: "-=3%"});
             $(".instructions-text").html("נכון מאוד! קודם כל יש לדאוג לבטיחות, על מנת למנוע היווצרות פצועים נוספים.");
             $(".instructions-text").css({marginRight: "1%"});
             $(".next").show();
@@ -165,8 +166,8 @@ function pressStage(event) {
             $(".options2").css({display: "flex"});
             $(".div2").css({display: "flex"});
             $(".instructions-text").html("איך נתחיל את שלב הB?");
-            $(".instructions-text").css({marginRight:"6%", width: "70%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', marginTop: '-15%', height: "75%", paddingLeft: "5%"});
+            $(".instructions-text").css({marginRight:"6%", width: "70%", marginTop: "-=5%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', height: "75%", paddingLeft: "5%", top: "+=10%", paddingTop: "-=5%"});
             $(".radio").css({margin: "0"});
             nPicked = 0;
             for(var i=3; i<=6; i++) {
@@ -285,7 +286,7 @@ function checkDrag(event) {
             $("#div" + i).css({color: "rgb(28, 163, 109)"});
         }
         $(".next").show();
-        $(".next").css({marginRight: "-40%", marginTop: "40%"})
+        $(".next").css({marginRight: "-40%", marginTop: "30%"})
         $(".next").on("touchend", function(){
             $(".instructions").css({height: '10%',marginTop: '-5%',paddingTop: '5%',paddingBottom: '30%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
             $(".instructions").append('<div class="options"><div class="radios"><img class="radio" id="radio1" src="assets/images/option.svg" /><img class="radio" id="radio2" src="assets/images/option.svg" /></div><div class="answer"><p>Jaw Thrust - דחיקת לסת</p><p>Head Tilt - הטיית ראש</p></div></div>');
@@ -293,7 +294,7 @@ function checkDrag(event) {
             $(".instructions-text").css({width: "70%", marginRight: "4.5%"});
             $(".conscious").hide();
             $(".div").hide();
-            $(".check2").css({position: "absolute", right: "25%", bottom: "10%"});
+            $(".check2").css({position: "absolute", right: "25%", bottom: "7%"});
             $(".check2").off("touchend", checkDrag);
             for(var i=1; i<=4; i++) {
                 $("#clue" + i).hide();
@@ -333,11 +334,11 @@ function checkRadio(event) {
         nNumPicks = 0;
         bWasWrong = false;
         bWasPicked = false;
-        $(".instructions").css({height: '35%',paddingTop: '15%'});
+        $(".instructions").css({marginTop: "-5%", height: "5%", paddingTop: "15%", paddingBottom: "30%",  width:" 50%",top: "21.7817%"});
         $(".instructions-text").html('נכון מאוד! נשתמש בדחיקת לסת כשיש חשש לפגיעה בעמש"צ או כשלא ידוע לנו סיפור המקרה.');
         $(".instructions-text").css({marginRight: "3%"});
         $(".next").show();
-        $(".next").css({marginRight: "25%"});
+        $(".next").css({marginRight: "25%", marginTop: "40%"});
         $(".check2").hide();
         $(".check2").off("touchend", checkRadio);
         $(".options").hide();
@@ -413,7 +414,7 @@ function checkYesOrNo(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "5%"})
     $(".instructions").append('<div class="absolute breath"<p>בדיקת הנשימה תתבצע למשך 30 שניות ונכפיל את התוצאה פי 2.</p><p>נשימה תקינה היא 8-20 נשימות בדקה.</p><p>2X12=24</p><p>כלומר לא בטווח התקין.</p></div>');
-    $(".instructions").css({height: "80%", width:"45%",   marginTop: '-15%'});
+    $(".instructions").css({height: "90%", width:"45%",   marginTop: '5%'});
     $(".next").show();
     $(".next").css({position: "absolute", bottom: '5%', right: '40%'});
     $(".yes-or-no").hide();
