@@ -50,6 +50,7 @@ function openFullscreen() {
     } else if (elem.msRequestFullscreen) { /* IE/Edge */
       elem.msRequestFullscreen();
     }
+    $("body").scrollTop();
   }
 
 function checkStep(event) {
