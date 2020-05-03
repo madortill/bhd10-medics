@@ -512,6 +512,7 @@ function finishExer() {
     $(".exploaded").delay(1500).fadeOut(1);
     $(".bomb").delay(1500).fadeOut(1);
     $(".hint").delay(1500).fadeOut();
+    $(".smoke").delay(1500).fadeOut();
     $(".back").delay(1500).fadeOut();
     $(".black").delay(2500).fadeOut();
     $(".closing").delay(2500).fadeIn();
