@@ -158,7 +158,7 @@ p {
 #clue5 {
     width: 10%;
     height: 12%;
-    bottom: 20%;
+    bottom: 25%;
     right: 59%;
     display: none;
 }
@@ -476,10 +476,10 @@ p {
 
 .clue11glow {
     opacity: 0;
-    width: 10%;
+    width: 8%;
     z-index: 97;
-    margin-left: -175%;
-    margin-top: -14%
+    margin-left: -153%;
+    margin-top: -4%
 }
 
 .clue12glow {
@@ -487,7 +487,7 @@ p {
     width: 9%;
     z-index: 97;
     margin-top: -26%;
-    margin-left: -129%;;
+    margin-left: -76.5%
 }
 
 .clue13glow {
