@@ -203,6 +203,7 @@ function openFullscreen() {
     } else if (elem.msRequestFullscreen) { /* IE/Edge */
       elem.msRequestFullscreen();
     }
+
   }
 
 function ZoomIn(event) {
@@ -254,7 +255,7 @@ function ZoomOut(event) {
             $("#clue" + i).hide();
         }
     } else {
-        screen = screens[5];
+        screen = screens[4];
         $(".glow").css({display: "none"});
         $(".exploaded").on("touchend", ZoomIn);
         $(".smoke").show();
@@ -397,7 +398,7 @@ function Hint(event) {
     $(".hint").off("touchend", Hint);
     nHints++;
     nRandom = Math.round(Math.random()*(13)+1);
-    while(arrAnswered.indexOf(nRandom) !== -1 || screen.questions.indexOf(nRandom) === -1 || nRandom === 4 || nRandom === 5) {
+    while(arrAnswered.indexOf(nRandom) !== -1 || screen.questions.indexOf(nRandom) === -1 || nRandom === 4 || nRandom === 7) {
         nRandom = Math.round(Math.random()*(13)+1);
     }
     if (nRandom === 1 || (nRandom >= 3) && (nRandom <= 5) || (nRandom >= 7) && (nRandom <= 8)) {

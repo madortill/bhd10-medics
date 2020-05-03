@@ -61,11 +61,10 @@ function checkStep(event) {
         if(nStepCounter < 4) {
             if(nStepCounter === 1) {
                 $(".steps").show();
-                $(".instructions").css({height: '30%'});
                 $(".instructions").css({marginTop: '-15%'});
-                $(".instructions").css({paddingTop: '15%'});
+                $(".instructions").css({paddingTop: '5%'});
                 $(".instructions").css({paddingBottom: '10%'});
-                $(".instructions").css({width: '40%'});
+                $(".instructions").css({width: '40%', marginTop: "+=10%", height: "10vh"});
                 $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")'});
                 $(".instructions-text").html("");
             }
