@@ -100,7 +100,6 @@ function pressStage(event) {
                 $("#answer" + i).on("touchend", pickAnswer2);
             }
             $(".check").show();
-            $(".check").css({marginRight: "55%", marginBottom: "-57%" });
             $(".check").on("touchend", checkAnswer);
         }
     } else {

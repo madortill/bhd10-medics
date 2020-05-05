@@ -115,8 +115,8 @@ body {
 .check {
     width: 8%;
     display: none;
-    margin-top: 50%;
-    margin-right: 52%;
+    margin-top: 67vh;
+    margin-right: 38%;
     z-index: 99;
 }
 
@@ -253,8 +253,8 @@ body {
 .options {
     display: none;
     right: 10%;
-    bottom: 13%;
-    width: 70%;
+    bottom: 30%;
+    width: min-content;
     z-index: 99;
     flex-direction: column;
 }
@@ -272,13 +272,15 @@ body {
     display: inline-block;
     margin-top: 4%;
     margin-right: 1%;
-    width: 50%;
+    width: min(70vmin, 50vmax);
     z-index: 98;
+    pointer-events: none;
 }
 
 .div {
     display: flex;
     z-index: 98;
+    width: min-content
 }
 
 .feedback {
@@ -300,7 +302,7 @@ body {
 
 .cont {
     display: flex;
-    width: 95%;
+    width: fit-content;
     margin-left: 0;
 }
 
