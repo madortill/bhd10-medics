@@ -221,7 +221,7 @@ function checkAirway(event) {
             $(".conscious-cont").css({display: "flex"});
             $(".divs").css({display: "flex"});
             $(".instructions-text").html("כל הכבוד! מהן רמות ההכרה שיכולות להיות לפצוע?");
-            $(".instructions-text").css({marginLeft: "41%", width: "40%", marginTop: "10%}");
+            $(".instructions-text").css({marginLeft: "41%", width: "40%", marginTop: "10%"});
             $(".conscious").on("touchmove", drag);
             window.dragged = $(".dragover");
             $(".conscious").on("touchend", dropItem);
