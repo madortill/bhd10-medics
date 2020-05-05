@@ -64,13 +64,16 @@ var bPenCanDrag = false;
 var bCottonCanDrag = false;
 var arrShadowIds = ["water1", "water2", "savior", "cotton", "madhom", "pen" ];
 var bPressedAbout = false;
+var elem = document.querySelector("html");
 
 $(function(){
-    $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
-    start();
+    $(".start").on("touchend", start);
 });
 
 function start() {
+    openFullscreen();
+    $(".opening").hide();
+    $(".game").show();
     $(".text").html(text[nTextCounter]["text"]);
     if(!bLoaded) {
         $("#water1").on("touchmove", drag);
@@ -89,6 +92,20 @@ function start() {
         bLoaded = true;
     }
 }
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullscreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+
+  }
+
 
 if (!('ClientRect' in window)) window.ClientRect = DOMRect;
 /**

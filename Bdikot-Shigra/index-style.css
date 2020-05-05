@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    background-image: url("assets/images/bg1.svg");
     font-family: "assistant";
     direction: rtl;
     margin: 0;
@@ -49,36 +50,56 @@ body {
     position: absolute;
 } 
 
-.header {
-    width: 100%;
-    color: white;
-    height: 10vh;
-    background-image: url("assets/images/bar.svg");
+.opening {
+    background-image: url("assets/images/welcome.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
-    z-index: 999;
-    display: flex;
-    align-items: center;
+    top: 18%;
+    right: 4%;
+    width: 75%;
+    height: 59%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+    font-size: min(5vmin, 2.5vmax);
+    color: rgb(78,117,130);
 }
 
-.head {
-    right: 20%;
-    font-weight: 470;
-    font-size: 120%;
+.opening-text {
+    width: 90%;
+}
+
+.start {
     margin: 0;
+    color: black;
+    bottom: 20%;
+    left: 0;
 }
 
-.about {
-    height: 50%;
-    left: 5%;
-    top: 25%;
+.start-text {
+    font-family: "ktavyadclm";
+    display: inline-block;
+    margin: 0;
+    font-size: 130%;
 }
 
-.navigate {
-    height: 30%;
+.square {
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -0.5%;
+    margin-left: 2%;
+}
+
+.line {
+    width: 65%;
+    margin: 0;
+    bottom: 15%;
     right: 5%;
-    top: 35%;
+}
+
+.goodluck {
+    font-size: 150%;
 }
 
 .text {
@@ -140,6 +161,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    display: none;
 }
 
 .bottles {

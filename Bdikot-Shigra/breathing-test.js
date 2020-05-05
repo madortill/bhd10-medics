@@ -14,25 +14,35 @@ var nTextCounter = 0;
 var nBreathingCounter = 0;
 var nStepCounter = 1;
 var nCurrStep = 0;
+var elem = document.querySelector("html");
 
 $(function(){
+    $(".start").on("touchend", start);
+});
+
+function start(event) {
+    openFullscreen();
+    $(".opening").hide();
+    $(".game").show();
     $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
     $(".objects-breathing").on("touchmove", drag);
     $(".objects-breathing").on("touchend", dropItem);
     $(".objects-breathing").on("touchcancel", dropItem);
     window.dragged = $(".dragover");
-});
-
-function start(event) {
-    if(this.id = ear) {
-        $(".objects").off("touchend", start);
-        $(".breathing-text").show();
-        $(".breathing-text").html(text[nTextCounter]["text"]);
-    } else {
-        $(".x").show();
-        $(".x").delay(150).fadeOut(500);
-    }
 } 
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullscreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+
+  }
 
 if (!('ClientRect' in window)) window.ClientRect = DOMRect;
 /**

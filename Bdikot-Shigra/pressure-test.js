@@ -23,18 +23,40 @@ var nCurrStep = 0;
 var nPicked = 0;
 var bWasPicked = false;
 var nCorrect = 0;
+var elem = document.querySelector("html");
 
 $(function(){
+    $(".start").on("touchend", start);
+});
+
+function start(event) {
+    openFullscreen();
+    $(".opening").hide();
+    $(".game").show();
     $("body").css({backgroundImage: 'url("assets/images/bg5.svg")'});
     $(".pressure-check-text").html(text[nTextCounter]["text"]);
     nTextCounter++;
     $(".object-div").css({flexDirection: "column", right: "4%", width: "92%", bottom: "2%"});
     $(".next").delay(1000).fadeIn();
     $(".next").css({bottom: "unset", top: "6%", left: "6%"});
-    $(".next").on("touchend", start);
-});
+    $(".next").on("touchend", Continue);
+} 
 
-function start(event) {
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullscreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+
+  }
+
+
+function Continue(event) {
     $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
     $(".next").hide();
     $(".object-div").hide();
@@ -48,7 +70,7 @@ function start(event) {
     $(".manjet").on("touchcancel", dropItem);
     $(".stetoscope").on("touchend", dropItem);
     $(".stetoscope").on("touchcancel", dropItem);
-} 
+}
 
 if (!('ClientRect' in window)) window.ClientRect = DOMRect;
 /**

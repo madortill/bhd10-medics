@@ -17,15 +17,37 @@ var nPalseCounter = 0;
 var nPicked = 0;
 var bWasPicked = false;
 var nCorrect = 0;
+var elem = document.querySelector("html");
 
 $(function(){
-    $(".question").hide();
-    $(".options").hide();
-    $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
-    $(".objects").on("touchend", start);
+    $(".start").on("touchend", start);
+   
 });
 
 function start(event) {
+    openFullscreen();
+    $(".opening").hide();
+    $(".game").show();
+    $(".question").hide();
+    $(".options").hide();
+    $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
+    $(".objects").on("touchend", Continue);
+}
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullscreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+
+  }
+
+function Continue(event) {
     if(this.id === "clock") {
         $(".objects").off("touchend", start);
         $(".question").show();

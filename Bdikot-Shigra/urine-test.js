@@ -18,16 +18,24 @@ var nStepCounter = 1;
 var nCurrStep = 0;
 var bLoaded = false;
 var nCupCounter = 1;
+var elem = document.querySelector("html");
 
 $(function(){
-    $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
-    $(".instructions").hide();
-    $("#cup").on("touchend", start);
-    $("#gloves").on("touchend", start);
-    $("#urineguide").on("touchend", start);
+    $(".start").on("touchend", start);
 });
 
 function start(event) {
+    openFullscreen();
+    $(".opening").hide();
+    $(".game").show();
+    $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
+    $(".instructions").hide();
+    $("#cup").on("touchend", Continue);
+    $("#gloves").on("touchend", Continue);
+    $("#urineguide").on("touchend", Continue);
+}
+
+function Continue(event) {
     if(nStepCounter !== 3) {
         nCurrStep = Number(this.classList[1].charAt(4));
     }
@@ -56,6 +64,19 @@ function start(event) {
         $(".x").delay(150).fadeOut(500);
     }
 }
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullscreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+
+  }
 
 if (!('ClientRect' in window)) window.ClientRect = DOMRect;
 /**
