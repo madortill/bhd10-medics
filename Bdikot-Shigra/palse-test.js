@@ -49,7 +49,7 @@ function openFullscreen() {
 
 function next(event) {
     if(this.id === "clock") {
-        $(".objects").off("touchend", start);
+        $(".objects").off("touchend", next);
         $(".question").show();
         $(".question-text").html(text[nTextCounter]["text"]);
         nTextCounter++;
@@ -163,6 +163,7 @@ function dropItem(event) {
                 break;
             }
         }
+        console.log(hitTarget);
         if (!hitTarget) {
             this.style.top = "";
             this.style.left = "";
