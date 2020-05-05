@@ -39,7 +39,7 @@ function start(event) {
     $(".object-div").css({flexDirection: "column", right: "4%", width: "92%", bottom: "2%"});
     $(".next").delay(1000).fadeIn();
     $(".next").css({bottom: "unset", top: "6%", left: "6%"});
-    $(".next").on("touchend", Continue);
+    $(".next").on("touchend", next);
 } 
 
 function openFullscreen() {
@@ -55,8 +55,7 @@ function openFullscreen() {
 
   }
 
-
-function Continue(event) {
+function next(event) {
     $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
     $(".next").hide();
     $(".object-div").hide();

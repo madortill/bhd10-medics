@@ -30,12 +30,12 @@ function start(event) {
     $(".game").show();
     $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
     $(".instructions").hide();
-    $("#cup").on("touchend", Continue);
-    $("#gloves").on("touchend", Continue);
-    $("#urineguide").on("touchend", Continue);
+    $("#cup").on("touchend", next);
+    $("#gloves").on("touchend", next);
+    $("#urineguide").on("touchend", next);
 }
 
-function Continue(event) {
+function next(event) {
     if(nStepCounter !== 3) {
         nCurrStep = Number(this.classList[1].charAt(4));
     }

@@ -31,7 +31,7 @@ function start(event) {
     $(".question").hide();
     $(".options").hide();
     $("body").css({backgroundImage: 'url("assets/images/bg2.svg")'});
-    $(".objects").on("touchend", Continue);
+    $(".objects").on("touchend", next);
 }
 
 function openFullscreen() {
@@ -47,7 +47,7 @@ function openFullscreen() {
 
   }
 
-function Continue(event) {
+function next(event) {
     if(this.id === "clock") {
         $(".objects").off("touchend", start);
         $(".question").show();
