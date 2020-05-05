@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ktavyadclm";
+    src: url("assets/fonts/ktavyadclm_bolditalic_0.ttf"), url("assets/fonts/KtavYadCLM-BoldItalic_0.otf");
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "assistant";
+    direction: rtl;
+    margin: 0;
+    background-image: url("assets/images/bg6.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 100%;
+    color: rgb(15,40,73);
+    width: 100%;
+    height: 100%;
+}
+
+.absolute {
+    position: absolute;
+} 
+
+.header {
+    width: 100%;
+    color: white;
+    height: 10vh;
+    background-image: url("assets/images/bar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    right: 20%;
+    font-weight: 470;
+    font-size: 120%;
+    margin: 0;
+}
+
+.about {
+    height: 50%;
+    left: 5%;
+    top: 25%;
+}
+
+.navigate {
+    height: 30%;
+    right: 5%;
+    top: 35%;
+}
+
+.about-div {
+    background-image: url("assets/images/about/bgvertical.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 95%;
+    padding-right: 5%;
+    top: 10%;
+    z-index: 100;
+    color: white;
+    display: none;
+    direction: rtl;
+}
+
+.logo {
+    height: 12%;
+    margin-top: 22%;
+    margin-right: 25%;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.opening {
+    background-image: url("assets/images/welcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 18%;
+    right: 4%;
+    width: 75%;
+    height: 59%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+    font-size: 130%;
+    color: rgb(78,117,130);
+}
+
+.opening-text {
+    width: 90%;
+}
+
+.start {
+    margin: 0;
+    color: black;
+    bottom: 20%;
+    left: 0;
+}
+
+.start-text {
+    font-family: "KtavYadCLM";
+    display: inline-block;
+    margin: 0;
+    font-size: 130%;
+}
+
+.square {
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -0.5%;
+    margin-left: 2%;
+}
+
+.line {
+    width: 65%;
+    margin: 0;
+    bottom: 15%;
+    right: 5%;
+}
+
+.goodluck {
+    font-size: 150%;
+}
+
+.exams {
+    display: none;
+}
+
+.exam {
+    width: 30%;
+    margin-top: 17%;
+}
+
+#palse {
+    margin-left: 3%;
+}
+
+#breathing {
+    margin-left: 20%;
+}
+
+#fever {
+    margin-left: 50%;
+}
+
+#pressure {
+    width: 40%;
+    margin-top: -10%;
+}
+
+#urine {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: 35%;
+}
