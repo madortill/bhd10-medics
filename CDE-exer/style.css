@@ -24,7 +24,7 @@ body {
     background-size: 100vw 100vh;
     overflow: hidden;
     color: rgb(15, 40, 73);
-    font-size: 100%;
+    font-size: min(5vmin, 2.5vmax);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -53,7 +53,7 @@ body {
 .head {
     right: 8%;
     font-weight: 400;
-    font-size: 130%;
+    font-size: min(5vmin, 3vmax);
     margin: 0;
 }
 
@@ -95,7 +95,7 @@ body {
     padding-top: 3%;
     padding-right: 4%;
     padding-left: 3%;
-    font-size: 110%;
+    /* font-size: 110%; */
     font-weight: 500;
     z-index: 99;
 }
@@ -139,7 +139,7 @@ body {
     text-align: center;
     font-weight: bold;
     color: rgb(78, 118, 131);
-    font-size: 110%;
+    /* font-size: 110%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@ body {
     padding-right: 1%;
     padding-left: 1%;
     text-align: center;
-    font-size: 90%;
+    /* font-size: 90%; */
     font-weight: 500;
 }
 
@@ -327,15 +327,15 @@ body {
     width: 27%;
     text-align: center;
     right: 60%;
-    bottom: -6%;
+    bottom: 8%;
     font-weight: bold;
 }
 
 .goodjob {
     width: 60%;
-    top: 54%;
+    top: 47%;
     right: 2%;
-    font-size: 400%;
+    font-size: min(20vmin, 17vmax);
     font-weight: bold;
 }
 
