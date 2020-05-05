@@ -17,9 +17,12 @@ body {
     background-size: 100vw 91vh;
     overflow: hidden;
     font-weight: 600;
-    display: flexbox;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .absolute {

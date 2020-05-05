@@ -13,7 +13,13 @@ body {
     overflow: hidden;
     color: rgb(15, 40, 73);
     font-size: 100%;
-    min-height: 100%
+    min-height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 html {
