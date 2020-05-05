@@ -49,7 +49,7 @@ function next(event) {
             window.dragged = $(".dragover");
             bLoaded = true;
         }
-        if(nStepCounter ===1) {
+        if(nStepCounter === 1) {
             $(".instructions").show();
         }
         if (nCurrStep === 2) {
@@ -129,7 +129,7 @@ function dropItem(event) {
             if (target.getBoundingClientRect().contains(point)) {
                 if (nCurrStep === nStepCounter) {
                     if(nStepCounter === 3) {
-                        start();
+                        next();
                         $(this).attr("src", "assets/images/urinestickcheck.svg");
                         $(this).css({width: "2vw", left: "unset", right: "33%", bottom: "23%"});
                         $("#cup").removeClass("target");
