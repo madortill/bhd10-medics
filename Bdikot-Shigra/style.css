@@ -110,7 +110,7 @@ body {
     padding-top: 15%;
     padding-bottom: 10%;
     padding-right: 15%;
-    font-size: 130%;
+    font-size: min(5vmin, 2.5vmax);
     color: rgb(78,117,130);
 }
 
