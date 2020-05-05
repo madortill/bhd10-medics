@@ -61,10 +61,8 @@ p {
 }
 
 .navigate {
-    width: 6vw;
-    /* height: 6vh; */
-    right: 5vw;
-    /* top: 2.5vh; */
+    width: 6%;
+    right: 5%;
 }
 
 .opening {

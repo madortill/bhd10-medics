@@ -119,7 +119,7 @@ function nextStage(event) {
     $(".next").hide();
     $(".nextstep").hide();
     $(".instructions").show();
-    $(".instructions").css({height: '10vh', paddingTop: '2%', paddingBottom: '3%'});
+    $(".instructions").css({height: '10vh', paddingTop: '1%', paddingBottom: '5%'});
     $(".instructions").css({marginTop: '-5%'});
     $(".instructions").css({width: '24%'});
     $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")'});
@@ -302,7 +302,7 @@ function checkDrag(event) {
         $(".next").show();
         $(".next").css({marginRight: "-40%", marginTop: "30%"})
         $(".next").on("touchend", function(){
-            $(".instructions").css({height: '10%',marginTop: '-7%',paddingTop: '5%',paddingBottom: '30%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
+            $(".instructions").css({height: '10%',marginTop: '-7%',paddingTop: '5%',paddingBottom: '8%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
             $(".instructions").append('<div class="options"><div class="radios"><img class="radio" id="radio1" src="assets/images/option.svg" /><img class="radio" id="radio2" src="assets/images/option.svg" /></div><div class="answer"><p>Jaw Thrust - דחיקת לסת</p><p>Head Tilt - הטיית ראש</p></div></div>');
             $(".instructions-text").html("פצוע נפגע כתוצאה מפיצוץ, באיזו שיטה נשתמש על מנת לפתוח נתיב אוויר?");
             $(".instructions-text").css({width: "70%", marginRight: "4.5%"});
@@ -348,11 +348,11 @@ function checkRadio(event) {
         nNumPicks = 0;
         bWasWrong = false;
         bWasPicked = false;
-        $(".instructions").css({marginTop: "-5%", height: "5%", paddingTop: "15%", paddingBottom: "30%",  width:" 50%",top: "21.7817%"});
+        $(".instructions").css({marginTop: "-9%", height: "5%", paddingTop: "4%", paddingBottom: "5%",  width:" 50%",top: "21.7817%"});
         $(".instructions-text").html('נכון מאוד! נשתמש בדחיקת לסת כשיש חשש לפגיעה בעמש"צ או כשלא ידוע לנו סיפור המקרה.');
         $(".instructions-text").css({marginRight: "3%"});
         $(".next").show();
-        $(".next").css({marginRight: "25%", marginTop: "40%"});
+        $(".next").css({marginRight: "25%", marginTop: "19%"});
         $(".check2").hide();
         $(".check2").off("touchend", checkRadio);
         $(".options").hide();
