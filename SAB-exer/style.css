@@ -201,6 +201,7 @@ html {
     align-content: flex-start;
     display: none;
     z-index: 99;
+    font-size: min(5vmin, 2.5vmax);
 }
 
 .stepss {
@@ -367,7 +368,8 @@ html {
     z-index: 99;
     bottom: 25%;
     right: 5%;
-    height: 64%;
+    padding-top: 2%;
+    height: calc(30vh + 4vw);
     width: 50%;
 }
 

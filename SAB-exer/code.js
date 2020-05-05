@@ -64,7 +64,7 @@ function checkStep(event) {
                 $(".instructions").css({marginTop: '-15%'});
                 $(".instructions").css({paddingTop: '5%'});
                 $(".instructions").css({paddingBottom: '10%'});
-                $(".instructions").css({width: '40%', marginTop: "+=10%", height: "10vh"});
+                $(".instructions").css({width: '40%', marginTop: "+=10%", height: "26vh"});
                 $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")'});
                 $(".instructions-text").html("");
             }
@@ -119,10 +119,8 @@ function nextStage(event) {
     $(".next").hide();
     $(".nextstep").hide();
     $(".instructions").show();
-    $(".instructions").css({height: '60%'});
+    $(".instructions").css({height: '10vh', paddingTop: '2%', paddingBottom: '3%'});
     $(".instructions").css({marginTop: '-5%'});
-    $(".instructions").css({paddingTop: '6%'});
-    $(".instructions").css({paddingBottom: '0'});
     $(".instructions").css({width: '24%'});
     $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")'});
     for(var i = 1; i<=3; i++) {
@@ -167,6 +165,7 @@ function pressStage(event) {
             });
         } else if(nCurrStage === 2) {
             nStepCounter = 1;
+            $(".instructions").css({height: "unset"});
             $(".circle").attr("src", "assets/images/a.svg");
             $(".instructions-text").html("נכון מאוד! עכשיו יש לפתוח את נתיב האויר של המטופל. בחר את הצעדים בשלב הA לפי הסדר:");
             $(".instructions-text").css({marginRight: "1%"});
@@ -222,7 +221,7 @@ function checkAirway(event) {
             $(".conscious-cont").css({display: "flex"});
             $(".divs").css({display: "flex"});
             $(".instructions-text").html("כל הכבוד! מהן רמות ההכרה שיכולות להיות לפצוע?");
-            $(".instructions-text").css({marginRight: "4%", width: "40%"});
+            $(".instructions-text").css({marginLeft: "41%", width: "40%", marginTop: "10%}");
             $(".conscious").on("touchmove", drag);
             window.dragged = $(".dragover");
             $(".conscious").on("touchend", dropItem);
