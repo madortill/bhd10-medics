@@ -4,19 +4,14 @@ var elem = document.querySelector("html");
 $(function(){
     $(".about").on("touchend", about);
     $(".navigate").on("touchend", Home);
-    if(localStorage.getItem("visited")) {
-        start();
-    } else {
-        $(".start").on("touchend", start);
-        localStorage.setItem("visited", true)
-    }
+    $(".start").on("touchend", start);
 });
 
-function Home() {
+function Home(event) {
     window.location.href = "https://mador-till-prod.github.io/BHD-10-Medics/big-site/";
 }
 
-function about() {
+function about(event) {
     if(!bPressedAbout) {
         bPressedAbout = true;
         $(".about-div").show();
