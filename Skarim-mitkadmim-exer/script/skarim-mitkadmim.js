@@ -2,6 +2,8 @@ var story = '*בתאריך 12/5/20* *בשעה 15:00* הגעתי, *חופי* שת
 var draggArr = [];
 var storyHTML = "";
 window.onload = () => {
+    document.querySelector(".i-icon").addEventListener("click", onClickI);
+
     screenHeight();
     window.onresize = screenHeight;
     initDrag();
@@ -10,6 +12,25 @@ window.onload = () => {
     set101();
 }
 var countMark = 0;
+
+function onClickI() {
+    // document.querySelector(".home-page").classList.add("inactive");
+    // document.querySelector(".info").classList.remove("inactive");
+    // void document.querySelector(".info").offsetWidth;
+    document.querySelector(".info").classList.add("transition");
+    document.querySelector(".play-icon").addEventListener("click", onClickPlay);
+
+}
+
+function onClickPlay() {
+    
+    document.querySelector(".info").classList.remove("transition");
+    // document.querySelector(".home-page").classList.remove("inactive");
+
+    // document.querySelector(".info").classList.add("inactive");
+}
+
+
 
 function screenHeight(){
     let emptySpace = window.innerHeight - document.querySelector("header").offsetHeight;
