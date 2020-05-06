@@ -74,7 +74,7 @@ header {
 }
 
 .girl {
-    height: 35vh;
+    height: 30vh;
     bottom: 0;
     right: 5vw;
     position: absolute;
@@ -461,7 +461,7 @@ header {
  position: absolute;
  color: #4E7582;
  position: absolute;
- top: 47vw;
+ top: 44vw;
  right: 17vw;
  font-size: 10vw;
 }
@@ -469,7 +469,7 @@ header {
 .finish-text{
     color: #4E7582;
     position: absolute;
-    top: 62vw;
+    top: 59vw;
     right: 16vw;
     font-size: 7vw;
     }
@@ -477,7 +477,7 @@ header {
     .finish-text2{
         color: #3d5760;
         position: absolute;
-        top: 84vw;
+        top: 79vw;
         right: 16vw;
         font-size: 5vw;
         }
@@ -533,3 +533,9 @@ header {
     color: #026a9b;
 }
 
+.finish-img{
+    width: 81vw;
+    position: absolute;
+    top: 102vw;
+    right: 10vw;
+}
