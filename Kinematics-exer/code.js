@@ -227,9 +227,9 @@ function ZoomIn(event) {
         $(".bomb").hide();
         $("#clue9").hide();
         $("#clue10").hide();
-        $(".exploaded").css({width: "120%"});
-        $(".exploaded").css({right: "15%"});
-        $(".clues").css({bottom: "0"});
+        $(".exploaded").css({display: "inline", width: "100%", right: "unset", height: "100%", bottom: 'unset'});
+        $(".clues").css({display: "block", bottom: "1vw", width: "50vw", height: "17vw",left: "25vw", right: "unset"});
+        $(".glow").css({display: "block", bottom: "1vw", width: "50vw", height: "17vw",left: "25vw", right: "unset"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).show();
         }
