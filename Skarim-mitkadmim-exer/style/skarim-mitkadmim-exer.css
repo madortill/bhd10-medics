@@ -603,12 +603,13 @@ margin: 19vw 14vw 4vw 14vw;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
+    pointer-events: none;
   }
   
   .info.transition {
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
-  
+    pointer-events: all;
   }
   
   .up-strip-info
