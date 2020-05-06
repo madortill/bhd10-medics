@@ -155,13 +155,13 @@ function setMidSummery() {
 }
 
 function midSummery() {
-    document.querySelectorAll("body > div")[0].classList.add("inactive");
-    document.querySelectorAll("body > div")[1].classList.remove("inactive");
+    document.querySelectorAll("body > .screen")[0].classList.add("inactive");
+    document.querySelectorAll("body > .screen")[1].classList.remove("inactive");
 }
 
 function goToTofes(e) {
-    document.querySelectorAll("body > div")[1].classList.add("inactive");
-    document.querySelectorAll("body > div")[2].classList.remove("inactive");
+    document.querySelectorAll("body > .screen")[1].classList.add("inactive");
+    document.querySelectorAll("body > .screen")[2].classList.remove("inactive");
 }
 
 
