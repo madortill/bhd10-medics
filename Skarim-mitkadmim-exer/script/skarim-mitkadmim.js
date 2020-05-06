@@ -2,12 +2,23 @@ var story = '*בתאריך 12/5/20* *בשעה 15:00* הגעתי, *חופי* שת
 var draggArr = [];
 var storyHTML = "";
 window.onload = () => {
+    screenHeight();
+    window.onresize = screenHeight;
     initDrag();
     setFirstScreen();
     setMidSummery();
     set101();
 }
 var countMark = 0;
+
+function screenHeight(){
+    let emptySpace = window.innerHeight - document.querySelector("header").offsetHeight;
+    let screens = document.querySelectorAll(".screen");
+    for (let i = 0; i < screens.length; i++) {
+        const screen = screens[i];
+        screen.style.height =  emptySpace + "px";
+    }
+}
 
 // set marking screen
 // set wordBank 

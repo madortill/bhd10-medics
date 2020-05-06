@@ -26,7 +26,7 @@ header {
 
 /* bureger image */
 header img {
-  height: 3vh;
+  width: 5vw;
 }
 
 /* space => align header text right*/
@@ -36,7 +36,7 @@ header .space {
 
 /* header text */
 #topic {
-  font-size: 3vh;
+  font-size: 6.3vw;
   margin-right: 7vw;
   font-weight: normal;
 }
@@ -669,6 +669,7 @@ iframe {
 
 
 /* RANDOM STAFF */
+
 .on-top {
   position: relative;
   z-index: 1;
