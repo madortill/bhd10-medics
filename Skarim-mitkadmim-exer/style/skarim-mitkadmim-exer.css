@@ -36,7 +36,7 @@ header {
     position: relative;
     /* width: 100vw; */
     background-color: white;
-    height: 40vh;
+    height: 50%;
     border-radius: 0 0 5vw 5vw;
     padding: 5vh 5vw;
     overflow-y: auto;
@@ -74,15 +74,19 @@ header {
 }
 
 .girl {
-    height: 80%;
+    height: 90%;
     bottom: 0;
     right: 5%;
     position: absolute;
 }
 
+.finish .girl{
+    height: 30%;
+}
+
 .instructions {
     position: absolute;
-    left: 12%;
+    left: 7%;
     top: 17%;
     transform: translateY(12%);
 }
@@ -113,7 +117,7 @@ header {
     position: absolute;
     width: 15vw;
     left: 15vw;
-    bottom: 23vh;
+    bottom: 50%;
 }
 
 .mid-summery .speech {
@@ -123,7 +127,7 @@ header {
 
 .mid-summery .word-bank {
     overflow: auto;
-    max-height: 20vh;
+    max-height: 54%;
     position: absolute;
     bottom: 1vh;
 }
@@ -144,9 +148,8 @@ header {
 }
 
 .mid-summery .speech img {
-    width: 40vw;
-    margin-top: -8vh;
-    margin-bottom: 2vh;
+    height: 40%;
+    margin-top: -18%;
     /* transform: translateY(-40%); */
 }
 
@@ -543,5 +546,5 @@ header {
 
 .triangle + div{
     position: relative;
-    height: 38vh;
+    height: 34%;
 }
