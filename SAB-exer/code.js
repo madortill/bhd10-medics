@@ -180,14 +180,14 @@ function pressStage(event) {
             $(".div2").css({display: "flex"});
             $(".instructions-text").html("איך נתחיל את שלב הB?");
             $(".instructions-text").css({marginRight:"6%", width: "70%", marginTop: "-=5%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', height: "75%", paddingLeft: "5%", top: "25%", paddingTop: "-=5%"});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")', width: '60%', height: "75%", paddingLeft: "5%", top: "25%", paddingBottom: "29%", paddingTop: "5%", marginTop: "-10%"});
             $(".radio").css({margin: "0"});
             nPicked = 0;
             for(var i=3; i<=6; i++) {
                 $("#radio" + i).on("touchend", pickAnswer);
             }
             $(".check2").show();
-            $(".check2").css({right: "40%", bottom: "20%"});
+            $(".check2").css({right: "86%", bottom:" 15%"});
             $(".check2").on("touchend", checkRadio2);
         }
     } else {
@@ -299,16 +299,19 @@ function checkDrag(event) {
         for(var i = 1; i<=4; i++) {
             $("#div" + i).css({color: "rgb(28, 163, 109)"});
         }
+        $(".check2").hide();
         $(".next").show();
-        $(".next").css({marginRight: "-40%", marginTop: "30%"})
+        $(".next").css({margin: "0", position: "absolute", bottom: "10%", right: "23%"});
         $(".next").on("touchend", function(){
+            $(".divs").hide();
+            $(".check2").show();
             $(".instructions").css({height: '10%',marginTop: '-7%',paddingTop: '5%',paddingBottom: '8%',width: '50%',backgroundImage: 'url("assets/images/note7.svg")'});
             $(".instructions").append('<div class="options"><div class="radios"><img class="radio" id="radio1" src="assets/images/option.svg" /><img class="radio" id="radio2" src="assets/images/option.svg" /></div><div class="answer"><p>Jaw Thrust - דחיקת לסת</p><p>Head Tilt - הטיית ראש</p></div></div>');
             $(".instructions-text").html("פצוע נפגע כתוצאה מפיצוץ, באיזו שיטה נשתמש על מנת לפתוח נתיב אוויר?");
-            $(".instructions-text").css({width: "70%", marginRight: "4.5%"});
+            $(".instructions-text").css({marginRight: "10.5%", marginLeft: "35%", width: "73%", marginTop: "3%"});
             $(".conscious").hide();
             $(".div").hide();
-            $(".check2").css({position: "absolute", right: "25%", bottom: "15%"});
+            $(".check2").css({position: "absolute", right: "86%", bottom: "11%"});
             for(var i=1; i<=4; i++) {
                 $("#clue" + i).hide();
             }
@@ -348,7 +351,7 @@ function checkRadio(event) {
         nNumPicks = 0;
         bWasWrong = false;
         bWasPicked = false;
-        $(".instructions").css({marginTop: "-9%", height: "5%", paddingTop: "4%", paddingBottom: "5%",  width:" 50%",top: "21.7817%"});
+        $(".instructions").css({marginTop: "-9%", height: "5%", paddingTop: "6%", paddingBottom: "16%", paddingRight: "7%", width: "37%",top: "21.7817%"});
         $(".instructions-text").html('נכון מאוד! נשתמש בדחיקת לסת כשיש חשש לפגיעה בעמש"צ או כשלא ידוע לנו סיפור המקרה.');
         $(".instructions-text").css({marginRight: "3%"});
         $(".next").show();
@@ -382,6 +385,7 @@ function checkRadio2(event) {
         $(".wrong").hide();
         $(".options2").css({display: 'none'});
         $(".check2").hide();
+        $(".instructions").css({width: "33%", paddingBottom: "15%", paddingRight: "6%"});
         $(".instructions-text").html("נכון מאוד! קודם כל יש לסרוק את בית החזה בהסתכלות ובמישוש. אין לאטום חורי ירי בשום אופן!");
         $(".instructions-text").css({marginRight: '4%', marginTop: "7%"});
         $(".next").show();
@@ -392,7 +396,7 @@ function checkRadio2(event) {
             $(".scan").hide();
             $(".instructions-text").html("מדדתם למטופל 12 נשימות ב-30 שניות. האם התוצאה מעידה על נשימה תקינה?");
             $(".instructions-text").css({marginRight: '3%', marginTop: "8%"});
-            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', height: '60%', width: '34%',  marginTop: '-10%', marginRight: '0.5%', paddinTop: '6%', paddingRight: '3%', paddingLeft: '4%'});
+            $(".instructions").css({backgroundImage: 'url("assets/images/note1.svg")', height: '60%', width: '34%',  marginTop: '-6%', marginRight: '0.5%', paddinTop: '6%', paddingRight: '3%', paddingLeft: '4%'});
             $(".options").hide();
             $(".yes-or-no").show();
             $("#yes").on("touchend", checkYesOrNo);
@@ -428,9 +432,9 @@ function checkYesOrNo(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "5%"})
     $(".instructions").append('<div class="absolute breath"<p>בדיקת הנשימה תתבצע למשך 30 שניות ונכפיל את התוצאה פי 2.</p><p>נשימה תקינה היא 8-20 נשימות בדקה.</p><p>2X12=24</p><p>כלומר לא בטווח התקין.</p></div>');
-    $(".instructions").css({height: "90%", width:"45%",   marginTop: '5%'});
+    $(".instructions").css({height: "42vh", width:"45%",   marginTop: '-9%'});
     $(".next").show();
-    $(".next").css({position: "absolute", bottom: '5%', right: '40%'});
+    $(".next").css({position: "absolute", bottom: '9%', right: '42%'});
     $(".yes-or-no").hide();
     $("#yes").hide();
     $("#no").hide();
