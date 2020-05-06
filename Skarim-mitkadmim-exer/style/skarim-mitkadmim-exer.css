@@ -74,16 +74,17 @@ header {
 }
 
 .girl {
-    height: 30vh;
+    height: 80%;
     bottom: 0;
-    right: 5vw;
+    right: 5%;
     position: absolute;
 }
 
 .instructions {
     position: absolute;
-    left: 12vw;
-    bottom: 23vh;
+    left: 12%;
+    top: 17%;
+    transform: translateY(12%);
 }
 
 .instructions .counter{
@@ -538,4 +539,9 @@ header {
     position: absolute;
     top: 102vw;
     right: 10vw;
+}
+
+.triangle + div{
+    position: relative;
+    height: 38vh;
 }
