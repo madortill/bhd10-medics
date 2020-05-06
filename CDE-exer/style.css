@@ -272,7 +272,7 @@ body {
     display: inline-block;
     margin-top: 4%;
     margin-right: 1%;
-    width: width: min(80vmin, 60vmax);
+    width: min(80vmin, 60vmax);
     z-index: 98;
     pointer-events: none;
 }
