@@ -63,7 +63,7 @@ function checkStep(event) {
                 $(".steps").show();
                 $(".instructions").css({marginTop: '-15%'});
                 $(".instructions").css({paddingTop: '5%'});
-                $(".instructions").css({paddingBottom: '10%'});
+                $(".instructions").css({paddingBottom: '4%'});
                 $(".instructions").css({width: '40%', marginTop: "+=10%", height: "26vh"});
                 $(".instructions").css({backgroundImage: 'url("assets/images/note7.svg")'});
                 $(".instructions-text").html("");
@@ -213,7 +213,7 @@ function checkAirway(event) {
         nStepCounter++;
         if(nStepCounter > 6) {
             $(".instructions").css({backgroundImage: 'url("assets/images/note6.svg")'});
-            $(".instructions").css({width: "60%"});
+            $(".instructions").css({width: "60%", height: "60vh"});
             $(".instructions").css({marginTop: "-5%"});
             for(var i=1; i<=7; i++) {
                 $("#airway" + i).hide();

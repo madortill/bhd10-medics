@@ -193,10 +193,11 @@ html {
     display: inline-block;
     margin: 1%;
     font-weight: 500;
+    font-size: min(4vmin, 2vmax);
 }
 
 .steps {
-    width: 46%;
+    width: 45%;
     height: 50%;
     position: absolute;
     top: calc(15vh + 8vw);
@@ -272,7 +273,7 @@ html {
     border-bottom-color: rgb(137, 184, 191);
     color: rgb(137, 184, 191);
     height: 7%;
-    /* font-size: 120%; */
+    width: 35vw;
 }
 
 .stage2 {
@@ -372,10 +373,10 @@ html {
     flex-direction: column;
     justify-content: space-between;
     z-index: 99;
-    bottom: 25%;
-    right: 5%;
+    top: 6%;
+    right: 2%;
     padding-top: 2%;
-    height: calc(30vh + 4vw);
+    height: calc(35vh + 4vw);
     width: 50%;
 }
 
