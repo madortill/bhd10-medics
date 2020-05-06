@@ -59,6 +59,7 @@ header {
 .speech>.to-mark,
 .speech>.word {
     margin: 0.5vh 0;
+    user-select: none;
 }
 
 .speech .to-mark.marked {
