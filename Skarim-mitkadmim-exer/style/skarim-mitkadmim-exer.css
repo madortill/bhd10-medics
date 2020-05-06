@@ -191,8 +191,10 @@ header {
 .down-arrow{
     width: 15%;
     position: absolute;
-    top: 69%;
-    left: 46.2%;
+    /* top: 69%; */
+    left: 50%;
+    transform: translate(-50%,-100%);
+    z-index: 1;
 }
 
 .dragover{
@@ -456,16 +458,20 @@ header {
     width: 94vw;
     position: absolute;
     right: 3vw;
-    top: 32vw;
+    top: 5%;
+    height: 61%;
 }
 
+.finish{
+    position: relative;
+}
 
 .finish-headline{
  color: #4E7582;
  position: absolute;
  color: #4E7582;
  position: absolute;
- top: 44vw;
+ top: 14%;
  right: 17vw;
  font-size: 10vw;
 }
@@ -473,18 +479,18 @@ header {
 .finish-text{
     color: #4E7582;
     position: absolute;
-    top: 59vw;
+    top: 25%;
     right: 16vw;
     font-size: 7vw;
-    }
+}
 
-    .finish-text2{
-        color: #3d5760;
-        position: absolute;
-        top: 79vw;
-        right: 16vw;
-        font-size: 5vw;
-        }
+    finish-text2{
+       color: #3d5760;
+       position: absolute;
+       top: 39%;
+       right: 16vw;
+       font-size: 5vw;
+    }
 
 
 .marking .help-tofes{
@@ -506,13 +512,14 @@ header {
 }
 
 .tofes .help-story{
-    top:0;
+    /* top:0; */
     right: 0;
     width: 100%;
     height: 100%;  
     position: absolute;
     z-index: 10;  
     background-image: url(../assests/images/generic/gradiant-background.svg);
+    background-size: cover;
 }
 
 .tofes .help-story .story{
@@ -540,7 +547,7 @@ header {
 .finish-img{
     width: 81vw;
     position: absolute;
-    top: 102vw;
+    top: 56%;
     right: 10vw;
 }
 
