@@ -1,0 +1,541 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: url(../assests/images/generic/gradiant-background.svg);
+    background-size: cover;
+    font-size: 4.5vw;
+    color: #0f2849;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inactive {
+    display: none;
+}
+
+.layer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+header {
+    -webkit-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
+    box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
+    z-index: 1;
+}
+
+.speech {
+    position: relative;
+    /* width: 100vw; */
+    background-color: white;
+    height: 40vh;
+    border-radius: 0 0 5vw 5vw;
+    padding: 5vh 5vw;
+    overflow-y: auto;
+}
+
+.speech+.triangle, .tofes .story+.triangle {
+    height: 4vh;
+    transform: translate(-15vw, 0%);
+}
+
+.speech .to-mark,
+.speech .word {
+    display: inline-block;
+}
+
+/* .speech .to-mark{
+    background-color: turquoise;
+} */
+
+.speech>.to-mark,
+.speech>.word {
+    margin: 0.5vh 0;
+}
+
+.speech .to-mark.marked {
+    /* .speech .to-mark { */
+    background-color: #7bcff1;
+    color: #026a9b;
+}
+
+.speech .word.marked {
+    /* .speech .word { */
+    background-color: #f18181;
+    color: #932644;
+}
+
+.girl {
+    height: 30vh;
+    bottom: 0;
+    right: 5vw;
+    position: absolute;
+}
+
+.instructions {
+    position: absolute;
+    left: 12vw;
+    bottom: 23vh;
+}
+
+.instructions .counter{
+    margin-top: 1vh;
+    color:#037c99;
+}
+
+.marker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    transform: translate(80%, -100%);
+}
+
+/* .marking  */
+.help {
+    width: 12vw;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+    z-index: 1;
+}
+
+.mid-summery .next {
+    position: absolute;
+    width: 15vw;
+    left: 15vw;
+    bottom: 23vh;
+}
+
+.mid-summery .speech {
+    overflow: hidden;
+    position: relative;
+}
+
+.mid-summery .word-bank {
+    overflow: auto;
+    max-height: 20vh;
+    position: absolute;
+    bottom: 1vh;
+}
+
+.mid-summery .word-bank>div{
+    display: inline-block;
+    margin: 1vh 1vw;
+}
+
+.tofes .word-bank>div{
+    display: inline-flex;
+}
+
+.word-bank>div>div {
+    /* display: inline-block; */
+    width: max-content;
+    margin: 1vh 1vw;
+}
+
+.mid-summery .speech img {
+    width: 40vw;
+    margin-top: -8vh;
+    margin-bottom: 2vh;
+    /* transform: translateY(-40%); */
+}
+
+.mid-summery .speech .congrats {
+    font-size: 10vw;
+    color: #1ca36d;
+    /* margin-top: 5vh; */
+}
+
+.tofes .tofes101 {
+    max-height: 68vh;
+    overflow: auto;
+    position: relative;
+}
+
+.tofes .word-bank {
+    position: absolute;
+    bottom: 0;
+    padding: 1vh 5vw;
+    height: 22vh;
+    /* overflow-x: auto; */
+    width:90vw;
+    overflow-x: auto;
+    background-image: url(../assests/images/generic/gradiant-background.svg);
+    background-size: cover;
+    -webkit-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.78);
+    box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.78);
+}
+
+.tofes .down {
+    width: 10vw;
+    position: absolute;
+    right: 50vw;
+    top: -1vh;
+    transform: translate(50%, -100%);
+}
+
+.down-arrow{
+    width: 15%;
+    position: absolute;
+    top: 69%;
+    left: 46.2%;
+}
+
+.dragover{
+    top:90;
+    left: 90;
+    z-index: 100;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tofes-answers{
+    /* top: 14.6%; */
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tofes-text{
+    /* position: absolute; */
+    font-size: 3vw;
+    color: #214296;
+    position: relative;
+    height: 4vw;
+    width: fit-content;
+    visibility: hidden;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.tofes-X{
+    position: absolute;
+    visibility: hidden;
+    padding:3%;
+}
+
+.tofes-X img{
+    width: 3.5vw;
+    position: relative;
+}
+
+.showAns{
+    visibility: visible;
+}
+
+.tofes-circle{
+    position: absolute;
+    visibility: hidden;
+    padding:3%;
+}
+
+.tofes-circle img{
+    width: 4vw;
+    position: relative;
+}
+
+.index0{
+    top: -28.3vw;
+    right: 71.5vw;
+    font-size: 2.5vw;
+}
+
+.index1{
+    top: -18.5vw;
+    right: 55.7vw;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.index2{
+    top: 102.5vw;
+    right: 5.7vw;
+    padding-bottom: 0%;
+}
+
+.index3{
+    top: -38.5vw;
+    right: 82.7vw;
+}
+
+.index4{
+    top: 11.5vw;
+    right: 0.7vw;
+}
+
+.index5{
+    top: 2vw;
+    right: 20vw;
+}
+.index6{
+    top: -8vw;
+    right: 40.7vw;
+}
+
+.index7{
+    top: 18.5vw;
+    right: 6vw;
+    padding: 3%;
+}
+
+.index7 .tofes-circle{
+    top: 9vw;
+    right: -9vw;
+}
+
+.index8{
+    top: 22.6vw;
+    right: 35.9vw;
+}
+
+.index9{
+    top: 49vw;
+    right: 37.8vw;
+}
+
+.index10{
+    top: 66.5vw;
+    right: 37.8vw;
+}
+
+.index11{
+    top: 34vw;
+    right: 4vw;
+    padding: 4%;
+}
+
+.index12{
+    top: 35vw;
+    right: 30.2vw;
+}
+
+.index12 :nth-child(2){
+    position: relative;
+    top: 2vw;
+    right: -8.4vw;
+    transform: scaleX(0.75);
+}
+
+.index13{
+    top: 5vw;
+    right: 21vw;
+    padding: 3%;
+}
+
+.index14{
+    top: 14vw;
+    right: 50.8vw;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+
+.index15{
+    top: 8vw;
+    right: 50.8vw;
+    padding: 3%;
+    padding-top: 0.5%;
+}
+
+.index16{
+    top: 20vw;
+    right: 49.8vw;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+
+.index17{
+    top: 42vw;
+    right: 49.8vw;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+}
+
+.index18{
+    top: 89vw;
+    right: 37.8vw;
+}
+
+.index19{
+    top: 146vw;
+    right: 37vw;
+}
+
+.index20{
+    top: 146vw;
+    right: 57.7vw;
+}
+
+.index21{
+    top: 126vw;
+    right: 7.7vw;
+    padding-top: 0%;
+}
+
+.index23{
+    top: 196vw;
+    right: 48.4vw;
+}
+
+.index24{
+    top: 196vw;
+    right: 0vw;
+}
+
+.index25{
+    top: 49vw;
+    right: 75.7vw;
+}
+
+.index27{
+    top: 196.5vw;
+    right: 67.7vw;
+}
+
+.index28{
+    top: 70vw;
+    right: 9vw;
+}
+
+.index28 .inside-text{
+    top: 132.3vw;
+    right: -5vw;
+    position: relative;
+}
+
+.index29{
+    top: 125vw;
+    right: 9.7vw;
+    padding-bottom: 0%;
+    padding-right: 3%;
+}
+
+.index30{
+    top: 83vw;
+    right: 1.7vw;
+}
+
+.index31{
+    top: 104vw;
+    right: 5.7vw;
+    padding-top: 0%;
+}
+
+.index26{
+    top: 59vw;
+    right: 72vw;
+}
+
+.index22{
+    top: 91vw;
+    right: 72vw;
+}
+
+.index32{
+    top: 71vw;
+    right: 9vw;
+}
+
+.clipboard{
+    width: 94vw;
+    position: absolute;
+    right: 3vw;
+    top: 32vw;
+}
+
+
+.finish-headline{
+ color: #4E7582;
+ position: absolute;
+ color: #4E7582;
+ position: absolute;
+ top: 44vw;
+ right: 17vw;
+ font-size: 10vw;
+}
+
+.finish-text{
+    color: #4E7582;
+    position: absolute;
+    top: 59vw;
+    right: 16vw;
+    font-size: 7vw;
+    }
+
+    .finish-text2{
+        color: #3d5760;
+        position: absolute;
+        top: 79vw;
+        right: 16vw;
+        font-size: 5vw;
+        }
+
+
+.marking .help-tofes{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    top:0;
+    right: 0;
+}
+
+/* .marking .help-tofes  */
+.exit{
+    position: fixed;
+    left: 1vh;
+    bottom: 1vh;
+    width: 12vw;
+}
+
+.tofes .help-story{
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+    z-index: 10;  
+    background-image: url(../assests/images/generic/gradiant-background.svg);
+}
+
+.tofes .help-story .story{
+    padding: 2vh 5vw;
+    height: 85vh;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 0 0 5vw 5vw;
+
+
+}
+
+.tofes .help-story .story>.word{
+    display: inline-block;
+    margin: 0.5vh 0;
+
+}
+
+.tofes .help-story .story>.to-mark {
+    display: inline-block;
+    background-color: #7bcff1;
+    color: #026a9b;
+}
+
+.finish-img{
+    width: 81vw;
+    position: absolute;
+    top: 102vw;
+    right: 10vw;
+}
