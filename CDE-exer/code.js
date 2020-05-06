@@ -82,7 +82,7 @@ function pressStage(event) {
         } else if (nCurrStage === 2) {
             $(".circle").attr("src", "assets/images/d.svg");
             $(".instructions-text").html("כל הכבוד! עכשיו נבדוק חסכים נוירולוגיים למטופל. אילו איברים נבקש ממנו להזיז?");
-            $(".instructions-text").css({width: "75%", textAlign: "right", marginRight: "8%", marginBottom: "0", marginTop: "5%"});
+            $(".instructions-text").css({width: "75%", textAlign: "right", marginBottom: "0", marginTop: "10%", marginRight: "11%"});
             $(".instructions").css({backgroundImage: 'url("assets/images/note3.svg")', width: "60%", height: "80%", marginRight: "0.5%", paddingTop: "2%", bottom: "6%"});
             $(".options").css({display: "flex"});
             for(var i = 1; i<=3; i++) {
