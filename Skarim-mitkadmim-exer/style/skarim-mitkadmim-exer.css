@@ -25,7 +25,7 @@ body {
     pointer-events: none;
 }
 
-header:not(.up-strip-info) {
+header:not(.info header) {
     -webkit-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
     box-shadow: 0px 10px 50px 4px rgba(0, 0, 0, 0.53);
@@ -598,7 +598,7 @@ margin: 19vw 14vw 4vw 14vw;
     -webkit-clip-path: inset(0 0 100% 0);
     clip-path: inset(0 0 100% 0);
     background-image: url("../assests/images/skarim-mitksdmim-exer/bgvertical.svg");
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -647,7 +647,7 @@ margin: 19vw 14vw 4vw 14vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 85vh;
+    height: 85%;
   }
   .info .about{
     font-size: 8vw;

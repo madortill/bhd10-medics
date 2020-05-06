@@ -11,7 +11,7 @@ body {
 
 /* HEADER */
 
-header:not(.up-strip-info) {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +22,11 @@ header:not(.up-strip-info) {
   background-repeat: no-repeat;
   background-size: cover;
   height: fit-content;
+}
+
+.info header{
+  background-image: unset;
+  background-color: unset;
 }
 
 /* bureger image */
