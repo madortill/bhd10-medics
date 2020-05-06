@@ -43,7 +43,7 @@ header {
 }
 
 .speech+.triangle, .tofes .story+.triangle {
-    height: 4vh;
+    height: 5%;
     transform: translate(-15vw, 0%);
 }
 
@@ -160,8 +160,9 @@ header {
 }
 
 .tofes .tofes101 {
-    max-height: 68vh;
-    overflow: auto;
+    max-height: 69%;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -169,7 +170,7 @@ header {
     position: absolute;
     bottom: 0;
     padding: 1vh 5vw;
-    height: 22vh;
+    height: 26%;
     /* overflow-x: auto; */
     width:90vw;
     overflow-x: auto;
@@ -497,7 +498,7 @@ header {
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     top:0;
     right: 0;
@@ -512,7 +513,7 @@ header {
 }
 
 .tofes .help-story{
-    /* top:0; */
+    top:0;
     right: 0;
     width: 100%;
     height: 100%;  
@@ -524,12 +525,10 @@ header {
 
 .tofes .help-story .story{
     padding: 2vh 5vw;
-    height: 85vh;
+    height: 80%;
     background-color: white;
     overflow-y: auto;
     border-radius: 0 0 5vw 5vw;
-
-
 }
 
 .tofes .help-story .story>.word{
