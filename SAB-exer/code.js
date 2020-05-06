@@ -432,7 +432,7 @@ function checkYesOrNo(event) {
     }
     $(".instructions-text").css({marginTop: "3%", marginRight: "5%"})
     $(".instructions").append('<div class="absolute breath"<p>בדיקת הנשימה תתבצע למשך 30 שניות ונכפיל את התוצאה פי 2.</p><p>נשימה תקינה היא 8-20 נשימות בדקה.</p><p>2X12=24</p><p>כלומר לא בטווח התקין.</p></div>');
-    $(".instructions").css({height: "42vh", width:"45%",   marginTop: '5%'});
+    $(".instructions").css({height: "42vh", width:"45%",   marginTop: '-9%'});
     $(".next").show();
     $(".next").css({position: "absolute", bottom: '9%', right: '42%'});
     $(".yes-or-no").hide();
