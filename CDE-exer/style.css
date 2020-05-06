@@ -253,7 +253,7 @@ body {
 .options {
     display: none;
     right: 10%;
-    bottom: 4%;
+    bottom: 4%s;
     width: min-content;
     z-index: 99;
     flex-direction: column;
