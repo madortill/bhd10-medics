@@ -507,7 +507,7 @@ p {
 
 .clue14glow {
     margin-right: 54%;
-    /* opacity: 0; */
+    opacity: 0;
     width: 8%;
     z-index: 97;
     margin-top: 17%;
