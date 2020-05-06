@@ -143,6 +143,7 @@ var bQuestion7 = false;
 var arrAnswered =[];
 var nNumPicks = 0;
 var bPressedAbout = false;
+var canShowQuestion = true;
 var elem = document.querySelector("html");
 
 
@@ -227,9 +228,9 @@ function ZoomIn(event) {
         $(".bomb").hide();
         $("#clue9").hide();
         $("#clue10").hide();
-        $(".exploaded").css({width: "120%"});
-        $(".exploaded").css({right: "15%"});
-        $(".clues").css({bottom: "0"});
+        $(".exploaded").css({display: "inline", width: "100%", right: "unset", height: "100%", bottom: 'unset'});
+        $(".clues").css({display: "block", bottom: "1vw", width: "50vw", height: "17vw",left: "25vw", right: "unset"});
+        $(".glow").css({display: "block", bottom: "1vw", width: "50vw", height: "17vw",left: "25vw", right: "unset"});
         for(var i=11; i<=14; i++) {
             $("#clue"+i).show();
         }
@@ -348,48 +349,51 @@ function continueRoom() {
 }
 
 function showQuestion(event) {
-    $(".feedback").html("");
-    for(var i = 1; i<=14; i++) {
-        $("#clue" + i).attr("src", "assets/images/clue" + i + ".svg");
+    if(canShowQuestion) {
+        canShowQuestion = false;
+        $(".feedback").html("");
+        for(var i = 1; i<=14; i++) {
+            $("#clue" + i).attr("src", "assets/images/clue" + i + ".svg");
+        }
+        $(".bomb").attr("src", "assets/images/bomb.svg");
+        $(".clue6glow").hide();
+        for(var i=10; i<=14; i++) {
+            $(".clue" + i +"glow").css({opacity: "0"});
+        }
+        if(screen.questions.indexOf(3) !== -1) {
+            $("#clue2").attr("src", "assets/images/clue22.svg");
+        }
+        if(nQuestionsCounter !== 0) {
+            $("#radio" + nPicked).attr("src", "assets/images/option.svg");
+        }
+        if(this.id.length < 7) {
+            /**
+             * @type {string}
+             */
+            let s = this.id;
+            nCurrQuestion = Number(s.substr(4));
+        } else {
+            nCurrQuestion = Number(this.id.substr(4,2));
+        }
+        for(var i=1; i<=14; i++) {
+            $("#clue" + i).off("touchend", showQuestion);
+        }
+        $("#clue121").off("touchend", showQuestion);
+        $("#clue141").off("touchend", showQuestion);
+        $("#clue142").off("touchend", showQuestion);
+        $(".questions").show();
+        $(".title").html(questions[nCurrQuestion - 1].title);
+        for(var i=1; i<=4; i++) {
+            $(".answer" + i).html(questions[nCurrQuestion - 1]["radio"+i]);
+        }
+        for(var i=1; i<=4; i++) {
+            $("#radio" + i).on("touchend", pickAnswer);
+        }
+        if (nCurrQuestion === 7) {
+            bQuestion7 = true;
+        }
+        $(".check").on("touchend", Check);
     }
-    $(".bomb").attr("src", "assets/images/bomb.svg");
-    $(".clue6glow").hide();
-    for(var i=10; i<=14; i++) {
-        $(".clue" + i +"glow").css({opacity: "0"});
-    }
-    if(screen.questions.indexOf(3) !== -1) {
-        $("#clue2").attr("src", "assets/images/clue22.svg");
-    }
-    if(nQuestionsCounter !== 0) {
-        $("#radio" + nPicked).attr("src", "assets/images/option.svg");
-    }
-    if(this.id.length < 7) {
-        /**
-         * @type {string}
-         */
-        let s = this.id;
-        nCurrQuestion = Number(s.substr(4));
-    } else {
-        nCurrQuestion = Number(this.id.substr(4,2));
-    }
-    for(var i=1; i<=14; i++) {
-        $("#clue" + i).off("touchend", showQuestion);
-    }
-    $("#clue121").off("touchend", showQuestion);
-    $("#clue141").off("touchend", showQuestion);
-    $("#clue142").off("touchend", showQuestion);
-    $(".questions").show();
-    $(".title").html(questions[nCurrQuestion - 1].title);
-    for(var i=1; i<=4; i++) {
-        $(".answer" + i).html(questions[nCurrQuestion - 1]["radio"+i]);
-    }
-    for(var i=1; i<=4; i++) {
-        $("#radio" + i).on("touchend", pickAnswer);
-    }
-    if (nCurrQuestion === 7) {
-        bQuestion7 = true;
-    }
-    $(".check").on("touchend", Check);
 }
 
 function Hint(event) {
@@ -447,8 +451,9 @@ function Check(event) {
         }
         $(".feedback").attr("src", "assets/images/vee.svg");
         $(".feedback").show();
-        $(".questions").delay(1500).fadeOut(1);
-        $(".feedback").delay(1500).fadeOut(1);
+        $(".questions").delay(1000).fadeOut(1);
+        $(".feedback").delay(1000).fadeOut(1);
+        setTimeout(changeBoolean, 1000);
         nQuestionsCounter++;
         arrAnswered.push(nCurrQuestion);
         screen.answered.push(nCurrQuestion);
@@ -503,6 +508,10 @@ function Check(event) {
             bWasWrong = true;
         }
     }
+}
+
+function changeBoolean() {
+    canShowQuestion = true;
 }
 
 function finishExer() {
