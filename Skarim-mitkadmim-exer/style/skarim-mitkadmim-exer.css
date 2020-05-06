@@ -259,7 +259,7 @@ header {
 }
 
 .index2{
-    top: 103.5vw;
+    top: 102.5vw;
     right: 5.7vw;
     padding-bottom: 0%;
 }
@@ -285,7 +285,8 @@ header {
 
 .index7{
     top: 18.5vw;
-    right: 10vw;
+    right: 6vw;
+    padding: 3%;
 }
 
 .index7 .tofes-circle{
@@ -310,7 +311,8 @@ header {
 
 .index11{
     top: 34vw;
-    right: 6vw;
+    right: 4vw;
+    padding: 4%;
 }
 
 .index12{
@@ -326,7 +328,7 @@ header {
 }
 
 .index13{
-    top: 4vw;
+    top: 5vw;
     right: 21vw;
     padding: 3%;
 }
@@ -377,7 +379,7 @@ header {
 }
 
 .index21{
-    top: 128vw;
+    top: 126vw;
     right: 7.7vw;
     padding-top: 0%;
 }
@@ -403,7 +405,7 @@ header {
 }
 
 .index28{
-    top: 71vw;
+    top: 70vw;
     right: 9vw;
 }
 
@@ -414,9 +416,10 @@ header {
 }
 
 .index29{
-    top: 126vw;
-    right: 12.7vw;
+    top: 125vw;
+    right: 9.7vw;
     padding-bottom: 0%;
+    padding-right: 3%;
 }
 
 .index30{
@@ -425,7 +428,7 @@ header {
 }
 
 .index31{
-    top: 105vw;
+    top: 104vw;
     right: 5.7vw;
     padding-top: 0%;
 }
