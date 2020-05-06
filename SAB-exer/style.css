@@ -69,7 +69,7 @@ html {
 
 .finished {
     right: 60%;
-    bottom: 18%;
+    bottom: 30%;
     width: 30%;
 }
 
@@ -247,8 +247,8 @@ html {
 .check2 {
     width: 6%;
     display: none;
-    bottom: 10%;
-    right: 45%;
+    bottom: 27%;
+    right: 27%;
     z-index: 99;
 }
 
@@ -419,7 +419,7 @@ html {
     align-items: center;
     width: 70%;
     height: 40%;
-    bottom: 40%;
+    top: calc(14vw - 24%);
     right: -50%;
     display: flex;
     flex-direction: column;
@@ -431,6 +431,7 @@ html {
     margin-right: 3%;
     margin-bottom: 0;
     font-weight: 500;
+    font-size: min(5vmin, 2.5vmax);
 }
 
 .answer2 {
@@ -459,7 +460,7 @@ html {
 }
 
 .breath {
-    bottom: 6%;
+    bottom: -3%;
     right: 9%;
     width: 70%;
     height: 80%;
