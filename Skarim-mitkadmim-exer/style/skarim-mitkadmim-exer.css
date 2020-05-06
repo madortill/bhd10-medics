@@ -456,10 +456,10 @@ header {
 }
 
 .clipboard{
-    width: 95vw;
+    width: 89vw;
     position: absolute;
     left: 50%;
-    top: 2vw;
+    top: 7vw;
     height: 123vw;
     transform: translateX(-50%);
 }
@@ -482,7 +482,7 @@ header {
     
 position: relative;
     
-margin: 17vw 11vw 3vw 11vw;
+margin: 19vw 14vw 4vw 14vw;
     
 /* padding: 0 10%; */
 }
@@ -535,7 +535,7 @@ margin: 17vw 11vw 3vw 11vw;
 
 .tofes .help-story .story{
     padding: 2vh 5vw;
-    height: 80%;
+    height: 85%;
     background-color: white;
     overflow-y: auto;
     border-radius: 0 0 5vw 5vw;
@@ -554,18 +554,15 @@ margin: 17vw 11vw 3vw 11vw;
 }
 
 .finish-img{
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    position: relative;
 }
 
 .finish-img > img{
     width: 68vw;
-    position: relative;
+    position: absolute;
     /* top: 43%; */
-    /* left: 50%; */
-    /* text-align: center; */
-    /* transform: translateX(-50%); */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .triangle + div{
