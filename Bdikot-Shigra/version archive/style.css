@@ -4,27 +4,47 @@
 }
 
 @font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
     font-family: "ktavyadclm";
     src: url("assets/fonts/ktavyadclm_bolditalic_0.ttf"), url("assets/fonts/KtavYadCLM-BoldItalic_0.otf");
+}
+html {
+    width: 100%;
+    height: 100%;
 }
 
 body {
     font-family: "assistant";
     direction: rtl;
     margin: 0;
-    /* background-image: url("assets/images/openendbg.svg"); */
+    background-image: url("assets/images/bg6.svg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     overflow: hidden;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 100%;
+    color: rgb(15,40,73);
+    width: 100%;
+    height: 100%;
 }
 
 .absolute {
     position: absolute;
-}
+} 
 
 .header {
-    width: 100vw;
+    width: 100%;
     color: white;
     height: 10vh;
     background-image: url("assets/images/bar.svg");
@@ -37,92 +57,127 @@ body {
 }
 
 .head {
-    right: 15vw;
+    right: 20%;
     font-weight: 470;
-    font-size: 5vw;
+    font-size: 120%;
     margin: 0;
 }
 
 .about {
-    width: 9vw;
-    height: 9vh;
-    left: 5vw;
-    top: 1vh;
+    height: 50%;
+    left: 5%;
+    top: 25%;
 }
 
 .navigate {
-    width: 6vw;
-    height: 6vh;
-    right: 5vw;
-    top: 2.5vh;
+    width: 6%;
+    right: 5%;
 }
 
-#exem {
-    top: 20vh;
-    width: 10vw;
-}
-
-.dragover {
-    top: 0;
-    left: 0;
+.about-div {
+    background-image: url("assets/images/about/bgvertical.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 95%;
+    padding-right: 5%;
+    top: 10%;
     z-index: 100;
+    color: white;
+    display: none;
+    direction: rtl;
 }
 
-#target {
-    top: 30vh;
+.logo {
+    height: 12%;
+    margin-top: 22%;
+    margin-right: 25%;
 }
 
-#burgerNav {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    z-index: 999;
+.invisible {
+    opacity: 0;
+}
+
+.opening {
+    background-image: url("assets/images/welcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 18%;
+    right: 4%;
+    width: 75%;
+    height: 59%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+    font-size: min(5vmin, 2.5vmax);
+    color: rgb(78,117,130);
+}
+
+.opening-text {
+    width: 90%;
+}
+
+.start {
+    margin: 0;
+    color: black;
+    bottom: 20%;
+    left: 0;
+}
+
+.start-text {
+    font-family: "ktavyadclm";
+    display: inline-block;
+    margin: 0;
+    font-size: 130%;
+}
+
+.square {
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -0.5%;
+    margin-left: 2%;
+}
+
+.line {
+    width: 65%;
+    margin: 0;
+    bottom: 15%;
+    right: 5%;
+}
+
+.goodluck {
+    font-size: 150%;
+}
+
+.exams {
     display: none;
 }
 
-#burgerNav>div {
-    width: 50vw;
-    height: inherit;
-    background-color: white;
-    color: #4d7683;
-    transform: translateX(100%);
-    transition: 0.3s transform linear;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    position: relative;
-    z-index: 999;
+.exam {
+    width: 30%;
+    margin-top: 17%;
 }
 
-#burgerNav .x-icon {
-    width: 6vw;
-    position: absolute;
-    right: 5vw;
-    top: 5vw;
+#palse {
+    margin-left: 3%;
 }
 
-#burgerNav a {
-    text-decoration: none;
-    color: inherit;
+#breathing {
+    margin-left: 20%;
 }
 
-#burgerNav.open {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.4);
+#fever {
+    margin-left: 50%;
 }
 
-#burgerNav.open>div {
-    transform: translateX(0);
+#pressure {
+    width: 40%;
+    margin-top: -10%;
 }
 
-.head-glow {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-left: 4vw;
-    align-items: center;
+#urine {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: 35%;
 }
