@@ -810,6 +810,9 @@ function pressureDropItem(event) {
                   } else {
                       $(this).hide();
                       $("#manjet").attr("src", "assets/images/manjetstetoscope.svg");
+                      setTimeout(function(){
+                        $("#manjet").attr("src", "assets/images/manjetstetoscopehighlight.svg");
+                      }, 1000);
                       $("#manjet").on("touchend", pressManjet);
                   }
                   nStepCounter++;
@@ -1025,7 +1028,7 @@ function backToMenu(event) {
   $(".back").hide();
   $("." + strCurrId + "-game").hide();
   $(".opening-game").show();
-  $("#" + strCurrId).css({opacity: "0.7"});
+  $("#" + strCurrId).css({opacity: "0.5"});
   $("body").css({backgroundImage: 'url("assets/images/bg6.svg")', direction: "ltr"});
   $(".header").show();
   $(".question-text").html("");
