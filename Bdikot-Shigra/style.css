@@ -621,10 +621,12 @@ body {
 .number {
     display: none;
     z-index: 99;
-    bottom: 12%;
-    right: 21%;
+    bottom: 23vw;
+    transform: translateY(-50%);
+    right: 21vw;
     font-weight: bold;
     margin: 0;
+    font-size: 4vw;
 }
 
 .manjet {
