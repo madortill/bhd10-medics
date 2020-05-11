@@ -643,9 +643,13 @@ function showQuestion() {
       document.querySelector(".fever-game .option"+i+".div").querySelector("img").setAttribute("src", "assets/images/option.svg");
       document.querySelector(".fever-game .option"+i+".div").addEventListener("touchend",feverPickAnswer);
   }
-     if(nQuestionCounter === 4) {
+  console.log(nQuestionCounter);
+     if(nQuestionCounter === 4 || nQuestionCounter === 2) {
         $(".question-title").css({marginBottom: "0"});
         $(".answer-text").css({marginTop: "1%"});
+     } else {
+        $(".question-title").css({marginBottom: "unset"});
+        $(".answer-text").css({marginTop: "5%"});
      }
   $(".check").on("touchend", feverCheck);
 }
