@@ -149,7 +149,7 @@ function about(event) {
 }
 
 function start(event) {
-    openFullscreen();
+    // openFullscreen();
     $(".opening").hide();
     $(".exams").show();
     $("body").css({direction: "ltr"});
