@@ -637,12 +637,16 @@ function showQuestion() {
     $(".drag").hide();
   $(".instructions").hide();
   $(".question").show();
-  $(".question-title").html(questions[nQuestionCounter]["title"])
+  $(".question-title").html(questions[nQuestionCounter]["title"]);
   for(var i = 1; i<=3; i++) {
       $(".answer" + i).html(questions[nQuestionCounter][i]);
       document.querySelector(".fever-game .option"+i+".div").querySelector("img").setAttribute("src", "assets/images/option.svg");
       document.querySelector(".fever-game .option"+i+".div").addEventListener("touchend",feverPickAnswer);
   }
+     if(nQuestionCounter === 4) {
+        $(".question-title").css({marginBottom: "0"});
+        $(".answer-text").css({marginTop: "1%"});
+     }
   $(".check").on("touchend", feverCheck);
 }
 
@@ -888,6 +892,7 @@ function pressureFinishExer() {
 }
 
 function urineStart(event) {
+    $(".next").hide();
   $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
   $(".instructions").hide();
   $("#cup").on("touchend", urineNext);
@@ -917,6 +922,10 @@ function urineNext(event) {
       } else {
           nCupCounter++;
           $("#cup").attr("src", "assets/images/urine" + nCupCounter +".svg");
+      }
+      if(nCurrStep === 4) {
+          $(".next").fadeIn();
+          $(".next").on("touchend", urineFinishExer);
       }
       nStepCounter++;
   } else {
@@ -979,16 +988,9 @@ function urineDropItem(event) {
                       urineNext();
                       $(this).attr("src", "assets/images/urinestickcheck.svg");
                       $(this).css({width: "2vw", left: "unset", right: "33%", bottom: "23%"});
-                      $("#cup").removeClass("target");
-                      $("#urineguide").addClass("target");
-                      $(this).removeClass("step3");
-                      $(this).addClass("step5");
-                  } else {
                       $(this).off("touchmove", urineDrag);
                       $(this).off("touchend", urineDropItem);
                       $(this).off("touchcancel", urineDropItem);
-                      $(this).hide();
-                      urineFinishExer();
                   }
               } else {
                   $(".x").show()
@@ -1023,6 +1025,8 @@ function urineFinishExer() {
 }
 
 function backToMenu(event) {
+    $(".question-title").css({marginBottom: "unset"});
+    $(".answer-text").css({marginTop: "5%"});
   $(".closing").css({display: "none"});
   $(".back").off("touchend", backToMenu);
   $(".back").hide();

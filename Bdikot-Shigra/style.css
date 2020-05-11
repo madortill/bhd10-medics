@@ -162,11 +162,11 @@ body {
 
 .exam {
     width: 30%;
-    margin-top: 17%;
 }
 
 #palse {
     margin-left: 3%;
+    margin-top: 10%;
 }
 
 #breathing {
@@ -175,6 +175,8 @@ body {
 
 #fever {
     margin-left: 50%;
+    position: relative;
+    top: 20%;
 }
 
 #pressure {
