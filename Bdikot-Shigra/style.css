@@ -412,13 +412,13 @@ body {
 
 .patient1 {
     width: 70%;
-    bottom: 22.3%;
+    bottom: 20.3%;
     z-index: 98;
     right: 0;
 }
 
 .object-div {
-    bottom: 3%;
+    bottom: 1%;
     width: 79%;
     right: 10.5%;
     display: flex;
