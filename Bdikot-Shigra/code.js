@@ -853,7 +853,7 @@ function pressManjet(event) {
     document.querySelector(".pressure-game .option1.div").addEventListener("touchend",pressurePickAnswer);
     document.querySelector(".pressure-game .option2.div").addEventListener("touchend",pressurePickAnswer);
     $(".check").on("touchend", pressureCheck);
-  }, 1800);
+  }, 2000);
   
 }
 
