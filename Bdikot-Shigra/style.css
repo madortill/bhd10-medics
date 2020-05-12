@@ -501,7 +501,7 @@ body {
 }
 
 #point2 {
-    top: 28%;
+    top: 24%;
     right: 10%;
 }
 
@@ -553,25 +553,25 @@ body {
     bottom: 26.3%;
 }
 
-#chest {
+#ches1 {
     width: 49%;
     bottom: 27%;
     right: 35%;
     visibility: hidden;
 }
 
-#face {
+#face0 {
     width: 34%;
     top: 18%;
     right: 52%;
     visibility: hidden;
 }
 
-#ear {
+#ear0 {
     width: 15vw;
 }
 
-#eye {
+#eye1 {
     width: 25vw;
 }
 

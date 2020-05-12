@@ -72,7 +72,7 @@ var pressureText = [
       "text": 'על החובש לוודא כי החייל יושב בצורה ישרה, החדר מאוורר, ושהחייל לא שתה קפה, עישן סיגריה או התאמן חצי שעה לפני הבדיקה.'
   },
   {
-      "text": "יש להניח את המנג'טה על הזרוע החלשה. "
+      "text": "יש להניח את המנג'טה על הזרוע. "
   },
   {
       "text": "משחילים את הסטטוסקופ מעל העורק הברכיאלי בשקע המרפק."
@@ -418,29 +418,26 @@ function breathingDropItem(event) {
   for (let touch of event.changedTouches) {
       var point = {x: touch.clientX,y: touch.clientY};
       var hitTarget = false;
-      for (let target of document.querySelectorAll(".breathing-game .target")) {
+      let nCurrDragged = this.id.charAt(3);
+      for (let target of document.querySelectorAll(".breathing-game .target"+nCurrDragged)) {
           if (target.getBoundingClientRect().contains(point)) {
-              if(nCurrStep === nStepCounter) {
-                  $(".question-text").html(breathingText[nTextCounter]["text"]);
-                  nTextCounter++;
-                  if(this.id === "ear") {
-                      $(".breathing-text").show();
-                      $("#face").remove();
-                      $("#chest").addClass("target");
-                      nStepCounter++;
-                  } else {
-                      $(".objects-breathing").remove();
-                      $(".breathing-object-div").html("<p>"+breathingText[nTextCounter]["text"]+"</p>");
-                      $(".breathing-object-div").css({right: "8.5%", color: "rgb(78,117,130)", paddingRight: "2%", paddingLeft: "2%", textAlign: "center"});
-                      $(".next").delay(1000).fadeIn();
-                      $(".next").on("touchend", breathingFinishExer);
-                      $(".next").css({bottom: "6%"});
-                  }
-              } else {
-                  $(".x").show()
-                  $(".x").delay(150).fadeOut(500);
-              }
-              hitTarget = true;
+                $(".question-text").html(breathingText[nCurrDragged]["text"]);
+                $(".breathing-text").show();
+                if(this.id === "ear0") {
+                    $("#face0").remove();
+                } else {
+                    $("#ches1").remove();
+                }
+                nBreathingCounter++;
+                if(nBreathingCounter === 2) {
+                    $(".objects-breathing").remove();
+                    $(".breathing-object-div").html("<p>"+breathingText[2]["text"]+"</p>");
+                    $(".breathing-object-div").css({right: "8.5%", color: "rgb(78,117,130)", paddingRight: "2%", paddingLeft: "2%", textAlign: "center"});
+                    $(".next").delay(1000).fadeIn();
+                    $(".next").on("touchend", breathingFinishExer);
+                    $(".next").css({bottom: "6%"});
+                }
+                hitTarget = true;
               break;
           } 
           if (!hitTarget) {
@@ -806,7 +803,7 @@ function pressureDropItem(event) {
       for (let target of document.querySelectorAll(".pressure-game .target")) {
           if (target.getBoundingClientRect().contains(point)) {
               if(nCurrStep === nStepCounter) {
-                  $(this).on("touchmove", pressureDrag);
+                  $(this).off("touchmove", pressureDrag);
                   $(this).off("touchend", pressureDropItem);
                   $(this).off("touchcancel", pressureDropItem);
                   if(nCurrStep === 1) {
@@ -897,6 +894,7 @@ function pressureFinishExer() {
 
 function urineStart(event) {
     $(".next").hide();
+    $(".next").css({bottom: "6%", left: "14%"});
   $("body").css({backgroundImage: 'url("assets/images/bg1.svg")'});
   $(".instructions").hide();
   $("#cup").on("touchend", urineNext);
