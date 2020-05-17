@@ -10,13 +10,6 @@ const homeOptions = [
                 icon: "assests/yesodotmivneihaguf.svg",
             },
             {
-                title: "מע' הדם באוויר והעצבים",
-                titleColor: "yellow", //yellow or red or orenge
-                explain: "מבוא למע' הדם באוויר והעצבים",
-                link: "www.gal.com",
-                icon: "assests/1bloodairnerve.svg",
-            },
-            {
                 title: "מע' העצבים",
                 titleColor: "red",
                 explain: "מי רוצה להיות חובש? - שאלות חזרה",
@@ -98,7 +91,7 @@ const homeOptions = [
                 title: 'מבוא למחלות מדבקות',
                 titleColor: "yellow",
                 explain: "בסרטון זה נלמד על מבוא למחלות מדבקות",
-                link: "www",
+                link: "https://www.youtube.com/watch?v=RjlManlauRo&list=PLPG8RZNM8LuUXDnjeKWAhd6hk6FsRy6T2&index=2&t=0s",
                 icon: "assests/9contagious.svg",
             },
             {
@@ -119,14 +112,14 @@ const homeOptions = [
                 title: 'מצבים דחופים בשגרה',
                 titleColor: "orenge",
                 explain: "סימולציית טיפול בחייל בשגרה",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/Matzavim-Dhufim-Bashigra/index.html",
                 icon: "assests/12herum.svg",
             },
             {
                 title: 'מחלות כרוניות ',
                 titleColor: "orenge",
                 explain: "למידה על מחלות כרוניות נפוצות",
-                link: "www",
+                link: "https://mador-till-prod.github.io/BHD-10-Medics/chronic-diseases/",
                 icon: "assests/13chronic.svg",
             },
         ]
@@ -138,7 +131,7 @@ const homeOptions = [
                 title: 'אנמנזה דגלים אדומים',
                 titleColor: "yellow",
                 explain: "בסרטון זה נלמד ונכיר את הדגלים האדומים באנמנזה",
-                link: "www",
+                link: "https://www.youtube.com/watch?v=sJdyuJLcVW4&list=PLPG8RZNM8LuUXDnjeKWAhd6hk6FsRy6T2&index=17&t=0s",
                 icon: "assests/14redflags.svg",
             },
             {
@@ -173,7 +166,7 @@ const homeOptions = [
                 title: 'אנמנזה עיכול',
                 titleColor: "yellow",
                 explain: "בסרטון זה נלמד להתמודד עם תלונות על מערכת העיכול",
-                link: "www",
+                link: "https://www.youtube.com/watch?v=4JdiKtVV9oQ&list=PLPG8RZNM8LuUXDnjeKWAhd6hk6FsRy6T2&index=5&t=0s",
                 icon: "assests/18digestion.svg",
             },
             {
@@ -187,7 +180,7 @@ const homeOptions = [
                 title: 'עין ואוזן ',
                 titleColor: "yellow",
                 explain: "בסרטון זה נלמד להתמודד עם תלונות על מערכת עין ואוזן",
-                link: "www",
+                link: "https://www.youtube.com/watch?v=6peuSa4y-nk&list=PLPG8RZNM8LuUXDnjeKWAhd6hk6FsRy6T2&index=19&t=0s",
                 icon: "assests/20eareyes.svg",
             }]
     },
@@ -239,14 +232,14 @@ const homeOptions = [
                 explain: "בסרטון זה נלמד על פגיעות אקלים",
                 link: "https://youtu.be/9f3pwp0jNKc",
                 icon: "assests/26hotclimate.svg",
-            },
-            {
-                title: 'פגיעות אקלים <br>קר',
-                titleColor: "yellow",
-                explain: "בסרטון זה נלמד על פגיעות אקלים",
-                link: "www",
-                icon: "assests/27coldclimate.svg",
-            }]
+             }/*,
+            // {
+            //     title: 'פגיעות אקלים <br>קר',
+            //     titleColor: "yellow",
+            //     explain: "בסרטון זה נלמד על פגיעות אקלים",
+            //     link: "www",
+            //     icon: "assests/27coldclimate.svg",
+            // }*/]
     }
 ];
 
