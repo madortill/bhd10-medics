@@ -128,6 +128,11 @@ var bPenCanDrag = false;
 var bCottonCanDrag = false;
 var nCupCounter = 1;
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+  let location = ""
+  navigator.serviceWorker.register(location + 'sw.js');
+}
+
 $(function(){
     $(".about").on("touchend", about);
     $(".navigate").on("touchend", Home);

@@ -10,6 +10,11 @@ var nNumPicks = 0;
 var bPressedAbout = false;
 var elem = document.querySelector("html");
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
+
 $(function(){
     $(".ok").on("touchend", removeTurn);
     $(".about").on("touchend", about);

@@ -253,6 +253,11 @@ const homeOptions = [
 //global var
 var placeInJason = null;
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
+
 window.onload = () => {
 
     //home menu buttons
