@@ -146,6 +146,10 @@ var bPressedAbout = false;
 var canShowQuestion = true;
 var elem = document.querySelector("html");
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
 
 $(function(){
     $(".ok").on("touchend", removeTurn);
