@@ -172,6 +172,11 @@ var currQues = 0;
 var life = 0;
 var timer;
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
+
 window.onload = () => {
     document.querySelector(".i-icon").addEventListener("click", onClickI);
     startGame();

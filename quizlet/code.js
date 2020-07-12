@@ -60,6 +60,11 @@ var worngsListTest = [];
 var currectAnsArrTry = [];
 var arrShaffelCard = [];
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
+
 window.onload = () => {
     document.querySelector(".card-button").addEventListener("click", onClickCardButton);
     document.querySelector(".test-button").addEventListener("click", onClickTestButton);

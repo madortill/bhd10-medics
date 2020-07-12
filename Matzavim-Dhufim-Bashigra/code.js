@@ -200,6 +200,11 @@ var nTextCounter = -1;
 var nPicked = 0;
 var bPressedAbout = false;
 
+if('serviceWorker' in navigator && location.hostname !== 'localhost'){
+    let location = ""
+    navigator.serviceWorker.register(location + 'sw.js');
+}
+
 $(function(){
     $(".about").on("touchend", about);
     $(".navigate").on("touchend", Home);
