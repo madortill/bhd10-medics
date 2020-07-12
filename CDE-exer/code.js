@@ -11,7 +11,7 @@ var bPressedAbout = false;
 var elem = document.querySelector("html");
 
 if('serviceWorker' in navigator && location.hostname !== 'localhost'){
-    let location = ""
+    let location = "../"
     navigator.serviceWorker.register(location + 'sw.js');
 }
 

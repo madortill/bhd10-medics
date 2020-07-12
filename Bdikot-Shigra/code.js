@@ -129,7 +129,7 @@ var bCottonCanDrag = false;
 var nCupCounter = 1;
 
 if('serviceWorker' in navigator && location.hostname !== 'localhost'){
-  let location = ""
+  let location = "../"
   navigator.serviceWorker.register(location + 'sw.js');
 }
 
