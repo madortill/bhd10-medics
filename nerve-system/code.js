@@ -65,7 +65,7 @@ const termList = [
     },
     {
         quess: "על מה שולטת מערכת העצבים העצמאית?",
-        ans0: "פעולות הלתי רצוניותכמו עיכול, נשימה ופעולות הלב",
+        ans0: "פעולות בלתי רצוניות כמו עיכול, נשימה ופעולות הלב",
         ans1: "פעולות רצוניות כמו ריצה, דיבור ונגינה",
         ans2: "מוכנות מערכות הגוף למצב של מלחמה",
         ans3: "התנהגות מערכות הגוף בזמן מנוחה",
@@ -74,14 +74,14 @@ const termList = [
     {
         quess: "על מה שולטת המערכת הסימפתטית?",
         ans0: "מוכנות מערכות הגוף למצב של מלחמה",
-        ans1: "פעולות רצוניות כומ ריצה, דיבור ונגינה",
+        ans1: "פעולות רצוניות כמו ריצה, דיבור ונגינה",
         ans2: "פעולות בלתי רצוניות כמו עיכול, נשימה ופעולות לב",
         ans3: "התנהגות מערכות הגוף בזמן מנוחה",
         img: "#"
     },
     {
         quess: "על מה שולטת המערכת הפראסמפתטית?",
-        ans0: "התנהגות מערכות הגוף הגוף בזמן מנוחה",
+        ans0: "התנהגות מערכות הגוף בזמן מנוחה",
         ans1: "פעולות רצוניות כמו ריצה, דיבור ונגינה",
         ans2: "פעולות בלתי רצוניות  כמו עיכול, נשימה ופעולות לב",
         ans3: "מוכנות מערכות הגוף למצב של מלחמה",
@@ -227,7 +227,7 @@ function cheack(e) {
                 }
             }
         }
-        timer = setTimeout(winMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+        timer = setTimeout(winMessege, 2500, e.currentTarget, document.querySelector(".correct"));
     }
     else {
 
@@ -240,7 +240,7 @@ function cheack(e) {
             //change cards color- green color
             e.currentTarget.classList.add("correct");
 
-            timer = setTimeout(nextQuestionRight, 1500, e.currentTarget);
+            timer = setTimeout(nextQuestionRight, 2500, e.currentTarget);
         }
         else {
             //remove life counter and img
@@ -256,12 +256,12 @@ function cheack(e) {
             for (var i = 0; i < ansArr.length; i++) {
                 if (allNotes[i].textContent == termList[currQues - 1].ans0) {
                     allNotes[i].classList.add("correct");
-                    timer = setTimeout(nextQuestionWorng, 1500, e.currentTarget, allNotes[i]);
+                    timer = setTimeout(nextQuestionWorng, 2500, e.currentTarget, allNotes[i]);
                 }
             }
             //if the user lose the game
             if (life == 3) {
-                timer = setTimeout(loseMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+                timer = setTimeout(loseMessege, 2500, e.currentTarget, document.querySelector(".correct"));
                 //clearInterval(timer);
             }
         }

@@ -17,7 +17,7 @@ const termList = [
     },
     {
         quess: "מה נכון לומר לגבי כלי הדם?",
-        ans0: "ככלל, הדם בוורידים הוא עני בחמצן ובעורקים הוא עשיר בחמצן",
+        ans0: "בדרך כלל, הדם בוורידים הוא עני בחמצן ובעורקים הוא עשיר בחמצן",
         ans1: "הנימים מחברים בין העורקים לרקמות הגוף",
         ans2: "הווריד בנוי משכבה שרירית עבה המאפשרת לו להקטין או להרחיב את קוטרו",
         ans3: "תהליך חילוף החומרים מתרחש בעורקיקים",
@@ -65,18 +65,18 @@ const termList = [
     },
     {
         quess: "מהו הסדר הנכון במחזור הדם הגדול?",
-        ans0: "חדר שמאל→אבי העורקים→עורקי הגוף→נימים←ורידי הגוף←ורידים נבובים←עליה ימין←חדר ימין",
-        ans1: "חדר ימין←עורקי הריאה←נימי הריאה←ורידי הריאה←עליה שמאל←חדר שמאל",
-        ans2: "חדר ימין←אבי העורקים←עורקי הגוף←נימים←ורידי הגוף←ורידים נבובים←עליה שמאל←חדר שמאל",
-        ans3: "חדר שמאל←עורקי הריאה←נימי הריאה←ורידי הריאה←עליה ימין←חדר ימין",
+        ans0: "חדר שמאל ← אבי העורקים ← עורקי הגוף ← נימים ← ורידי הגוף ← ורידים נבובים ← עליה ימין ← חדר ימין",
+        ans1: "חדר ימין ← עורקי הריאה ← נימי הריאה ← ורידי הריאה ← עליה שמאל ← חדר שמאל",
+        ans2: "חדר ימין ← אבי העורקים ← עורקי הגוף ← נימים ← ורידי הגוף ← ורידים נבובים ← עליה שמאל ← חדר שמאל",
+        ans3: "חדר שמאל ← עורקי הריאה ← נימי הריאה ← ורידי הריאה ← עליה ימין ← חדר ימין",
         img: "#"
     },
     {
         quess: "מהו הסדר הנכון במחזור הדם הקטן?",
-        ans0: "חדר ימין←עורקי הריאה←ינימי הריאה←ורידי הריאה←עליה שמאל←חדר שמאל",
-        ans1: "חדר שמאל←אבי העורקים←עורקי הגוף←נימים←ורידי הגוף←ורידים נבובים←עליה ימין←חדר ימין",
-        ans2: "חדר ימין←אבי העורקים←עורקי הגוף←נימים←ורידי הגוף←ורידים נבובים←עליה שמאל←חדר שמאל",
-        ans3: "חדר שמאל←עורקי הריאה←נימי הריאה←ורידי הריאה←עליה ימין←חדר ימין",
+        ans0: "חדר ימין ← עורקי הריאה ← ינימי הריאה ← ורידי הריאה ← עליה שמאל ← חדר שמאל",
+        ans1: "חדר שמאל ← אבי העורקים ← עורקי הגוף ← נימים ← ורידי הגוף ← ורידים נבובים ← עליה ימין ← חדר ימין",
+        ans2: "חדר ימין ← אבי העורקים ← עורקי הגוף ← נימים ← ורידי הגוף ← ורידים נבובים ← עליה שמאל ← חדר שמאל",
+        ans3: "חדר שמאל ← עורקי הריאה ← נימי הריאה ← ורידי הריאה ← עליה ימין ← חדר ימין",
         img: "#"
     },
     {
@@ -241,7 +241,7 @@ function cheack(e) {
                 }
             }
         }
-        timer = setTimeout(winMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+        timer = setTimeout(winMessege, 2500, e.currentTarget, document.querySelector(".correct"));
     }
     else {
 
@@ -254,7 +254,7 @@ function cheack(e) {
             //change cards color- green color
             e.currentTarget.classList.add("correct");
 
-            timer = setTimeout(nextQuestionRight, 1500, e.currentTarget);
+            timer = setTimeout(nextQuestionRight, 2500, e.currentTarget);
         }
         else {
             //remove life counter and img
@@ -270,12 +270,12 @@ function cheack(e) {
             for (var i = 0; i < ansArr.length; i++) {
                 if (allNotes[i].textContent == termList[currQues - 1].ans0) {
                     allNotes[i].classList.add("correct");
-                    timer = setTimeout(nextQuestionWorng, 1500, e.currentTarget, allNotes[i]);
+                    timer = setTimeout(nextQuestionWorng, 2500, e.currentTarget, allNotes[i]);
                 }
             }
             //if the user lose the game
             if (life == 3) {
-                timer = setTimeout(loseMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+                timer = setTimeout(loseMessege, 2500, e.currentTarget, document.querySelector(".correct"));
                 //clearInterval(timer);
             }
         }

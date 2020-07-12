@@ -19,7 +19,7 @@ const termList = [
         quess: "לאיזה צד סביר שייכנס גוף זר שחודר לסימפונות?",
         ans0: "ימין",
         ans1: "שמאל",
-        ans2: "לשיניהם באותה מידה",
+        ans2: "לשניהם באותה מידה",
         ans3: "הסימפונות קטנים מידי לחדירת גופים זרים",
         img: "#"
     },
@@ -230,7 +230,7 @@ function cheack(e) {
                 }
             }
         }
-        timer = setTimeout(winMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+        timer = setTimeout(winMessege, 2500, e.currentTarget, document.querySelector(".correct"));
     }
     else {
 
@@ -243,7 +243,7 @@ function cheack(e) {
             //change cards color- green color
             e.currentTarget.classList.add("correct");
 
-            timer = setTimeout(nextQuestionRight, 1500, e.currentTarget);
+            timer = setTimeout(nextQuestionRight, 2500, e.currentTarget);
         }
         else {
             //remove life counter and img
@@ -259,12 +259,12 @@ function cheack(e) {
             for (var i = 0; i < ansArr.length; i++) {
                 if (allNotes[i].textContent == termList[currQues - 1].ans0) {
                     allNotes[i].classList.add("correct");
-                    timer = setTimeout(nextQuestionWorng, 1500, e.currentTarget, allNotes[i]);
+                    timer = setTimeout(nextQuestionWorng, 2500, e.currentTarget, allNotes[i]);
                 }
             }
             //if the user lose the game
             if (life == 3) {
-                timer = setTimeout(loseMessege, 1500, e.currentTarget, document.querySelector(".correct"));
+                timer = setTimeout(loseMessege, 2500, e.currentTarget, document.querySelector(".correct"));
                 //clearInterval(timer);
             }
         }
