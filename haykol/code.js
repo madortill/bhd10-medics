@@ -138,7 +138,7 @@ var life = 0;
 var timer;
 
 if('serviceWorker' in navigator && location.hostname !== 'localhost'){
-    let location = ""
+    let location = "../"
     navigator.serviceWorker.register(location + 'sw.js');
 }
 
