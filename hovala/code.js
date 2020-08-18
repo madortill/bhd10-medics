@@ -7,14 +7,14 @@ const termList = [
         ans3: "70% מים, 8% פלסמה, 12% כדוריות דם אדומות",
         img: "#"
     },
-    {
-        quess: "מהו הסדר הנכון של שכבות כלי הדם (מחוץ אל הפנים)?",
-        ans0: "Adventitia → media → intima",
-        ans1: "Intima → adventitia → media",
-        ans2: "Media → intima → adventitia",
-        ans3: "Adventitia → intima → media",
-        img: "#"
-    },
+    // {
+    //     quess: "מהו הסדר הנכון של שכבות כלי הדם (מחוץ אל הפנים)?",
+    //     ans0: "Adventitia → media → intima",
+    //     ans1: "Intima → adventitia → media",
+    //     ans2: "Media → intima → adventitia",
+    //     ans3: "Adventitia → intima → media",
+    //     img: "#"
+    // },
     {
         quess: "מה נכון לומר לגבי כלי הדם?",
         ans0: "בדרך כלל, הדם בוורידים הוא עני בחמצן ובעורקים הוא עשיר בחמצן",
@@ -141,7 +141,7 @@ const termList = [
 ];
 
 //value of the questions
-const quesValue = ["0", "100", "200", "500", "1,000", "2,000", "5,000", "10,000", "80,000", "100,000", "200,000", "400,000", "500,000", "800,000", "1,000,000", "1,000,000"];
+const quesValue = ["0", "100", "200", "500", "1,000", "2,000", "5,000", "20,000", "100,000", "200,000", "400,000", "500,000", "800,000", "1,000,000", "1,000,000"];
 
 
 var quessOrder = [];
